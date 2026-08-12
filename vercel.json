@@ -1,14 +1,9 @@
 {
   "version": 2,
   "framework": null,
-  "buildCommand": null,
+  "buildCommand": "echo 'Static site - no build required'",
   "outputDirectory": ".",
   "installCommand": null,
-  "functions": {
-    "api/*.php": {
-      "runtime": "static"
-    }
-  },
   "rewrites": [
     { "source": "/(.*)", "destination": "/demo-homepage.html" }
   ],
