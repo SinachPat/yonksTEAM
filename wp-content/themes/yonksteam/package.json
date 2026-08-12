@@ -1,0 +1,17 @@
+{
+  "name": "yonksteam-theme",
+  "version": "2.0.0",
+  "private": true,
+  "description": "YonksTEAM WordPress block theme — Tailwind CSS build pipeline.",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/css/tailwind.css -o ./assets/css/style.css --minify",
+    "build": "npm run build:css",
+    "dev": "tailwindcss -i ./src/css/tailwind.css -o ./assets/css/style.css --watch",
+    "prebuild": "echo 'Building compiled CSS...'"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49"
+  }
+}

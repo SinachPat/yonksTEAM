@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Next Season — Newsletter — YonksTEAM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  :root { --primary: #1a1a2e; --secondary: #c97b3a; --accent: #d4946a; --background: #faf8f5; --surface: #f5f0eb; --foreground: #1a1a2e; --muted: #6b6b7d; --white: #ffffff; --heading: 'Playfair Display', Georgia, 'Times New Roman', serif; --body: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; --content: 720px; --wide: 1140px; --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: var(--body); color: var(--foreground); background: var(--background); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a { color: inherit; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  .reveal { animation: fadeUp 0.7s cubic-bezier(0.25,0.46,0.45,0.94) both; }
+  .reveal-d1 { animation-delay: 0.1s; }
+  .reveal-d2 { animation-delay: 0.2s; }
+
+  .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,245,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.04); transition: box-shadow var(--transition); }
+  .site-header.scrolled { box-shadow: 0 1px 12px rgba(0,0,0,0.06); }
+  .site-header__inner { max-width: var(--wide); margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .site-header__logo { font-family: var(--heading); font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; letter-spacing: -0.02em; transition: color var(--transition); }
+  .site-header__logo:hover { color: var(--secondary); }
+  .site-header__nav { display: flex; align-items: center; gap: 2.5rem; }
+  .site-header__link { text-decoration: none; color: var(--muted); font-size: 0.9rem; font-weight: 500; transition: color var(--transition); position: relative; }
+  .site-header__link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--secondary); transition: width var(--transition); }
+  .site-header__link:hover { color: var(--primary); }
+  .site-header__link:hover::after { width: 100%; }
+  .site-header__link--active { color: var(--primary); }
+  .site-header__link--active::after { width: 100%; }
+
+  .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 2rem; border-radius: 6px; font-family: var(--body); font-size: 1rem; font-weight: 600; text-decoration: none; text-align: center; cursor: pointer; border: 2px solid transparent; white-space: nowrap; transition: all var(--transition); }
+  .btn--primary { background: var(--secondary); color: var(--white); border-color: var(--secondary); }
+  .btn--primary:hover { background: #b86a2a; border-color: #b86a2a; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(201,123,58,0.25); }
+  .btn--white { background: var(--white); color: var(--primary); border-color: var(--white); }
+  .btn--white:hover { background: transparent; color: var(--white); transform: translateY(-2px); }
+  .btn--outline-white { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.3); }
+  .btn--outline-white:hover { background: rgba(255,255,255,0.08); border-color: var(--white); transform: translateY(-2px); }
+  .btn--sm { padding: 0.625rem 1.25rem; font-size: 0.875rem; }
+
+  .hero-interior { padding: 10rem 1.5rem 6rem; background: linear-gradient(165deg, var(--primary) 0%, #242445 100%); position: relative; overflow: hidden; text-align: center; }
+  .hero-interior::before { content: ''; position: absolute; top: -40%; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(201,123,58,0.08) 0%, transparent 70%); pointer-events: none; }
+  .hero-interior__inner { max-width: var(--content); margin: 0 auto; position: relative; z-index: 1; }
+  .hero-interior__eyebrow { font-family: var(--body); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--secondary); margin-bottom: 1.5rem; }
+  .hero-interior__headline { font-family: var(--heading); font-size: 4rem; line-height: 1.05; color: var(--white); margin: 0 auto 1rem; font-weight: 700; letter-spacing: -0.02em; }
+  .hero-interior__subheadline { font-family: var(--heading); font-size: 1.25rem; font-style: italic; color: var(--secondary); font-weight: 400; max-width: 35ch; margin: 0 auto 1.5rem; }
+  .hero-interior__body { font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.7); max-width: 45ch; margin: 0 auto 2.5rem; }
+
+  .section { padding: 6rem 1.5rem; }
+  .section--warm { background: var(--surface); }
+  .section__inner--narrow { max-width: var(--content); margin: 0 auto; }
+  .section__headline { font-family: var(--heading); font-size: 2.5rem; line-height: 1.2; color: var(--primary); font-weight: 600; margin: 0 0 1rem; }
+  .section__headline--center { text-align: center; margin-bottom: 3rem; }
+
+  .features { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem; }
+  .feature { background: var(--white); border-radius: 12px; padding: 2rem; border: 1px solid var(--surface); }
+  .feature__icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+  .feature__title { font-family: var(--heading); font-size: 1.25rem; color: var(--primary); font-weight: 600; margin-bottom: 0.5rem; }
+  .feature__body { font-size: 0.95rem; line-height: 1.7; color: var(--muted); }
+  .feature__body p { margin: 0; }
+
+  .newsletter-form { max-width: 480px; margin: 3rem auto 0; display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+  .newsletter-form input[type="email"] { flex: 1 1 240px; padding: 0.875rem 1rem; border: 2px solid var(--surface); border-radius: 6px; font-family: var(--body); font-size: 1rem; background: var(--white); color: var(--foreground); transition: border-color var(--transition); }
+  .newsletter-form input[type="email"]:focus { outline: none; border-color: var(--secondary); box-shadow: 0 0 0 3px rgba(201,123,58,0.15); }
+  .newsletter-form input[type="email"]::placeholder { color: var(--muted); }
+
+  .site-footer { background: linear-gradient(165deg, var(--primary) 0%, #1f1f3a 100%); padding: 3rem 1.5rem; }
+  .site-footer__inner { max-width: var(--wide); margin: 0 auto; }
+  .site-footer__divider { display: none; }
+  .site-footer__content { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; }
+  .site-footer p.site-footer__tagline, .site-footer p.site-footer__copyright { font-size: 0.875rem; color: rgba(255,255,255,0.6); margin: 0; }
+  .site-footer__nav { display: flex; gap: 2rem; flex-wrap: wrap; }
+  .site-footer__link { text-decoration: none; color: rgba(255,255,255,0.6); font-size: 0.875rem; transition: color var(--transition); }
+  .site-footer__link:hover { color: var(--white); }
+  .site-footer__copyright { text-align: center; font-size: 0.8rem; margin-top: 1.5rem; margin-bottom: 0; }
+
+  @media (max-width: 768px) {
+    .hero-interior { padding: 7rem 1.5rem 4rem; }
+    .hero-interior__headline { font-size: 2.5rem; }
+    .section { padding: 4rem 1.5rem; }
+    .section__headline { font-size: 1.75rem; }
+    .features { grid-template-columns: 1fr; }
+    .site-header__nav { gap: 1.25rem; }
+    .site-header__link { font-size: 0.8rem; }
+  }
+  @media (max-width: 600px) { .site-header__nav { display: none; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:0;z-index:200;font-size:1rem;">Skip to main content</a>
+
+<header class="site-header" id="site-header">
+  <div class="site-header__inner">
+    <a href="demo-homepage.html" class="site-header__logo" aria-label="YonksTEAM — Home">YonksTEAM</a>
+    <nav class="site-header__nav" aria-label="Primary navigation">
+      <a href="demo-for-advisors.html" class="site-header__link">For Advisors</a>
+      <a href="demo-exit-to-client.html" class="site-header__link">Exit to Client</a>
+      <a href="demo-about.html" class="site-header__link">About</a>
+      <a href="demo-newsletter.html" class="site-header__link site-header__link--active">The Newsletter</a>
+      <a href="demo-contact.html" class="btn btn--primary btn--sm">Start the Conversation</a>
+    </nav>
+  </div>
+</header>
+<main id="main-content">
+  <section class="hero-interior">
+    <div class="hero-interior__inner">
+      <div class="hero-interior__eyebrow">The Next Season</div>
+      <h1 class="hero-interior__headline">The Next Season.</h1>
+      <p class="hero-interior__subheadline">One newsletter. From the two of us. About the life after the practice.</p>
+      <div class="hero-interior__body">
+        <p>No fluff. No "5 tips for a better work-life balance." Real stories from people who've made the transition. Honest talk about what it takes to leave. And early access to events, conversations, and the Exit to Client model.</p>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn--white">Join The Next Season →</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section section--warm">
+    <div class="section__inner--narrow">
+      <h2 class="section__headline section__headline--center">What you'll get</h2>
+      <div class="features">
+        <div class="feature reveal">
+          <div class="feature__icon">📖</div>
+          <h3 class="feature__title">Real Transition Stories</h3>
+          <div class="feature__body"><p>Advisors who've made the leap. What they did, what they learned, what they wish they'd known sooner.</p></div>
+        </div>
+        <div class="feature reveal reveal-d1">
+          <div class="feature__icon">🔑</div>
+          <h3 class="feature__title">Early Access</h3>
+          <div class="feature__body"><p>Be the first to hear about Exit to Client developments, events, and conversations with people who've been where you are.</p></div>
+        </div>
+        <div class="feature reveal">
+          <div class="feature__icon">💬</div>
+          <h3 class="feature__title">Honest Talk</h3>
+          <div class="feature__body"><p>The stuff nobody says at industry conferences. What it actually feels like to leave, what you'll miss, and what you won't.</p></div>
+        </div>
+        <div class="feature reveal reveal-d1">
+          <div class="feature__icon">🌍</div>
+          <h3 class="feature__title">From the Road</h3>
+          <div class="feature__body"><p>Jason and Tyler's full-time traveler life — and the perspective it gives on what matters after the practice.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+    <div class="site-footer__content">
+      <p class="site-footer__tagline">Building ♾️ WeOwnNet 🌐 ecosystem</p>
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        <a href="demo-blog.html" class="site-footer__link">Blog</a>
+        <a href="#" class="site-footer__link">Privacy</a>
+        <a href="#" class="site-footer__link">Terms</a>
+      </nav>
+    </div>
+    <p class="site-footer__copyright">&copy; 2026 YonksTEAM. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  (function() { var h = document.getElementById('site-header'), t = false; window.addEventListener('scroll', function() { if (!t) { requestAnimationFrame(function() { h.classList.toggle('scrolled', window.scrollY > 20); t = false; }); t = true; } }); })();
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------------------------------------------------------------------
+   YonksTEAM — Tailwind Input File
+   Compile with: npx tailwindcss -i ./src/css/tailwind.css -o ./assets/css/style.css
+   -------------------------------------------------------------------------- */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-foreground bg-background antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-primary;
+    line-height: 1.3;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded font-body font-semibold
+           no-underline transition-all duration-200 cursor-pointer border-2;
+  }
+
+  .btn--primary {
+    @apply bg-secondary text-white border-secondary;
+  }
+
+  .btn--primary:hover {
+    @apply bg-accent border-accent;
+  }
+
+  .btn--secondary {
+    @apply bg-transparent text-primary border-primary;
+  }
+
+  .btn--secondary:hover {
+    @apply bg-primary text-white;
+  }
+
+  .btn--arrow::after {
+    content: "→";
+    @apply inline-block transition-transform duration-200;
+    line-height: 1;
+  }
+
+  .btn--arrow:hover::after {
+    transform: translateX(4px);
+  }
+
+  .section-padding {
+    @apply py-section px-4;
+  }
+
+  .container-content {
+    @apply mx-auto max-w-content;
+  }
+
+  .container-wide {
+    @apply mx-auto max-w-wide;
+  }
+}

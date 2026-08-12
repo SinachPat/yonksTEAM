@@ -1,0 +1,68 @@
+{
+  "name": "acf/two-paths",
+  "title": "Two Paths",
+  "description": "Two paths side by side, each with title, description, and CTA button.",
+  "category": "yonksteam",
+  "icon": "admin-page",
+  "keywords": ["paths", "options", "choice", "comparison"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "mode": true,
+    "jsx": false
+  },
+  "fields": [
+    {
+      "key": "field_twopaths_headline",
+      "label": "Headline",
+      "name": "headline",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_twopaths_path_1_title",
+      "label": "Path 1 Title",
+      "name": "path_1_title",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_twopaths_path_1_body",
+      "label": "Path 1 Body",
+      "name": "path_1_body",
+      "type": "textarea",
+      "required": true,
+      "new_lines": "wpautop"
+    },
+    {
+      "key": "field_twopaths_path_1_cta",
+      "label": "Path 1 CTA",
+      "name": "path_1_cta",
+      "type": "link"
+    },
+    {
+      "key": "field_twopaths_path_2_title",
+      "label": "Path 2 Title",
+      "name": "path_2_title",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_twopaths_path_2_body",
+      "label": "Path 2 Body",
+      "name": "path_2_body",
+      "type": "textarea",
+      "required": true,
+      "new_lines": "wpautop"
+    },
+    {
+      "key": "field_twopaths_path_2_cta",
+      "label": "Path 2 CTA",
+      "name": "path_2_cta",
+      "type": "link"
+    }
+  ]
+}

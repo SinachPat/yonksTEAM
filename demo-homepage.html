@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YonksTEAM — Homepage</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+<!-- Theme's compiled CSS -->
+<link rel="stylesheet" href="wp-content/themes/yonksteam/assets/css/style.css">
+
+<style>
+  /* ==========================================================================
+     YonksTEAM — Refined Theme Styles
+     Bolder, smoother, more on point.
+     ========================================================================== */
+
+  :root {
+    --color-primary: #1a1a2e;
+    --color-secondary: #c97b3a;
+    --color-accent: #d4946a;
+    --color-background: #faf8f5;
+    --color-surface: #f5f0eb;
+    --color-foreground: #1a1a2e;
+    --color-muted: #6b6b7d;
+    --color-white: #ffffff;
+    --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    --font-body: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --content-width: 720px;
+    --wide-width: 1140px;
+    --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* ---- Smooth scroll ---- */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-foreground);
+    background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* ---- Accessibility helpers ---- */
+  .skip-link { position: absolute; left: -9999px; top: 0; z-index: 200; }
+  .skip-link:focus { left: 0; padding: 1rem 1.5rem; background: var(--color-secondary); color: var(--color-white); font-weight: 600; text-decoration: none; border-radius: 0 0 6px 0; }
+  a:focus-visible, .btn:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--color-secondary); outline-offset: 3px; }
+
+  /* ---- Core animation ---- */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+
+  .reveal {
+    animation: fadeUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    opacity: 0;
+  }
+
+  .reveal-delay-1 { animation-delay: 0.1s; }
+  .reveal-delay-2 { animation-delay: 0.2s; }
+  .reveal-delay-3 { animation-delay: 0.3s; }
+  .reveal-delay-4 { animation-delay: 0.4s; }
+
+  /* ================================================================
+     SITE HEADER — More refined
+     ================================================================ */
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(250, 248, 245, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    transition: box-shadow var(--transition);
+  }
+
+  .site-header.scrolled {
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  .site-header__inner {
+    max-width: var(--wide-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+  }
+
+  .site-header__logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    transition: color var(--transition);
+  }
+
+  .site-header__logo:hover {
+    color: var(--color-secondary);
+  }
+
+  .site-header__nav {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .site-header__link {
+    text-decoration: none;
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color var(--transition);
+    position: relative;
+  }
+
+  .site-header__link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-secondary);
+    transition: width var(--transition);
+  }
+
+  .site-header__link:hover {
+    color: var(--color-primary);
+  }
+
+  .site-header__link:hover::after {
+    width: 100%;
+  }
+
+  /* ================================================================
+     HERO — More dramatic
+     ================================================================ */
+  .hero-block {
+    position: relative;
+    padding: 10rem 1.5rem 8rem;
+    overflow: hidden;
+    animation: fadeIn 0.6s ease;
+  }
+
+  .hero-block--variant-default {
+    background: linear-gradient(165deg, var(--color-background) 0%, var(--color-surface) 40%, #efe8e0 100%);
+  }
+
+  .hero-block--variant-default::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -30%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(201, 123, 58, 0.04) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-block__inner {
+    max-width: var(--wide-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-block__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-block__eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-secondary);
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.8s ease;
+  }
+
+  .hero-block__headline {
+    font-family: var(--font-heading);
+    font-size: 4.5rem;
+    line-height: 1.05;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    animation: fadeUp 0.8s ease 0.05s both;
+  }
+
+  .hero-block__subheadline {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--color-secondary);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    animation: fadeUp 0.8s ease 0.1s both;
+  }
+
+  .hero-block__body {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-muted);
+    margin-bottom: 2.5rem;
+    max-width: 48ch;
+    animation: fadeUp 0.8s ease 0.15s both;
+  }
+
+  .hero-block__body p {
+    margin-bottom: 0;
+  }
+
+  .hero-block__actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    animation: fadeUp 0.8s ease 0.2s both;
+  }
+
+  .hero-block__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scaleIn 0.8s ease 0.15s both;
+  }
+
+  .hero-block__image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 24px 48px rgba(26, 26, 46, 0.08), 0 8px 16px rgba(26, 26, 46, 0.04);
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+  }
+
+  .hero-block__image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 32px 64px rgba(26, 26, 46, 0.12), 0 12px 24px rgba(26, 26, 46, 0.06);
+  }
+
+  .hero-block__image-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #e8e0d8 0%, #ddd5cc 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-muted);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    box-shadow: 0 24px 48px rgba(26, 26, 46, 0.08);
+  }
+
+  /* ---- Buttons — refined ---- */
+  .btn {
+    padding: 1rem 2.25rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    transition: all var(--transition);
+  }
+
+  .btn--primary {
+    background: var(--color-secondary);
+    color: var(--color-white);
+    border-color: var(--color-secondary);
+  }
+
+  .btn--primary:hover {
+    background: #b86a2a;
+    border-color: #b86a2a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(201, 123, 58, 0.25);
+  }
+
+  .btn--secondary {
+    background: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+  .btn--secondary:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(26, 26, 46, 0.15);
+  }
+
+  .btn--white {
+    background: var(--color-white);
+    color: var(--color-primary);
+    border-color: var(--color-white);
+  }
+
+  .btn--white:hover {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+    transform: translateY(-2px);
+  }
+
+  .btn--outline-white {
+    background: transparent;
+    color: var(--color-white);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .btn--outline-white:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--color-white);
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     RECOGNITION — The problem named
+     ================================================================ */
+  .recognition-block {
+    padding: 8rem 1.5rem;
+    background: var(--color-background);
+    text-align: center;
+    position: relative;
+  }
+
+  .recognition-block::before {
+    content: '"';
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-heading);
+    font-size: 8rem;
+    line-height: 1;
+    color: var(--color-secondary);
+    opacity: 0.08;
+    pointer-events: none;
+  }
+
+  .recognition-block__inner {
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+
+  .recognition-block__headline {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    line-height: 1.25;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  .recognition-block__body {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-muted);
+    max-width: 55ch;
+    margin: 0 auto;
+  }
+
+  .recognition-block__body p {
+    margin-bottom: 0;
+  }
+
+  /* ================================================================
+     EMPATHY — Stories that connect
+     ================================================================ */
+  .empathy-story {
+    padding: 8rem 1.5rem;
+    background: var(--color-surface);
+  }
+
+  .empathy-story__inner {
+    max-width: var(--wide-width);
+    margin: 0 auto;
+  }
+
+  .empathy-story__headline {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 600;
+  }
+
+  .empathy-story__stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .empathy-story__story {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.5rem;
+    background: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+
+  .empathy-story__story:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(26, 26, 46, 0.06);
+  }
+
+  .empathy-story__image-wrap {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--color-surface);
+    aspect-ratio: 16 / 10;
+  }
+
+  .empathy-story__image-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+  }
+
+  .empathy-story__story-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  .empathy-story__story-body {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--color-muted);
+  }
+
+  .empathy-story__story-body p {
+    margin-bottom: 0;
+  }
+
+  .empathy-story__connecting-line {
+    text-align: center;
+    margin-top: 3rem;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--color-secondary);
+    max-width: 40ch;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top: 2rem;
+  }
+
+  .empathy-story__connecting-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: var(--color-secondary);
+    border-radius: 2px;
+    opacity: 0.3;
+  }
+
+  /* ================================================================
+     AUTHORITY — Credentials, earned
+     ================================================================ */
+  .authority-block {
+    padding: 8rem 1.5rem;
+    background: var(--color-background);
+  }
+
+  .authority-block__inner {
+    max-width: var(--wide-width);
+    margin: 0 auto;
+  }
+
+  .authority-block__headline {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 600;
+  }
+
+  .authority-block__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .authority-block__credential {
+    background: var(--color-white);
+    border-radius: 12px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    border-top: 3px solid transparent;
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    position: relative;
+  }
+
+  .authority-block__credential:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(26, 26, 46, 0.06);
+    border-color: var(--color-secondary);
+  }
+
+  .authority-block__credential-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .authority-block__credential-title {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    color: var(--color-primary);
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  .authority-block__credential-body {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--color-muted);
+  }
+
+  .authority-block__credential-body p {
+    margin-bottom: 0;
+  }
+
+  /* ================================================================
+     PLAN STEPS — The way out
+     ================================================================ */
+  .plan-steps {
+    padding: 8rem 1.5rem;
+    background: linear-gradient(165deg, var(--color-primary) 0%, #242445 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .plan-steps::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(201, 123, 58, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .plan-steps__inner {
+    max-width: var(--wide-width);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .plan-steps__headline {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    line-height: 1.15;
+    color: var(--color-white);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  .plan-steps__subheadline {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--color-secondary);
+    margin-bottom: 4rem;
+    font-weight: 400;
+  }
+
+  .plan-steps__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .plan-steps__step {
+    position: relative;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: transform var(--transition), background var(--transition);
+  }
+
+  .plan-steps__step:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.07);
+  }
+
+  .plan-steps__step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--color-secondary);
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .plan-steps__step-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  .plan-steps__step-body {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .plan-steps__step-body p {
+    margin-bottom: 0;
+  }
+
+  /* ================================================================
+     SUCCESS / FAILURE SPLIT
+     ================================================================ */
+  .success-failure-split {
+    padding: 8rem 1.5rem;
+    background: var(--color-background);
+  }
+
+  .success-failure-split__inner {
+    max-width: var(--wide-width);
+    margin: 0 auto;
+  }
+
+  .success-failure-split__headline {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 600;
+  }
+
+  .success-failure-split__columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .success-failure-split__column {
+    padding: 3rem;
+    border-radius: 12px;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+
+  .success-failure-split__column:hover {
+    transform: translateY(-4px);
+  }
+
+  .success-failure-split__column--success {
+    background: linear-gradient(135deg, #f0faf0 0%, #e6f5e6 100%);
+    border: 1px solid rgba(76, 175, 80, 0.15);
+  }
+
+  .success-failure-split__column--success:hover {
+    box-shadow: 0 12px 32px rgba(76, 175, 80, 0.08);
+  }
+
+  .success-failure-split__column--failure {
+    background: linear-gradient(135deg, #fdf0f0 0%, #fae6e6 100%);
+    border: 1px solid rgba(229, 57, 53, 0.12);
+  }
+
+  .success-failure-split__column--failure:hover {
+    box-shadow: 0 12px 32px rgba(229, 57, 53, 0.06);
+  }
+
+  .success-failure-split__column-label {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  .success-failure-split__column--success .success-failure-split__column-label {
+    color: #2e7d32;
+  }
+
+  .success-failure-split__column--failure .success-failure-split__column-label {
+    color: #c62828;
+  }
+
+  .success-failure-split__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .success-failure-split__list-item {
+    position: relative;
+    padding-left: 2rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-foreground);
+  }
+
+  .success-failure-split__list-item::before {
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  .success-failure-split__list--success .success-failure-split__list-item::before {
+    content: "✓";
+    color: #4caf50;
+  }
+
+  .success-failure-split__list--failure .success-failure-split__list-item::before {
+    content: "✗";
+    color: #e53935;
+  }
+
+  /* ================================================================
+     TRANSFORMATION STATEMENT — The pivot
+     ================================================================ */
+  .transformation-statement {
+    padding: 8rem 1.5rem;
+    background: var(--color-surface);
+    text-align: center;
+    position: relative;
+  }
+
+  .transformation-statement__inner {
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+
+  .transformation-statement__transform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .transformation-statement__from {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-muted);
+    text-decoration: line-through;
+    line-height: 1.3;
+    font-style: italic;
+  }
+
+  .transformation-statement__arrow {
+    font-size: 2rem;
+    color: var(--color-secondary);
+    display: block;
+    animation: fadeIn 1s ease 0.3s both;
+  }
+
+  .transformation-statement__to {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    max-width: 14ch;
+  }
+
+  .transformation-statement__body {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-muted);
+    max-width: 50ch;
+    margin: 0 auto;
+  }
+
+  .transformation-statement__body p {
+    margin-bottom: 0;
+  }
+
+  /* ================================================================
+     CTA SECTION
+     ================================================================ */
+  .cta-section {
+    padding: 8rem 1.5rem 6rem;
+    background: linear-gradient(165deg, var(--color-primary) 0%, #1f1f3a 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(201, 123, 58, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cta-section__inner {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-section__headline {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    line-height: 1.15;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .cta-section__body {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2.5rem;
+    max-width: 45ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-section__actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cta-section__tagline {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: var(--font-heading);
+    font-style: italic;
+  }
+
+  /* ================================================================
+     SITE FOOTER
+     ================================================================ */
+  .site-footer {
+    background: linear-gradient(165deg, var(--color-primary) 0%, #1f1f3a 100%);
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .site-footer__inner {
+    max-width: var(--wide-width);
+    margin: 0 auto;
+  }
+
+  .site-footer__divider {
+    display: none;
+  }
+
+  .site-footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .site-footer p.site-footer__tagline,
+  .site-footer p.site-footer__copyright {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+  }
+
+  .site-footer__nav {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .site-footer__link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.875rem;
+    transition: color var(--transition);
+  }
+
+  .site-footer__link:hover {
+    color: var(--color-white);
+  }
+
+  .site-footer__copyright {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  /* ================================================================
+     RESPONSIVE
+     ================================================================ */
+  @media (max-width: 900px) {
+    .hero-block__inner {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    .hero-block__headline {
+      font-size: 3rem;
+    }
+    .hero-block {
+      padding: 7rem 1.5rem 4rem;
+    }
+    .hero-block__image-placeholder {
+      min-height: 320px;
+    }
+    .empathy-story__stories,
+    .authority-block__grid,
+    .plan-steps__list,
+    .success-failure-split__columns {
+      grid-template-columns: 1fr;
+    }
+    .recognition-block,
+    .empathy-story,
+    .authority-block,
+    .plan-steps,
+    .success-failure-split,
+    .transformation-statement,
+    .cta-section {
+      padding: 4rem 1.5rem;
+    }
+    .recognition-block__headline,
+    .authority-block__headline,
+    .success-failure-split__headline {
+      font-size: 1.75rem;
+    }
+    .plan-steps__headline {
+      font-size: 2rem;
+    }
+    .transformation-statement__to {
+      font-size: 2.25rem;
+    }
+    .cta-section__headline {
+      font-size: 2rem;
+    }
+    .site-header__nav {
+      gap: 1.25rem;
+    }
+    .site-header__link {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hero-block__headline {
+      font-size: 2.25rem;
+    }
+    .hero-block__subheadline {
+      font-size: 1.125rem;
+    }
+    .site-header__nav {
+      display: none;
+    }
+    .success-failure-split__column {
+      padding: 1.5rem;
+    }
+    .empathy-story__story {
+      padding: 1.5rem;
+    }
+    .authority-block__credential {
+      padding: 1.5rem;
+    }
+    .plan-steps__step {
+      padding: 1.5rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- ===== SITE HEADER ===== -->
+<header class="site-header" id="site-header">
+  <div class="site-header__inner">
+    <a href="demo-homepage.html" class="site-header__logo" aria-label="YonksTEAM — Home">YonksTEAM</a>
+    <nav class="site-header__nav" aria-label="Primary navigation">
+      <a href="demo-for-advisors.html" class="site-header__link">For Advisors</a>
+      <a href="demo-exit-to-client.html" class="site-header__link">Exit to Client</a>
+      <a href="demo-about.html" class="site-header__link">About</a>
+      <a href="demo-newsletter.html" class="site-header__link">The Newsletter</a>
+      <a href="demo-contact.html" class="btn btn--primary btn--sm">Start the Conversation</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main id="main-content">
+
+  <!-- ================================================================
+       HERO
+       ================================================================ -->
+  <section class="hero-block hero-block--variant-default alignfull">
+    <div class="hero-block__inner">
+      <div class="hero-block__content">
+        <div class="hero-block__eyebrow">Jason &amp; Tyler Younker</div>
+        <h1 class="hero-block__headline">You hate work you used to love.</h1>
+        <p class="hero-block__subheadline">You can say that here.</p>
+        <div class="hero-block__body">
+          <p>You built a successful practice. It was supposed to fund your life — not be the thing that keeps you from living it. You're not ungrateful. You're trapped. And we know exactly how to get you out.</p>
+        </div>
+        <div class="hero-block__actions">
+          <a href="demo-contact.html" class="btn btn--primary btn--arrow">Start the Conversation →</a>
+          <a href="demo-about.html" class="btn btn--secondary">Read Our Story →</a>
+        </div>
+      </div>
+      <div class="hero-block__media">
+        <div class="hero-block__image-placeholder">
+          📸 Jason &amp; Tyler — candid photo
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       RECOGNITION
+       ================================================================ -->
+  <section class="recognition-block alignfull">
+    <div class="recognition-block__inner">
+      <h2 class="recognition-block__headline reveal">A practice you built to fund your life<br>shouldn't be the thing keeping you from living it.</h2>
+      <div class="recognition-block__body reveal reveal-delay-1">
+        <p>If you're a CPA or financial advisor 25 years into a successful practice, there's a good chance this sounds familiar: The phone rings all day. The practice can't run a week without you. You can't slow down without the income slowing too. And the work? You used to love it. Now you're not sure you even like it. But complaining about a successful practice sounds ungrateful, so you keep quiet and keep going.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       EMPATHY
+       ================================================================ -->
+  <section class="empathy-story alignfull">
+    <div class="empathy-story__inner">
+      <h2 class="empathy-story__headline reveal">We know exactly what that feels like.</h2>
+      <div class="empathy-story__stories">
+        <div class="empathy-story__story reveal reveal-delay-1">
+          <div class="empathy-story__image-wrap">
+            <div class="empathy-story__image-placeholder" style="width: 100%; height: 100%; min-height: 240px; background: linear-gradient(135deg, #e8dfd8 0%, #ddd5cc 100%); display: flex; align-items: center; justify-content: center; color: #6b6b7d;">
+              📸 Tyler's photo
+            </div>
+          </div>
+          <h3 class="empathy-story__story-title">Tyler's Story</h3>
+          <div class="empathy-story__story-body">
+            <p>Tyler spent eight years in sales chasing a number nobody in company history had ever hit. The year she finally hit it, she wanted a marching band down the hall, cheerleaders, glitter falling from the sky. She got a congratulations email and a nice lunch. And in January, her ticker flipped back to zero.</p>
+          </div>
+        </div>
+        <div class="empathy-story__story reveal reveal-delay-2">
+          <div class="empathy-story__image-wrap">
+            <div class="empathy-story__image-placeholder" style="width: 100%; height: 100%; min-height: 240px; background: linear-gradient(135deg, #e8dfd8 0%, #ddd5cc 100%); display: flex; align-items: center; justify-content: center; color: #6b6b7d;">
+              📸 Jason's photo
+            </div>
+          </div>
+          <h3 class="empathy-story__story-title">Jason's Story</h3>
+          <div class="empathy-story__story-body">
+            <p>Jason burned out on his IT career in 2017. He started driving Uber just to buy back a little freedom.</p>
+          </div>
+        </div>
+      </div>
+      <div class="empathy-story__connecting-line reveal reveal-delay-3">
+        We know what it's like to have everything and hate your life anyway. We also know what it's like to get out.
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       AUTHORITY
+       ================================================================ -->
+  <section class="authority-block alignfull">
+    <div class="authority-block__inner">
+      <h2 class="authority-block__headline reveal">The way out we teach is the way we took.</h2>
+      <div class="authority-block__grid">
+        <div class="authority-block__credential reveal reveal-delay-1">
+          <div class="authority-block__credential-icon">🌍</div>
+          <h3 class="authority-block__credential-title">Eight years of freedom</h3>
+          <div class="authority-block__credential-body">
+            <p>We traded careers for income-producing assets. We've been full-time travelers ever since, raising a five-year-old who thinks it's normal to ask which city she'll live in tomorrow.</p>
+          </div>
+        </div>
+        <div class="authority-block__credential reveal reveal-delay-2">
+          <div class="authority-block__credential-icon">🏛️</div>
+          <h3 class="authority-block__credential-title">$3 billion — institutionally</h3>
+          <div class="authority-block__credential-body">
+            <p>Before that season, Tyler raised $3 billion institutionally — her clients were financial advisors and stockbrokers, never retail investors. Today she serves as a FINRA arbitrator.</p>
+          </div>
+        </div>
+        <div class="authority-block__credential reveal reveal-delay-3">
+          <div class="authority-block__credential-icon">🎓</div>
+          <h3 class="authority-block__credential-title">Certified Exit Planning Advisor</h3>
+          <div class="authority-block__credential-body">
+            <p>Jason is training as a Certified Exit Planning Advisor (CEPA). We've spent the years since our own escape building ownership models designed to buy other people the same freedom.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PLAN STEPS
+       ================================================================ -->
+  <section class="plan-steps alignfull">
+    <div class="plan-steps__inner">
+      <h2 class="plan-steps__headline reveal">Here's how it works.</h2>
+      <p class="plan-steps__subheadline reveal reveal-delay-1">Three steps. Not a program. A path.</p>
+      <div class="plan-steps__list">
+        <div class="plan-steps__step reveal reveal-delay-1">
+          <span class="plan-steps__step-number">1</span>
+          <h3 class="plan-steps__step-title">Say it out loud.</h3>
+          <div class="plan-steps__step-body">
+            <p>Admit how you really feel about the thing you built — to people who have felt it too. This is the hardest step, and the one you can't do alone.</p>
+          </div>
+        </div>
+        <div class="plan-steps__step reveal reveal-delay-2">
+          <span class="plan-steps__step-number">2</span>
+          <h3 class="plan-steps__step-title">Picture what replaces it.</h3>
+          <div class="plan-steps__step-body">
+            <p>Get concrete about the life you want next. What does it need to earn? Do you want the practice rebuilt around that life — or do you want to walk away? If you want to walk away, Exit to Client lets you sell to the people who already know exactly what it's worth: your clients.</p>
+          </div>
+        </div>
+        <div class="plan-steps__step reveal reveal-delay-3">
+          <span class="plan-steps__step-number">3</span>
+          <h3 class="plan-steps__step-title">Wake up wanting the day.</h3>
+          <div class="plan-steps__step-body">
+            <p>Every change we help you make points at that one outcome. Not a retirement number. Not a valuation multiple. A day you actually want to show up for.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SUCCESS / FAILURE
+       ================================================================ -->
+  <section class="success-failure-split alignfull">
+    <div class="success-failure-split__inner">
+      <h2 class="success-failure-split__headline reveal">What winning looks like. What losing looks like.</h2>
+      <div class="success-failure-split__columns">
+        <div class="success-failure-split__column success-failure-split__column--success reveal reveal-delay-1">
+          <h3 class="success-failure-split__column-label">What Winning Looks Like</h3>
+          <ul class="success-failure-split__list success-failure-split__list--success">
+            <li class="success-failure-split__list-item">You stop dreading the phone.</li>
+            <li class="success-failure-split__list-item">Your week fits around your life instead of the other way around.</li>
+            <li class="success-failure-split__list-item">Your income stops depending on your calendar.</li>
+            <li class="success-failure-split__list-item">You can answer "what's next" with something you can't wait to start.</li>
+            <li class="success-failure-split__list-item">When you do hand the practice off, it happens on your terms and your timeline.</li>
+          </ul>
+        </div>
+        <div class="success-failure-split__column success-failure-split__column--failure reveal reveal-delay-2">
+          <h3 class="success-failure-split__column-label">What Losing Looks Like</h3>
+          <ul class="success-failure-split__list success-failure-split__list--failure">
+            <li class="success-failure-split__list-item">Keep white-knuckling toward a retirement date that keeps moving.</li>
+            <li class="success-failure-split__list-item">Let the practice keep eating evenings and weekends until health or family makes the decision for you.</li>
+            <li class="success-failure-split__list-item">Sell in a hurry to whoever shows up with a check, and watch thirty years of client relationships get scattered.</li>
+            <li class="success-failure-split__list-item">Keep hating it quietly while everyone keeps congratulating you.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       TRANSFORMATION
+       ================================================================ -->
+  <section class="transformation-statement alignfull">
+    <div class="transformation-statement__inner">
+      <div class="transformation-statement__transform">
+        <span class="transformation-statement__from">The perfect life on paper, and done inside.</span>
+        <span class="transformation-statement__arrow">→</span>
+        <span class="transformation-statement__to">A life that feels<br>as good as it looks.</span>
+      </div>
+      <div class="transformation-statement__body reveal">
+        <p>This is what we do. We help you cross that gap. Not with a framework. Not with a workbook. With a conversation, a plan, and a partner who's already been where you are.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       FINAL CTA
+       ================================================================ -->
+  <section class="cta-section alignfull">
+    <div class="cta-section__inner">
+      <h2 class="cta-section__headline reveal">Ready to want the day again?</h2>
+      <div class="cta-section__body reveal reveal-delay-1">
+        <p>One conversation could change everything. No pressure. No pitch. Just honesty from people who have been there.</p>
+      </div>
+      <div class="cta-section__actions reveal reveal-delay-2">
+        <a href="demo-contact.html" class="btn btn--white btn--arrow">Start the Conversation →</a>
+        <a href="demo-newsletter.html" class="btn btn--outline-white">Join the Newsletter →</a>
+      </div>
+      <p class="cta-section__tagline reveal reveal-delay-3">One list. From the two of us. About the next season.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+    <div class="site-footer__content">
+      <p class="site-footer__tagline">Building ♾️ WeOwnNet 🌐 ecosystem</p>
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        <a href="demo-blog.html" class="site-footer__link">Blog</a>
+        <a href="#" class="site-footer__link">Privacy</a>
+        <a href="#" class="site-footer__link">Terms</a>
+      </nav>
+    </div>
+    <p class="site-footer__copyright">&copy; 2026 YonksTEAM. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ===== SCROLL SHADOW FOR HEADER ===== -->
+<script>
+  (function() {
+    var header = document.getElementById('site-header');
+    var ticking = false;
+
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        requestAnimationFrame(function() {
+          if (window.scrollY > 20) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+# WordPress core
+wp/
+wp-admin/
+wp-includes/
+xmlrpc.php
+wp-config.php
+
+# Uploads
+wp-content/uploads/
+
+# Node
+node_modules/
+
+# Source maps
+*.map
+
+# Environment
+.env
+.env.local
+
+# PHPUnit
+.phpunit.result.cache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Allow pre-compiled theme CSS
+!assets/css/style.css

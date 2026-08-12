@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Advisors — YonksTEAM</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+<style>
+  /* ======================================================================
+     YonksTEAM — Shared Styles
+     ====================================================================== */
+  :root {
+    --primary: #1a1a2e;
+    --secondary: #c97b3a;
+    --accent: #d4946a;
+    --background: #faf8f5;
+    --surface: #f5f0eb;
+    --foreground: #1a1a2e;
+    --muted: #6b6b7d;
+    --white: #ffffff;
+    --heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    --body: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --content: 720px;
+    --wide: 1140px;
+    --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    font-family: var(--body);
+    color: var(--foreground);
+    background: var(--background);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  a { color: inherit; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  .reveal { animation: fadeUp 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  .reveal-d1 { animation-delay: 0.1s; }
+  .reveal-d2 { animation-delay: 0.2s; }
+  .reveal-d3 { animation-delay: 0.3s; }
+  .reveal-d4 { animation-delay: 0.4s; }
+
+  /* ======================================================================
+     HEADER
+     ====================================================================== */
+  .site-header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(250, 248, 245, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    transition: box-shadow var(--transition);
+  }
+  .site-header.scrolled { box-shadow: 0 1px 12px rgba(0,0,0,0.06); }
+  .site-header__inner {
+    max-width: var(--wide); margin: 0 auto; padding: 0 1.5rem;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 72px;
+  }
+  .site-header__logo {
+    font-family: var(--heading); font-size: 1.5rem; font-weight: 700;
+    color: var(--primary); text-decoration: none; letter-spacing: -0.02em;
+    transition: color var(--transition);
+  }
+  .site-header__logo:hover { color: var(--secondary); }
+  .site-header__nav { display: flex; align-items: center; gap: 2.5rem; }
+  .site-header__link {
+    text-decoration: none; color: var(--muted); font-size: 0.9rem; font-weight: 500;
+    transition: color var(--transition); position: relative;
+  }
+  .site-header__link::after {
+    content: ''; position: absolute; bottom: -4px; left: 0;
+    width: 0; height: 2px; background: var(--secondary);
+    transition: width var(--transition);
+  }
+  .site-header__link:hover { color: var(--primary); }
+  .site-header__link:hover::after { width: 100%; }
+  .site-header__link--active { color: var(--primary); }
+  .site-header__link--active::after { width: 100%; }
+
+  /* ======================================================================
+     BUTTONS
+     ====================================================================== */
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.875rem 2rem; border-radius: 6px;
+    font-family: var(--body); font-size: 1rem; font-weight: 600;
+    text-decoration: none; text-align: center; cursor: pointer;
+    border: 2px solid transparent; white-space: nowrap;
+    transition: all var(--transition);
+  }
+  .btn--primary {
+    background: var(--secondary); color: var(--white); border-color: var(--secondary);
+  }
+  .btn--primary:hover {
+    background: #b86a2a; border-color: #b86a2a;
+    transform: translateY(-2px); box-shadow: 0 8px 20px rgba(201,123,58,0.25);
+  }
+  .btn--secondary {
+    background: transparent; color: var(--primary); border-color: var(--primary);
+  }
+  .btn--secondary:hover {
+    background: var(--primary); color: var(--white);
+    transform: translateY(-2px); box-shadow: 0 8px 20px rgba(26,26,46,0.15);
+  }
+  .btn--white {
+    background: var(--white); color: var(--primary); border-color: var(--white);
+  }
+  .btn--white:hover {
+    background: transparent; color: var(--white); transform: translateY(-2px);
+  }
+  .btn--outline-white {
+    background: transparent; color: var(--white); border-color: rgba(255,255,255,0.3);
+  }
+  .btn--outline-white:hover {
+    background: rgba(255,255,255,0.08); border-color: var(--white); transform: translateY(-2px);
+  }
+  .btn--sm { padding: 0.625rem 1.25rem; font-size: 0.875rem; }
+
+  /* ======================================================================
+     HERO (dark variant for interior pages)
+     ====================================================================== */
+  .hero-interior {
+    padding: 10rem 1.5rem 6rem;
+    background: linear-gradient(165deg, var(--primary) 0%, #242445 100%);
+    position: relative; overflow: hidden;
+  }
+  .hero-interior::before {
+    content: ''; position: absolute; top: -40%; right: -20%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(201,123,58,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-interior__inner {
+    max-width: var(--content); margin: 0 auto; text-align: center;
+    position: relative; z-index: 1;
+  }
+  .hero-interior__eyebrow {
+    font-family: var(--body); font-size: 0.8rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.15em;
+    color: var(--secondary); margin-bottom: 1.5rem;
+  }
+  .hero-interior__headline {
+    font-family: var(--heading); font-size: 3.5rem; line-height: 1.1;
+    color: var(--white); margin: 0 auto 1rem; font-weight: 700;
+    letter-spacing: -0.02em; max-width: 16ch;
+  }
+  .hero-interior__subheadline {
+    font-family: var(--heading); font-size: 1.25rem; font-style: italic;
+    color: var(--secondary); font-weight: 400; max-width: 40ch; margin: 0 auto;
+  }
+
+  /* ======================================================================
+     SECTION — shared
+     ====================================================================== */
+  .section { padding: 6rem 1.5rem; }
+  .section--light { background: var(--background); }
+  .section--warm { background: var(--surface); }
+  .section--dark {
+    background: linear-gradient(165deg, var(--primary) 0%, #242445 100%);
+    color: var(--white);
+  }
+  .section__inner { max-width: var(--wide); margin: 0 auto; }
+  .section__inner--narrow { max-width: var(--content); margin: 0 auto; }
+
+  .section__headline {
+    font-family: var(--heading); font-size: 2.5rem; line-height: 1.2;
+    color: var(--primary); font-weight: 600; margin: 0 0 1rem;
+  }
+  .section--dark .section__headline { color: var(--white); }
+  .section__headline--center { text-align: center; margin-bottom: 3rem; }
+
+  .section__body {
+    font-family: var(--body); font-size: 1.125rem; line-height: 1.8;
+    color: var(--muted); max-width: 55ch;
+  }
+  .section__body--center { text-align: center; margin: 0 auto; }
+  .section__body p { margin: 0 0 1rem; }
+  .section__body p:last-child { margin-bottom: 0; }
+
+  /* ======================================================================
+     TWO PATHS
+     ====================================================================== */
+  .two-paths__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem; }
+  .two-paths__card {
+    background: var(--white); border-radius: 12px; padding: 2.5rem;
+    display: flex; flex-direction: column; gap: 1rem;
+    border: 2px solid var(--surface);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .two-paths__card:hover {
+    transform: translateY(-4px); box-shadow: 0 12px 32px rgba(26,26,46,0.06);
+  }
+  .two-paths__card-title {
+    font-family: var(--heading); font-size: 1.5rem; color: var(--primary);
+    font-weight: 600; line-height: 1.3;
+  }
+  .two-paths__card-body { font-size: 1rem; line-height: 1.8; color: var(--muted); flex: 1; }
+  .two-paths__card-body p { margin: 0; }
+
+  /* ======================================================================
+     COMPARISON TABLE
+     ====================================================================== */
+  .comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 3rem; border-radius: 12px; overflow: hidden; }
+  .comparison__col { padding: 2.5rem; }
+  .comparison__col--traditional { background: #fdf0f0; border: 1px solid rgba(229,57,53,0.12); }
+  .comparison__col--exit { background: #f0faf0; border: 1px solid rgba(76,175,80,0.15); }
+  .comparison__label {
+    font-family: var(--heading); font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem;
+  }
+  .comparison__col--traditional .comparison__label { color: #c62828; }
+  .comparison__col--exit .comparison__label { color: #2e7d32; }
+  .comparison__list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem; }
+  .comparison__item {
+    padding-left: 1.5rem; position: relative; font-size: 1rem; line-height: 1.7;
+  }
+  .comparison__item::before { position: absolute; left: 0; top: 0.1em; font-weight: 700; }
+  .comparison__col--traditional .comparison__item::before { content: "✗"; color: #e53935; }
+  .comparison__col--exit .comparison__item::before { content: "✓"; color: #4caf50; }
+
+  /* ======================================================================
+     STEPS (Exit to Client)
+     ====================================================================== */
+  .steps { display: flex; flex-direction: column; gap: 2rem; margin-top: 3rem; counter-reset: step; }
+  .step {
+    display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: start;
+    padding: 2rem; border-radius: 12px; background: var(--white);
+    border: 1px solid var(--surface);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .step:hover { transform: translateX(4px); box-shadow: 0 8px 24px rgba(26,26,46,0.04); }
+  .step__num {
+    width: 60px; height: 60px; border-radius: 50%;
+    background: var(--secondary); color: var(--white);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--heading); font-size: 1.5rem; font-weight: 700;
+  }
+  .step__title { font-family: var(--heading); font-size: 1.35rem; color: var(--primary); font-weight: 600; margin-bottom: 0.5rem; }
+  .step__body { font-size: 1rem; line-height: 1.8; color: var(--muted); }
+  .step__body p { margin: 0; }
+
+  /* ======================================================================
+     CHAPTERS (About page)
+     ====================================================================== */
+  .chapters { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 3rem; }
+  .chapter {
+    padding: 2rem; border-radius: 12px; background: var(--white);
+    border-left: 4px solid var(--secondary);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .chapter:hover { transform: translateX(4px); box-shadow: 0 8px 24px rgba(26,26,46,0.04); }
+  .chapter__num {
+    font-family: var(--body); font-size: 0.8rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.1em; color: var(--secondary); margin-bottom: 0.5rem;
+  }
+  .chapter__title { font-family: var(--heading); font-size: 1.5rem; color: var(--primary); font-weight: 600; margin-bottom: 0.75rem; }
+  .chapter__body { font-size: 1rem; line-height: 1.8; color: var(--muted); }
+  .chapter__body p { margin: 0; }
+
+  /* ======================================================================
+     TEAM CARDS
+     ====================================================================== */
+  .team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem; }
+  .team-card {
+    background: var(--white); border-radius: 12px; padding: 2.5rem;
+    text-align: center; border: 1px solid var(--surface);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .team-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(26,26,46,0.06); }
+  .team-card__photo {
+    width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #e8dfd8 0%, #ddd5cc 100%);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted); font-size: 0.875rem;
+  }
+  .team-card__name { font-family: var(--heading); font-size: 1.5rem; color: var(--primary); font-weight: 600; }
+  .team-card__role { font-size: 0.9rem; color: var(--secondary); font-weight: 500; margin: 0.25rem 0 1rem; }
+  .team-card__bio { font-size: 0.95rem; line-height: 1.7; color: var(--muted); }
+  .team-card__quote {
+    font-family: var(--heading); font-size: 1rem; font-style: italic;
+    color: var(--muted); margin-top: 1rem; padding-top: 1rem;
+    border-top: 1px solid var(--surface);
+  }
+
+  /* ======================================================================
+     NEWSLETTER SIGNUP
+     ====================================================================== */
+  .newsletter-form {
+    max-width: 480px; margin: 3rem auto 0;
+    display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;
+  }
+  .newsletter-form input[type="email"] {
+    flex: 1 1 240px; padding: 0.875rem 1rem;
+    border: 2px solid var(--surface); border-radius: 6px;
+    font-family: var(--body); font-size: 1rem;
+    background: var(--white); color: var(--foreground);
+    transition: border-color var(--transition);
+  }
+  .newsletter-form input[type="email"]:focus {
+    outline: none; border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(201,123,58,0.15);
+  }
+  .newsletter-form input[type="email"]::placeholder { color: var(--muted); }
+
+  /* ======================================================================
+     CONTACT FORM
+     ====================================================================== */
+  .contact-form {
+    max-width: 600px; margin: 3rem auto 0;
+    display: flex; flex-direction: column; gap: 1.5rem;
+  }
+  .contact-form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .contact-form label {
+    display: flex; flex-direction: column; gap: 0.5rem;
+    font-size: 0.9rem; font-weight: 500; color: var(--primary);
+    text-align: left;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--surface); border-radius: 6px;
+    font-family: var(--body); font-size: 1rem;
+    background: var(--white); color: var(--foreground);
+    transition: border-color var(--transition);
+  }
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none; border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(201,123,58,0.15);
+  }
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder { color: var(--muted); }
+  .contact-form textarea { min-height: 140px; resize: vertical; }
+  .contact-form .btn { align-self: flex-start; }
+
+  /* ======================================================================
+     BLOG GRID
+     ====================================================================== */
+  .blog-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem; }
+  .blog-card {
+    background: var(--white); border-radius: 12px; overflow: hidden;
+    border: 1px solid var(--surface);
+    transition: transform var(--transition), box-shadow var(--transition);
+    text-decoration: none; color: inherit;
+  }
+  .blog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(26,26,46,0.06); }
+  .blog-card__image {
+    width: 100%; height: 200px;
+    background: linear-gradient(135deg, #e8dfd8 0%, #ddd5cc 100%);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted); font-size: 0.875rem;
+  }
+  .blog-card__body { padding: 1.5rem; }
+  .blog-card__category {
+    font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.1em; color: var(--secondary); margin-bottom: 0.5rem;
+  }
+  .blog-card__title {
+    font-family: var(--heading); font-size: 1.25rem; color: var(--primary);
+    font-weight: 600; line-height: 1.3; margin-bottom: 0.5rem;
+  }
+  .blog-card__excerpt { font-size: 0.95rem; line-height: 1.7; color: var(--muted); }
+
+  /* ======================================================================
+     CTA SECTION
+     ====================================================================== */
+  .cta-section {
+    padding: 6rem 1.5rem;
+    background: linear-gradient(165deg, var(--primary) 0%, #1f1f3a 100%);
+    text-align: center; position: relative; overflow: hidden;
+  }
+  .cta-section::before {
+    content: ''; position: absolute; top: -30%; left: -20%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(201,123,58,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .cta-section__inner {
+    max-width: var(--content); margin: 0 auto; position: relative; z-index: 1;
+  }
+  .cta-section__headline {
+    font-family: var(--heading); font-size: 3rem; line-height: 1.15;
+    color: var(--white); margin: 0 0 1rem; font-weight: 700;
+  }
+  .cta-section__body {
+    font-size: 1.125rem; line-height: 1.8; color: rgba(255,255,255,0.7);
+    margin-bottom: 2.5rem; max-width: 45ch; margin-left: auto; margin-right: auto;
+  }
+  .cta-section__actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+  .cta-section__tagline {
+    margin-top: 2rem; font-size: 0.875rem; color: rgba(255,255,255,0.3);
+    font-family: var(--heading); font-style: italic;
+  }
+
+  /* ======================================================================
+     FOOTER
+     ====================================================================== */
+  .site-footer {
+    background: linear-gradient(165deg, var(--primary) 0%, #1f1f3a 100%);
+    padding: 3rem 1.5rem;
+  }
+  .site-footer__inner { max-width: var(--wide); margin: 0 auto; }
+  .site-footer__divider { display: none; }
+  .site-footer__content { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; }
+  .site-footer p.site-footer__tagline, .site-footer p.site-footer__copyright { font-size: 0.875rem; color: rgba(255,255,255,0.6); margin: 0; }
+  .site-footer__nav { display: flex; gap: 2rem; flex-wrap: wrap; }
+  .site-footer__link { text-decoration: none; color: rgba(255,255,255,0.6); font-size: 0.875rem; transition: color var(--transition); }
+  .site-footer__link:hover { color: var(--white); }
+  .site-footer__copyright { text-align: center; font-size: 0.8rem; margin-top: 1.5rem; margin-bottom: 0; }
+
+  /* ======================================================================
+     RESPONSIVE
+     ====================================================================== */
+  @media (max-width: 768px) {
+    .hero-interior { padding: 7rem 1.5rem 4rem; }
+    .hero-interior__headline { font-size: 2.25rem; }
+    .section { padding: 4rem 1.5rem; }
+    .section__headline { font-size: 1.75rem; }
+    .two-paths__grid, .team-grid, .blog-grid { grid-template-columns: 1fr; }
+    .comparison { grid-template-columns: 1fr; }
+    .step { grid-template-columns: 1fr; gap: 1rem; }
+    .contact-form__row { grid-template-columns: 1fr; }
+    .site-header__nav { gap: 1.25rem; }
+    .site-header__link { font-size: 0.8rem; }
+    .cta-section__headline { font-size: 2rem; }
+  }
+  @media (max-width: 600px) {
+    .site-header__nav { display: none; }
+  }
+@media (max-width: 600px) { .site-header__nav { display: none; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:0;z-index:200;font-size:1rem;">Skip to main content</a>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="site-header">
+  <div class="site-header__inner">
+    <a href="demo-homepage.html" class="site-header__logo" aria-label="YonksTEAM — Home">YonksTEAM</a>
+    <nav class="site-header__nav" aria-label="Primary navigation">
+      <a href="demo-for-advisors.html" class="site-header__link site-header__link--active">For Advisors</a>
+      <a href="demo-exit-to-client.html" class="site-header__link">Exit to Client</a>
+      <a href="demo-about.html" class="site-header__link">About</a>
+      <a href="demo-newsletter.html" class="site-header__link">The Newsletter</a>
+      <a href="demo-contact.html" class="btn btn--primary btn--sm">Start the Conversation</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-interior">
+    <div class="hero-interior__inner">
+      <div class="hero-interior__eyebrow">For CPAs &amp; Financial Advisors</div>
+      <h1 class="hero-interior__headline">You built a practice that clients trust. Now you need a way out that doesn't betray them.</h1>
+      <p class="hero-interior__subheadline">Whether you want to rebuild the practice around the life you want, or sell it to the people who trust you most — we'll show you how.</p>
+    </div>
+  </section>
+
+  <!-- ===== THE PROBLEM ===== -->
+  <section class="section section--light">
+    <div class="section__inner--narrow" style="text-align:center;">
+      <h2 class="section__headline" style="text-align:center;">The clock is ticking on the old model.</h2>
+      <div class="section__body section__body--center">
+        <p>You're watching the AI headlines. You know the writing is on the wall. Embrace it or watch the practice lose value. Meanwhile, the only exits on offer are ugly: sell to a bigger firm that scatters longtime clients (the kind of sale where clients find out from an email address change), or hold on and ride the value down.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TWO PATHS ===== -->
+  <section class="section section--warm">
+    <div class="section__inner">
+      <h2 class="section__headline section__headline--center">You have two paths forward.</h2>
+      <div class="two-paths__grid">
+        <div class="two-paths__card reveal">
+          <h3 class="two-paths__card-title">Rebuild the Practice Around Your Life</h3>
+          <div class="two-paths__card-body">
+            <p>Keep the practice. Use AI (on your terms) to take the drudgery. Rebuild the schedule so the week fits around your life. The practice still runs — but it doesn't run you.</p>
+          </div>
+          <a href="demo-contact.html" class="btn btn--primary" style="align-self:flex-start;">Talk About Rebuilding →</a>
+        </div>
+        <div class="two-paths__card reveal reveal-d1">
+          <h3 class="two-paths__card-title">Exit to Client</h3>
+          <div class="two-paths__card-body">
+            <p>Sell the practice to the people who already know exactly what it's worth: your clients. They become owners instead of casualties of the sale. You walk away with the value you built, and the relationships you spent thirty years cultivating don't get scattered by strangers.</p>
+          </div>
+          <a href="demo-exit-to-client.html" class="btn btn--primary" style="align-self:flex-start;">Learn About Exit to Client →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="cta-section__inner">
+      <h2 class="cta-section__headline reveal">Not sure which path is yours?</h2>
+      <div class="cta-section__body reveal reveal-d1">
+        <p>That's exactly what the first conversation is for. Tell us where you are, and we'll help you see the way forward.</p>
+      </div>
+      <div class="cta-section__actions reveal reveal-d2">
+        <a href="demo-contact.html" class="btn btn--white btn--arrow">Start the Conversation →</a>
+        <a href="demo-newsletter.html" class="btn btn--outline-white">Join the Newsletter →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+    <div class="site-footer__content">
+      <p class="site-footer__tagline">Building ♾️ WeOwnNet 🌐 ecosystem</p>
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        <a href="demo-blog.html" class="site-footer__link">Blog</a>
+        <a href="#" class="site-footer__link">Privacy</a>
+        <a href="#" class="site-footer__link">Terms</a>
+      </nav>
+    </div>
+    <p class="site-footer__copyright">&copy; 2026 YonksTEAM. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    var header = document.getElementById('site-header');
+    var ticking = false;
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        requestAnimationFrame(function() {
+          if (window.scrollY > 20) header.classList.add('scrolled');
+          else header.classList.remove('scrolled');
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  })();
+</script>
+</body>
+</html>

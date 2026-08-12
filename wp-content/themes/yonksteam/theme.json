@@ -1,0 +1,101 @@
+{
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#1a1a2e",
+          "name": "Deep Navy"
+        },
+        {
+          "slug": "secondary",
+          "color": "#c97b3a",
+          "name": "Warm Amber"
+        },
+        {
+          "slug": "accent",
+          "color": "#d4946a",
+          "name": "Terracotta"
+        },
+        {
+          "slug": "background",
+          "color": "#faf8f5",
+          "name": "Warm Off-White"
+        },
+        {
+          "slug": "surface",
+          "color": "#f5f0eb",
+          "name": "Light Warm"
+        },
+        {
+          "slug": "foreground",
+          "color": "#1a1a2e",
+          "name": "Text Primary"
+        },
+        {
+          "slug": "muted",
+          "color": "#6b6b7d",
+          "name": "Text Muted"
+        },
+        {
+          "slug": "white",
+          "color": "#ffffff",
+          "name": "White"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "\"Chronicle Display\", Georgia, \"Times New Roman\", serif",
+          "slug": "heading",
+          "name": "Chronicle (Headings)"
+        },
+        {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "slug": "body",
+          "name": "Inter (Body)"
+        }
+      ],
+      "fontSizes": [
+        { "slug": "small", "size": "0.875rem" },
+        { "slug": "medium", "size": "1rem" },
+        { "slug": "large", "size": "1.25rem" },
+        { "slug": "xl", "size": "1.5rem" },
+        { "slug": "2xl", "size": "2rem" },
+        { "slug": "3xl", "size": "2.5rem" },
+        { "slug": "4xl", "size": "3.5rem" },
+        { "slug": "5xl", "size": "4.5rem" }
+      ],
+      "lineHeight": {
+        "body": 1.7,
+        "heading": 1.3
+      }
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true,
+      "units": ["px", "em", "rem", "vh", "vw"]
+    },
+    "layout": {
+      "contentSize": "720px",
+      "wideSize": "1140px"
+    }
+  },
+  "styles": {
+    "blocks": {
+      "core/paragraph": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--body)",
+          "lineHeight": "1.7"
+        }
+      },
+      "core/heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--heading)"
+        }
+      }
+    }
+  }
+}

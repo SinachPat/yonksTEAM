@@ -1,0 +1,53 @@
+name: Deploy to Production
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: wp-content/themes/yonksteam/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: wp-content/themes/yonksteam
+
+      - name: Build theme assets
+        run: npm run build
+        working-directory: wp-content/themes/yonksteam
+
+      - name: Deploy to production server
+        uses: easingthemes/ssh-deploy@v5
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.PRODUCTION_SSH_KEY }}
+          ARGS: "-rlgoDzvc -i --delete"
+          SOURCE: "."
+          REMOTE_HOST: ${{ secrets.PRODUCTION_HOST }}
+          REMOTE_USER: ${{ secrets.PRODUCTION_USER }}
+          TARGET: ${{ secrets.PRODUCTION_PATH }}
+          EXCLUDE: |
+            /.git*
+            /node_modules/
+            /src/
+            /wp/
+            /.env
+            /.env.local
+            composer.json
+            composer.lock
+            package.json
+            package-lock.json
+            postcss.config.js
+            tailwind.config.js
+            release-zip.sh
+            .phpunit.result.cache

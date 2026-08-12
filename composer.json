@@ -1,0 +1,33 @@
+{
+    "name": "yonksteam/yonks-team",
+    "description": "YonksTEAM WordPress project — helping burned-out advisors get their lives back.",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "johnpbloch/wordpress": "^6.5",
+        "wpackagist-plugin/wordpress-seo": "^22.0",
+        "wpackagist-plugin/disable-comments": "^2.4",
+        "wpackagist-plugin/limit-login-attempts-reloaded": "^2.26"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        }
+    ],
+    "extra": {
+        "wordpress-install-dir": "wp"
+    },
+    "config": {
+        "allow-plugins": {
+            "johnpbloch/wordpress-core-installer": true
+        }
+    }
+}
