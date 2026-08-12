@@ -1,15 +1,16 @@
 {
   "version": 2,
+  "framework": null,
   "buildCommand": null,
   "outputDirectory": ".",
+  "installCommand": null,
+  "functions": {
+    "api/*.php": {
+      "runtime": "static"
+    }
+  },
   "rewrites": [
-    { "source": "/", "destination": "/demo-homepage.html" },
-    { "source": "/for-advisors", "destination": "/demo-for-advisors.html" },
-    { "source": "/exit-to-client", "destination": "/demo-exit-to-client.html" },
-    { "source": "/about", "destination": "/demo-about.html" },
-    { "source": "/newsletter", "destination": "/demo-newsletter.html" },
-    { "source": "/blog", "destination": "/demo-blog.html" },
-    { "source": "/contact", "destination": "/demo-contact.html" }
+    { "source": "/(.*)", "destination": "/demo-homepage.html" }
   ],
   "cleanUrls": true
 }
