@@ -1,17 +1,7 @@
 {
   "version": 2,
   "framework": null,
-  "buildCommand": "echo 'Static site - no build required'",
+  "buildCommand": null,
   "outputDirectory": ".",
-  "installCommand": null,
-  "rewrites": [
-    { "source": "/", "destination": "/demo-homepage.html" },
-    { "source": "/for-advisors", "destination": "/demo-for-advisors.html" },
-    { "source": "/exit-to-client", "destination": "/demo-exit-to-client.html" },
-    { "source": "/about", "destination": "/demo-about.html" },
-    { "source": "/newsletter", "destination": "/demo-newsletter.html" },
-    { "source": "/blog", "destination": "/demo-blog.html" },
-    { "source": "/contact", "destination": "/demo-contact.html" }
-  ],
-  "cleanUrls": true
+  "installCommand": null
 }
