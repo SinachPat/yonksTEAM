@@ -10,7 +10,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 
-<!-- Theme's compiled CSS -->
 <!-- Theme's compiled CSS removed — all styles are inlined below -->
 
 <style>
@@ -53,6 +52,7 @@
   .skip-link { position: absolute; left: -9999px; top: 0; z-index: 200; }
   .skip-link:focus { left: 0; padding: 1rem 1.5rem; background: var(--color-secondary); color: var(--color-white); font-weight: 600; text-decoration: none; border-radius: 0 0 6px 0; }
   a:focus-visible, .btn:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--color-secondary); outline-offset: 3px; }
+  a { text-decoration: none; }
 
   /* ---- Core animation ---- */
   @keyframes fadeUp {
@@ -292,9 +292,6 @@
 
   /* ---- Buttons — refined ---- */
   .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
     padding: 1rem 2.25rem;
     border-radius: 6px;
     font-size: 1rem;
@@ -869,12 +866,11 @@
      ================================================================ */
   .cta-section {
     padding: 8rem 1.5rem 6rem;
-    background: linear-gradient(165deg, var(--color-primary) 0%, #1f1f3a 100%);
+    background: #1a1a2e;
+    background: linear-gradient(165deg, #1a1a2e 0%, #1f1f3a 100%);
     text-align: center;
     position: relative;
     overflow: hidden;
-  background: radial-gradient(circle, rgba(201, 123, 58, 0.06) 0%, transparent 70%);
-    pointer-events: none;
   }
 
   .cta-section::before {
