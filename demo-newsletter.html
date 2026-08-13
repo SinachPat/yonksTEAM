@@ -31,6 +31,15 @@
   .site-header__link--active { color: var(--primary); }
   .site-header__link--active::after { width: 100%; }
 
+  .nav-toggle { display: none; align-items: center; justify-content: center; width: 40px; height: 40px; border: none; background: transparent; cursor: pointer; padding: 0; }
+  .nav-toggle__icon, .nav-toggle__icon::before, .nav-toggle__icon::after { display: block; width: 22px; height: 2px; background: var(--primary); border-radius: 2px; position: relative; transition: transform 0.25s ease, background 0.25s ease; }
+  .nav-toggle__icon::before, .nav-toggle__icon::after { content: ''; position: absolute; left: 0; }
+  .nav-toggle__icon::before { top: -7px; }
+  .nav-toggle__icon::after { top: 7px; }
+  .nav-toggle[aria-expanded="true"] .nav-toggle__icon { background: transparent; }
+  .nav-toggle[aria-expanded="true"] .nav-toggle__icon::before { top: 0; transform: rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] .nav-toggle__icon::after { top: 0; transform: rotate(-45deg); }
+
   .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 2rem; border-radius: 6px; font-family: var(--body); font-size: 1rem; font-weight: 600; text-decoration: none; text-align: center; cursor: pointer; border: 2px solid transparent; white-space: nowrap; transition: all var(--transition); }
   .btn--primary { background: var(--secondary); color: var(--white); border-color: var(--secondary); }
   .btn--primary:hover { background: #1d4ed8; border-color: #1d4ed8; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(37,99,235,0.25); }
@@ -43,9 +52,9 @@
   .hero-interior { padding: 10rem 1.5rem 6rem; background: linear-gradient(165deg, var(--primary) 0%, #123a63 100%); position: relative; overflow: hidden; text-align: center; }
   .hero-interior::before { content: ''; position: absolute; top: -40%; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(37,99,235,0.08) 0%, transparent 70%); pointer-events: none; }
   .hero-interior__inner { max-width: var(--content); margin: 0 auto; position: relative; z-index: 1; }
-  .hero-interior__eyebrow { font-family: var(--body); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--secondary); margin-bottom: 1.5rem; }
+  .hero-interior__eyebrow { font-family: var(--body); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent); margin-bottom: 1.5rem; }
   .hero-interior__headline { font-family: var(--heading); font-size: 4rem; line-height: 1.05; color: var(--white); margin: 0 auto 1rem; font-weight: 700; letter-spacing: -0.02em; }
-  .hero-interior__subheadline { font-family: var(--heading); font-size: 1.25rem; font-style: italic; color: var(--secondary); font-weight: 400; max-width: 35ch; margin: 0 auto 1.5rem; }
+  .hero-interior__subheadline { font-family: var(--heading); font-size: 1.25rem; font-style: italic; color: var(--accent); font-weight: 400; max-width: 35ch; margin: 0 auto 1.5rem; }
   .hero-interior__body { font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.7); max-width: 45ch; margin: 0 auto 2.5rem; }
 
   .section { padding: 6rem 1.5rem; }
@@ -85,7 +94,18 @@
     .site-header__nav { gap: 1.25rem; }
     .site-header__link { font-size: 0.8rem; }
   }
-  @media (max-width: 600px) { .site-header__nav { display: none; } }
+  @media (max-width: 600px) {
+    .nav-toggle { display: flex; }
+    .site-header__nav {
+      display: none; position: absolute; top: 72px; left: 0; right: 0;
+      flex-direction: column; align-items: stretch; gap: 0;
+      background: var(--background); border-bottom: 1px solid rgba(0,0,0,0.08);
+      padding: 0.5rem 1.5rem 1.5rem;
+    }
+    .site-header__nav.is-open { display: flex; }
+    .site-header__nav .site-header__link { padding: 0.875rem 0; width: 100%; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .site-header__nav .btn { margin-top: 1rem; justify-content: center; width: 100%; }
+  }
 
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
@@ -99,13 +119,16 @@
 <header class="site-header" id="site-header">
   <div class="site-header__inner">
     <a href="demo-homepage.html" class="site-header__logo" aria-label="YonksTEAM — Home">YonksTEAM</a>
-    <nav class="site-header__nav" aria-label="Primary navigation">
+    <nav class="site-header__nav" id="primary-nav" aria-label="Primary navigation">
       <a href="demo-for-advisors.html" class="site-header__link">For Advisors</a>
       <a href="demo-exit-to-client.html" class="site-header__link">Exit to Client</a>
       <a href="demo-about.html" class="site-header__link">About</a>
       <a href="demo-newsletter.html" class="site-header__link site-header__link--active">The Newsletter</a>
       <a href="demo-contact.html" class="btn btn--primary btn--sm">Start the Conversation</a>
     </nav>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+      <span class="nav-toggle__icon"></span>
+    </button>
   </div>
 </header>
 <main id="main-content">
@@ -167,6 +190,26 @@
 </footer>
 <script>
   (function() { var h = document.getElementById('site-header'), t = false; window.addEventListener('scroll', function() { if (!t) { requestAnimationFrame(function() { h.classList.toggle('scrolled', window.scrollY > 20); t = false; }); t = true; } }); })();
+
+  (function() {
+    var toggle = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('primary-nav');
+    if (!toggle || !nav) return;
+    toggle.addEventListener('click', function() {
+      var isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      if (isOpen) { var firstLink = nav.querySelector('a, button'); if (firstLink) firstLink.focus(); }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && nav.classList.contains('is-open')) { nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.focus(); }
+    });
+    document.addEventListener('click', function(e) {
+      if (nav.classList.contains('is-open') && !nav.contains(e.target) && !toggle.contains(e.target)) { nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); }
+    });
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 600 && nav.classList.contains('is-open')) { nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); }
+    });
+  })();
 </script>
 </body>
 </html>

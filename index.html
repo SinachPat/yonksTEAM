@@ -138,6 +138,54 @@
     position: relative;
   }
 
+  .nav-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .nav-toggle__icon,
+  .nav-toggle__icon::before,
+  .nav-toggle__icon::after {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--color-primary);
+    border-radius: 2px;
+    position: relative;
+    transition: transform 0.25s ease, opacity 0.25s ease, background 0.25s ease;
+  }
+
+  .nav-toggle__icon::before,
+  .nav-toggle__icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+  }
+
+  .nav-toggle__icon::before { top: -7px; }
+  .nav-toggle__icon::after { top: 7px; }
+
+  .nav-toggle[aria-expanded="true"] .nav-toggle__icon {
+    background: transparent;
+  }
+
+  .nav-toggle[aria-expanded="true"] .nav-toggle__icon::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .nav-toggle[aria-expanded="true"] .nav-toggle__icon::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
   .site-header__link::after {
     content: '';
     position: absolute;
@@ -263,23 +311,23 @@
   .hero-block__image {
     width: 100%;
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 24px 48px rgba(11, 42, 74, 0.08), 0 8px 16px rgba(11, 42, 74, 0.04);
+    border-radius: 16px;
+    border: 1px solid rgba(11, 42, 74, 0.08);
     aspect-ratio: 4 / 5;
     object-fit: cover;
-    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    transition: transform 0.4s ease;
   }
 
   .hero-block__image:hover {
-    transform: scale(1.02);
-    box-shadow: 0 32px 64px rgba(11, 42, 74, 0.12), 0 12px 24px rgba(11, 42, 74, 0.06);
+    transform: translateY(-4px);
   }
 
   .hero-block__image-placeholder {
     width: 100%;
     height: 100%;
     min-height: 480px;
-    border-radius: 12px;
+    border-radius: 16px;
+    border: 1px solid rgba(11, 42, 74, 0.08);
     background: linear-gradient(135deg, #dbe8f5 0%, #c5d9ee 100%);
     display: flex;
     align-items: center;
@@ -287,7 +335,6 @@
     color: var(--color-muted);
     font-family: var(--font-body);
     font-size: 0.875rem;
-    box-shadow: 0 24px 48px rgba(11, 42, 74, 0.08);
   }
 
   /* ---- Buttons — refined ---- */
@@ -312,7 +359,6 @@
     background: #1d4ed8;
     border-color: #1d4ed8;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
   }
 
   .btn--secondary {
@@ -325,7 +371,6 @@
     background: var(--color-primary);
     color: var(--color-white);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(11, 42, 74, 0.15);
   }
 
   .btn--white {
@@ -441,13 +486,13 @@
     padding: 2.5rem;
     background: var(--color-white);
     border-radius: 12px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-    transition: transform var(--transition), box-shadow var(--transition);
+    border: 1px solid var(--color-surface);
+    transition: transform var(--transition), border-color var(--transition);
   }
 
   .empathy-story__story:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(11, 42, 74, 0.06);
+    border-color: var(--color-accent);
   }
 
   .empathy-story__image-wrap {
@@ -552,16 +597,15 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    border: 1px solid var(--color-surface);
     border-top: 3px solid transparent;
-    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    transition: transform var(--transition), border-color var(--transition);
     position: relative;
   }
 
   .authority-block__credential:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(11, 42, 74, 0.06);
-    border-color: var(--color-secondary);
+    border-top-color: var(--color-secondary);
   }
 
   .authority-block__credential-icon {
@@ -631,7 +675,7 @@
     font-family: var(--font-heading);
     font-size: 1.25rem;
     font-style: italic;
-    color: var(--color-secondary);
+    color: var(--color-accent);
     margin-bottom: 4rem;
     font-weight: 400;
   }
@@ -723,7 +767,7 @@
   .success-failure-split__column {
     padding: 3rem;
     border-radius: 12px;
-    transition: transform var(--transition), box-shadow var(--transition);
+    transition: transform var(--transition), border-color var(--transition);
   }
 
   .success-failure-split__column:hover {
@@ -736,7 +780,7 @@
   }
 
   .success-failure-split__column--success:hover {
-    box-shadow: 0 12px 32px rgba(76, 175, 80, 0.08);
+    border-color: rgba(76, 175, 80, 0.4);
   }
 
   .success-failure-split__column--failure {
@@ -745,7 +789,7 @@
   }
 
   .success-failure-split__column--failure:hover {
-    box-shadow: 0 12px 32px rgba(229, 57, 53, 0.06);
+    border-color: rgba(229, 57, 53, 0.35);
   }
 
   .success-failure-split__column-label {
@@ -1045,8 +1089,34 @@
     .hero-block__subheadline {
       font-size: 1.125rem;
     }
+    .nav-toggle {
+      display: flex;
+    }
     .site-header__nav {
       display: none;
+      position: absolute;
+      top: 72px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      background: var(--color-background);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      padding: 0.5rem 1.5rem 1.5rem;
+    }
+    .site-header__nav.is-open {
+      display: flex;
+    }
+    .site-header__nav .site-header__link {
+      padding: 0.875rem 0;
+      width: 100%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .site-header__nav .btn {
+      margin-top: 1rem;
+      justify-content: center;
+      width: 100%;
     }
     .success-failure-split__column {
       padding: 1.5rem;
@@ -1075,13 +1145,16 @@
 <header class="site-header" id="site-header">
   <div class="site-header__inner">
     <a href="demo-homepage.html" class="site-header__logo" aria-label="YonksTEAM — Home">YonksTEAM</a>
-    <nav class="site-header__nav" aria-label="Primary navigation">
+    <nav class="site-header__nav" id="primary-nav" aria-label="Primary navigation">
       <a href="demo-for-advisors.html" class="site-header__link">For Advisors</a>
       <a href="demo-exit-to-client.html" class="site-header__link">Exit to Client</a>
       <a href="demo-about.html" class="site-header__link">About</a>
       <a href="demo-newsletter.html" class="site-header__link">The Newsletter</a>
       <a href="demo-contact.html" class="btn btn--primary btn--sm">Start the Conversation</a>
     </nav>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+      <span class="nav-toggle__icon"></span>
+    </button>
   </div>
 </header>
 
@@ -1106,8 +1179,8 @@
         </div>
       </div>
       <div class="hero-block__media">
-        <div class="hero-block__image-placeholder">
-          📸 Jason &amp; Tyler — candid photo
+        <div class="hero-block__image-placeholder" role="img" aria-label="Photo of Jason and Tyler">
+          <span aria-hidden="true">📸</span> Jason &amp; Tyler — candid photo
         </div>
       </div>
     </div>
@@ -1134,8 +1207,8 @@
       <div class="empathy-story__stories">
         <div class="empathy-story__story reveal reveal-delay-1">
           <div class="empathy-story__image-wrap">
-            <div class="empathy-story__image-placeholder" style="width: 100%; height: 100%; min-height: 240px; background: linear-gradient(135deg, #dbe8f5 0%, #c5d9ee 100%); display: flex; align-items: center; justify-content: center; color: #5b6b84;">
-              📸 Tyler's photo
+            <div class="empathy-story__image-placeholder" role="img" aria-label="Photo of Tyler" style="width: 100%; height: 100%; min-height: 240px; background: linear-gradient(135deg, #dbe8f5 0%, #c5d9ee 100%); display: flex; align-items: center; justify-content: center; color: #5b6b84;">
+              <span aria-hidden="true">📸</span> Tyler's photo
             </div>
           </div>
           <h3 class="empathy-story__story-title">Tyler's Story</h3>
@@ -1145,8 +1218,8 @@
         </div>
         <div class="empathy-story__story reveal reveal-delay-2">
           <div class="empathy-story__image-wrap">
-            <div class="empathy-story__image-placeholder" style="width: 100%; height: 100%; min-height: 240px; background: linear-gradient(135deg, #dbe8f5 0%, #c5d9ee 100%); display: flex; align-items: center; justify-content: center; color: #5b6b84;">
-              📸 Jason's photo
+            <div class="empathy-story__image-placeholder" role="img" aria-label="Photo of Jason" style="width: 100%; height: 100%; min-height: 240px; background: linear-gradient(135deg, #dbe8f5 0%, #c5d9ee 100%); display: flex; align-items: center; justify-content: center; color: #5b6b84;">
+              <span aria-hidden="true">📸</span> Jason's photo
             </div>
           </div>
           <h3 class="empathy-story__story-title">Jason's Story</h3>
@@ -1169,21 +1242,21 @@
       <h2 class="authority-block__headline reveal">The way out we teach is the way we took.</h2>
       <div class="authority-block__grid">
         <div class="authority-block__credential reveal reveal-delay-1">
-          <div class="authority-block__credential-icon">🌍</div>
+          <div class="authority-block__credential-icon" aria-hidden="true">🌍</div>
           <h3 class="authority-block__credential-title">Eight years of freedom</h3>
           <div class="authority-block__credential-body">
             <p>We traded careers for income-producing assets. We've been full-time travelers ever since, raising a five-year-old who thinks it's normal to ask which city she'll live in tomorrow.</p>
           </div>
         </div>
         <div class="authority-block__credential reveal reveal-delay-2">
-          <div class="authority-block__credential-icon">🏛️</div>
+          <div class="authority-block__credential-icon" aria-hidden="true">🏛️</div>
           <h3 class="authority-block__credential-title">$3 billion — institutionally</h3>
           <div class="authority-block__credential-body">
             <p>Before that season, Tyler raised $3 billion institutionally — her clients were financial advisors and stockbrokers, never retail investors. Today she serves as a FINRA arbitrator.</p>
           </div>
         </div>
         <div class="authority-block__credential reveal reveal-delay-3">
-          <div class="authority-block__credential-icon">🎓</div>
+          <div class="authority-block__credential-icon" aria-hidden="true">🎓</div>
           <h3 class="authority-block__credential-title">Certified Exit Planning Advisor</h3>
           <div class="authority-block__credential-body">
             <p>Jason is training as a Certified Exit Planning Advisor (CEPA). We've spent the years since our own escape building ownership models designed to buy other people the same freedom.</p>
@@ -1263,7 +1336,7 @@
     <div class="transformation-statement__inner">
       <div class="transformation-statement__transform">
         <span class="transformation-statement__from">The perfect life on paper, and done inside.</span>
-        <span class="transformation-statement__arrow">→</span>
+        <span class="transformation-statement__arrow" aria-hidden="true">→</span>
         <span class="transformation-statement__to">A life that feels<br>as good as it looks.</span>
       </div>
       <div class="transformation-statement__body reveal">
@@ -1323,6 +1396,46 @@
           ticking = false;
         });
         ticking = true;
+      }
+    });
+  })();
+</script>
+
+<!-- ===== MOBILE NAV TOGGLE ===== -->
+<script>
+  (function() {
+    var toggle = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('primary-nav');
+    if (!toggle || !nav) return;
+
+    toggle.addEventListener('click', function() {
+      var isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      if (isOpen) {
+        var firstLink = nav.querySelector('a, button');
+        if (firstLink) firstLink.focus();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+
+    document.addEventListener('click', function(e) {
+      if (nav.classList.contains('is-open') && !nav.contains(e.target) && !toggle.contains(e.target)) {
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 600 && nav.classList.contains('is-open')) {
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
       }
     });
   })();
