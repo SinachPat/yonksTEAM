@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-  :root { --primary: #1a1a2e; --secondary: #c97b3a; --accent: #d4946a; --background: #faf8f5; --surface: #f5f0eb; --foreground: #1a1a2e; --muted: #6b6b7d; --white: #ffffff; --heading: 'Playfair Display', Georgia, 'Times New Roman', serif; --body: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; --content: 720px; --wide: 1140px; --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  :root { --primary: #1a1a2e; --secondary: #7a9e7e; --accent: #c9a87c; --background: #faf8f5; --surface: #f5f0eb; --foreground: #1a1a2e; --muted: #6b6b7d; --white: #ffffff; --heading: 'Playfair Display', Georgia, 'Times New Roman', serif; --body: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; --content: 720px; --wide: 1140px; --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body { margin: 0; font-family: var(--body); color: var(--foreground); background: var(--background); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
@@ -33,7 +33,7 @@
 
   .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 2rem; border-radius: 6px; font-family: var(--body); font-size: 1rem; font-weight: 600; text-decoration: none; text-align: center; cursor: pointer; border: 2px solid transparent; white-space: nowrap; transition: all var(--transition); }
   .btn--primary { background: var(--secondary); color: var(--white); border-color: var(--secondary); }
-  .btn--primary:hover { background: #b86a2a; border-color: #b86a2a; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(201,123,58,0.25); }
+  .btn--primary:hover { background: #6b8a6f; border-color: #6b8a6f; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(122,158,126,0.25); }
   .btn--secondary { background: transparent; color: var(--primary); border-color: var(--primary); }
   .btn--secondary:hover { background: var(--primary); color: var(--white); transform: translateY(-2px); }
   .btn--sm { padding: 0.625rem 1.25rem; font-size: 0.875rem; }
@@ -62,7 +62,7 @@
   .category-tag--active { background: var(--primary); color: var(--white); }
 
   .cta-section { padding: 6rem 1.5rem; background: linear-gradient(165deg, var(--primary) 0%, #1f1f3a 100%); text-align: center; position: relative; overflow: hidden; }
-  .cta-section::before { content: ''; position: absolute; top: -30%; left: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(201,123,58,0.06) 0%, transparent 70%); pointer-events: none; }
+  .cta-section::before { content: ''; position: absolute; top: -30%; left: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(122,158,126,0.06) 0%, transparent 70%); pointer-events: none; }
   .cta-section__inner { max-width: var(--content); margin: 0 auto; position: relative; z-index: 1; }
   .cta-section__headline { font-family: var(--heading); font-size: 3rem; line-height: 1.15; color: var(--white); margin: 0 0 1rem; font-weight: 700; }
   .cta-section__body { font-size: 1.125rem; line-height: 1.8; color: rgba(255,255,255,0.7); margin-bottom: 2.5rem; max-width: 45ch; margin-left: auto; margin-right: auto; }

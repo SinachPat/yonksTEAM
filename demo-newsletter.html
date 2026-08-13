@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-  :root { --primary: #1a1a2e; --secondary: #c97b3a; --accent: #d4946a; --background: #faf8f5; --surface: #f5f0eb; --foreground: #1a1a2e; --muted: #6b6b7d; --white: #ffffff; --heading: 'Playfair Display', Georgia, 'Times New Roman', serif; --body: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; --content: 720px; --wide: 1140px; --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  :root { --primary: #1a1a2e; --secondary: #7a9e7e; --accent: #c9a87c; --background: #faf8f5; --surface: #f5f0eb; --foreground: #1a1a2e; --muted: #6b6b7d; --white: #ffffff; --heading: 'Playfair Display', Georgia, 'Times New Roman', serif; --body: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; --content: 720px; --wide: 1140px; --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body { margin: 0; font-family: var(--body); color: var(--foreground); background: var(--background); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
@@ -33,7 +33,7 @@
 
   .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 2rem; border-radius: 6px; font-family: var(--body); font-size: 1rem; font-weight: 600; text-decoration: none; text-align: center; cursor: pointer; border: 2px solid transparent; white-space: nowrap; transition: all var(--transition); }
   .btn--primary { background: var(--secondary); color: var(--white); border-color: var(--secondary); }
-  .btn--primary:hover { background: #b86a2a; border-color: #b86a2a; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(201,123,58,0.25); }
+  .btn--primary:hover { background: #6b8a6f; border-color: #6b8a6f; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(122,158,126,0.25); }
   .btn--white { background: var(--white); color: var(--primary); border-color: var(--white); }
   .btn--white:hover { background: transparent; color: var(--white); transform: translateY(-2px); }
   .btn--outline-white { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.3); }
@@ -41,7 +41,7 @@
   .btn--sm { padding: 0.625rem 1.25rem; font-size: 0.875rem; }
 
   .hero-interior { padding: 10rem 1.5rem 6rem; background: linear-gradient(165deg, var(--primary) 0%, #242445 100%); position: relative; overflow: hidden; text-align: center; }
-  .hero-interior::before { content: ''; position: absolute; top: -40%; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(201,123,58,0.08) 0%, transparent 70%); pointer-events: none; }
+  .hero-interior::before { content: ''; position: absolute; top: -40%; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(122,158,126,0.08) 0%, transparent 70%); pointer-events: none; }
   .hero-interior__inner { max-width: var(--content); margin: 0 auto; position: relative; z-index: 1; }
   .hero-interior__eyebrow { font-family: var(--body); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--secondary); margin-bottom: 1.5rem; }
   .hero-interior__headline { font-family: var(--heading); font-size: 4rem; line-height: 1.05; color: var(--white); margin: 0 auto 1rem; font-weight: 700; letter-spacing: -0.02em; }
@@ -63,7 +63,7 @@
 
   .newsletter-form { max-width: 480px; margin: 3rem auto 0; display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
   .newsletter-form input[type="email"] { flex: 1 1 240px; padding: 0.875rem 1rem; border: 2px solid var(--surface); border-radius: 6px; font-family: var(--body); font-size: 1rem; background: var(--white); color: var(--foreground); transition: border-color var(--transition); }
-  .newsletter-form input[type="email"]:focus { outline: none; border-color: var(--secondary); box-shadow: 0 0 0 3px rgba(201,123,58,0.15); }
+  .newsletter-form input[type="email"]:focus { outline: none; border-color: var(--secondary); box-shadow: 0 0 0 3px rgba(122,158,126,0.15); }
   .newsletter-form input[type="email"]::placeholder { color: var(--muted); }
 
   .site-footer { background: linear-gradient(165deg, var(--primary) 0%, #1f1f3a 100%); padding: 3rem 1.5rem; }
