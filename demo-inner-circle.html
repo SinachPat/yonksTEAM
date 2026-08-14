@@ -3,20 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exit to Client — YonksTEAM</title>
+<title>Inner Circle — YonksTEAM</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --primary: #0b2a4a; --secondary: #2563eb; --accent: #38bdf8;
-    --background: #f5f9fd; --surface: #e8f1fa; --foreground: #0b2a4a;
-    --muted: #5b6b84; --white: #ffffff;
-    --heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
-    --body: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --content: 720px; --wide: 1140px;
-    --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
+  :root { --primary: #0b2a4a; --secondary: #2563eb; --accent: #38bdf8; --background: #f5f9fd; --surface: #e8f1fa; --foreground: #0b2a4a; --muted: #5b6b84; --white: #ffffff; --heading: 'Playfair Display', Georgia, 'Times New Roman', serif; --body: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; --content: 720px; --wide: 1140px; --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body { margin: 0; font-family: var(--body); color: var(--foreground); background: var(--background); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
@@ -25,7 +17,6 @@
   .reveal { animation: fadeUp 0.7s cubic-bezier(0.25,0.46,0.45,0.94) both; }
   .reveal-d1 { animation-delay: 0.1s; }
   .reveal-d2 { animation-delay: 0.2s; }
-  .reveal-d3 { animation-delay: 0.3s; }
 
   .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(245,249,253,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.04); transition: box-shadow var(--transition); }
   .site-header.scrolled { box-shadow: 0 1px 12px rgba(0,0,0,0.06); }
@@ -51,13 +42,11 @@
 
   .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 2rem; border-radius: 6px; font-family: var(--body); font-size: 1rem; font-weight: 600; text-decoration: none; text-align: center; cursor: pointer; border: 2px solid transparent; white-space: nowrap; transition: all var(--transition); }
   .btn--primary { background: var(--secondary); color: var(--white); border-color: var(--secondary); }
-  .btn--primary:hover { background: #1d4ed8; border-color: #1d4ed8; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(37,99,235,0.25); }
+  .btn--primary:hover { background: #1d4ed8; border-color: #1d4ed8; transform: translateY(-2px); }
   .btn--secondary { background: transparent; color: var(--primary); border-color: var(--primary); }
-  .btn--secondary:hover { background: var(--primary); color: var(--white); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(11,42,74,0.15); }
-  .btn--white { background: var(--white); color: var(--primary); border-color: var(--white); }
+  .btn--secondary:hover { background: var(--primary); color: var(--white); transform: translateY(-2px); }
+  .btn--white { background: var(--white); color: var(--primary); border-color: rgba(255,255,255,0.4); }
   .btn--white:hover { background: rgba(255,255,255,0.15); color: var(--white); border-color: var(--white); transform: translateY(-2px); }
-  .btn--outline-white { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.4); }
-  .btn--outline-white:hover { background: rgba(255,255,255,0.15); color: var(--white); border-color: var(--white); transform: translateY(-2px); }
   .btn--sm { padding: 0.625rem 1.25rem; font-size: 0.875rem; }
 
   .hero-interior { padding: 10rem 1.5rem 6rem; background: linear-gradient(165deg, var(--primary) 0%, #123a63 100%); position: relative; overflow: hidden; }
@@ -70,37 +59,31 @@
   .section { padding: 6rem 1.5rem; }
   .section--light { background: var(--background); }
   .section--warm { background: var(--surface); }
-  .section--dark { background: linear-gradient(165deg, var(--primary) 0%, #123a63 100%); color: var(--white); }
   .section__inner { max-width: var(--wide); margin: 0 auto; }
   .section__inner--narrow { max-width: var(--content); margin: 0 auto; }
   .section__headline { font-family: var(--heading); font-size: 2.5rem; line-height: 1.2; color: var(--primary); font-weight: 600; margin: 0 0 1rem; }
   .section__headline--center { text-align: center; margin-bottom: 3rem; }
-  .section--dark .section__headline { color: var(--white); }
-  .section__body { font-family: var(--body); font-size: 1.125rem; line-height: 1.8; color: var(--muted); }
+  .section__body { font-family: var(--body); font-size: 1.125rem; line-height: 1.8; color: var(--muted); max-width: 55ch; }
   .section__body--center { text-align: center; margin: 0 auto; }
   .section__body p { margin: 0 0 1rem; }
   .section__body p:last-child { margin-bottom: 0; }
 
-  .comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 3rem; border-radius: 12px; overflow: hidden; }
-  .comparison__col { padding: 2.5rem; }
-  .comparison__col--traditional { background: #fdf0f0; border: 1px solid rgba(229,57,53,0.12); }
-  .comparison__col--exit { background: #f0faf0; border: 1px solid rgba(76,175,80,0.15); }
-  .comparison__label { font-family: var(--heading); font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; }
-  .comparison__col--traditional .comparison__label { color: #c62828; }
-  .comparison__col--exit .comparison__label { color: #2e7d32; }
-  .comparison__list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem; }
-  .comparison__item { padding-left: 1.5rem; position: relative; font-size: 1rem; line-height: 1.7; }
-  .comparison__item::before { position: absolute; left: 0; top: 0.1em; font-weight: 700; }
-  .comparison__col--traditional .comparison__item::before { content: "✗"; color: #e53935; }
-  .comparison__col--exit .comparison__item::before { content: "✓"; color: #4caf50; }
+  .pricing-card { max-width: 480px; margin: 3rem auto 0; background: var(--white); border-radius: 12px; padding: 3rem; text-align: center; border: 2px solid var(--secondary); position: relative; }
+  .pricing-card__badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--secondary); color: var(--white); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.375rem 1rem; border-radius: 100px; }
+  .pricing-card__price { font-family: var(--heading); font-size: 4rem; font-weight: 700; color: var(--primary); line-height: 1; margin-bottom: 0.5rem; }
+  .pricing-card__price span { font-size: 1.5rem; font-weight: 600; color: var(--muted); }
+  .pricing-card__period { font-size: 0.9rem; color: var(--muted); margin-bottom: 2rem; }
+  .pricing-card__list { list-style: none; padding: 0; margin: 0 0 2rem; display: flex; flex-direction: column; gap: 0.75rem; text-align: left; }
+  .pricing-card__item { padding-left: 1.75rem; position: relative; font-size: 1rem; line-height: 1.7; color: var(--foreground); }
+  .pricing-card__item::before { content: "✓"; position: absolute; left: 0; top: 0.1em; color: var(--secondary); font-weight: 700; }
+  .pricing-card__cta { width: 100%; justify-content: center; }
 
-  .steps { display: flex; flex-direction: column; gap: 2rem; margin-top: 3rem; }
-  .step { display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: start; padding: 2rem; border-radius: 12px; background: var(--white); border: 1px solid var(--surface); transition: transform var(--transition), border-color var(--transition); }
-  .step:hover { transform: translateX(4px); border-color: var(--accent); }
-  .step__num { width: 60px; height: 60px; border-radius: 50%; background: var(--secondary); color: var(--white); display: flex; align-items: center; justify-content: center; font-family: var(--heading); font-size: 1.5rem; font-weight: 700; }
-  .step__title { font-family: var(--heading); font-size: 1.35rem; color: var(--primary); font-weight: 600; margin-bottom: 0.5rem; }
-  .step__body { font-size: 1rem; line-height: 1.8; color: var(--muted); }
-  .step__body p { margin: 0; }
+  .features { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem; }
+  .feature { background: var(--white); border-radius: 12px; padding: 2rem; border: 1px solid var(--surface); }
+  .feature__icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+  .feature__title { font-family: var(--heading); font-size: 1.25rem; color: var(--primary); font-weight: 600; margin-bottom: 0.5rem; }
+  .feature__body { font-size: 0.95rem; line-height: 1.7; color: var(--muted); }
+  .feature__body p { margin: 0; }
 
   .cta-section { padding: 6rem 1.5rem; background: linear-gradient(165deg, var(--primary) 0%, #0e2f52 100%); text-align: center; position: relative; overflow: hidden; }
   .cta-section::before { content: ''; position: absolute; top: -30%; left: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 70%); pointer-events: none; }
@@ -124,8 +107,7 @@
     .hero-interior__headline { font-size: 2.25rem; }
     .section { padding: 4rem 1.5rem; }
     .section__headline { font-size: 1.75rem; }
-    .comparison { grid-template-columns: 1fr; }
-    .step { grid-template-columns: 1fr; gap: 1rem; }
+    .features { grid-template-columns: 1fr; }
     .site-header__nav { gap: 1.25rem; }
     .site-header__link { font-size: 0.8rem; }
     .cta-section__headline { font-size: 2rem; }
@@ -154,11 +136,11 @@
 
 <header class="site-header" id="site-header">
   <div class="site-header__inner">
-    <a href="demo-homepage.html" class="site-header__logo" aria-label="YonksTEAM — Home">YonksTEAM</a>
+    <a href="index.html" class="site-header__logo" aria-label="YonksTEAM — Home">YonksTEAM</a>
     <nav class="site-header__nav" id="primary-nav" aria-label="Primary navigation">
       <a href="demo-for-advisors.html" class="site-header__link">For Advisors</a>
-      <a href="demo-exit-to-client.html" class="site-header__link site-header__link--active">Exit to Client</a>
-      <a href="demo-inner-circle.html" class="site-header__link">Inner Circle</a>
+      <a href="demo-exit-to-client.html" class="site-header__link">Exit to Client</a>
+      <a href="demo-inner-circle.html" class="site-header__link site-header__link--active">Inner Circle</a>
       <a href="demo-aop.html" class="site-header__link">Agent Operator</a>
       <a href="demo-about.html" class="site-header__link">About</a>
       <a href="demo-contact.html" class="btn btn--primary btn--sm">Start the Conversation</a>
@@ -168,67 +150,62 @@
     </button>
   </div>
 </header>
+
 <main id="main-content">
+
   <section class="hero-interior">
     <div class="hero-interior__inner">
-      <div class="hero-interior__eyebrow">The Flagship Model</div>
-      <h1 class="hero-interior__headline">Exit to Client. The sale that serves everyone.</h1>
-      <p class="hero-interior__subheadline">Your clients trust you. They already know what your practice is worth. Why not sell it to them?</p>
+      <div class="hero-interior__eyebrow">Responsible Agentic AI</div>
+      <h1 class="hero-interior__headline">The Inner Circle.</h1>
+      <p class="hero-interior__subheadline">A private mentoring circle for using agentic AI the right way — no hype, no shortcuts, no calling yourself an "AI expert" after one webinar.</p>
     </div>
   </section>
 
   <section class="section section--light">
-    <div class="section__inner">
-      <h2 class="section__headline section__headline--center">Traditional exits leave everyone worse off.</h2>
-      <div class="comparison">
-        <div class="comparison__col comparison__col--traditional">
-          <h3 class="comparison__label">Traditional Exit</h3>
-          <ul class="comparison__list">
-            <li class="comparison__item">Sold to the highest bidder</li>
-            <li class="comparison__item">Clients find out from an email address change</li>
-            <li class="comparison__item">Thirty years of relationships scattered</li>
-            <li class="comparison__item">A stranger runs the practice</li>
-            <li class="comparison__item">You get a check and disappear</li>
-          </ul>
-        </div>
-        <div class="comparison__col comparison__col--exit">
-          <h3 class="comparison__label">Exit to Client</h3>
-          <ul class="comparison__list">
-            <li class="comparison__item">Sold to the people who know you best</li>
-            <li class="comparison__item">Clients become owners</li>
-            <li class="comparison__item">Thirty years of relationships deepened</li>
-            <li class="comparison__item">The community runs the practice</li>
-            <li class="comparison__item">You get a check and a legacy</li>
-          </ul>
-        </div>
+    <div class="section__inner--narrow">
+      <h2 class="section__headline" style="text-align:center;">Join the Circle</h2>
+      <div class="section__body section__body--center">
+        <p>Agentic AI is the new wild west. Everyone's selling courses. Almost no one is mentoring. The Inner Circle is a small, private group where Jason &amp; Tyler actually walk with you — building agents responsibly, thinking through the risks, and skipping the hype entirely.</p>
+      </div>
+      <div class="pricing-card reveal">
+        <div class="pricing-card__badge">Membership</div>
+        <div class="pricing-card__price">$12<span>/yr</span></div>
+        <div class="pricing-card__period">A year of responsible agentic AI mentorship. Less than a coffee a month.</div>
+        <ul class="pricing-card__list">
+          <li class="pricing-card__item">Monthly live mentoring sessions with Jason &amp; Tyler</li>
+          <li class="pricing-card__item">Responsible agentic AI frameworks &amp; checklists</li>
+          <li class="pricing-card__item">Private community for honest questions</li>
+          <li class="pricing-card__item">Early access to tools, experiments &amp; case studies</li>
+          <li class="pricing-card__item">No upsells. No "masterclass" spam. Ever.</li>
+        </ul>
+        <a href="demo-contact.html" class="btn btn--primary btn--arrow pricing-card__cta">Request to Join →</a>
       </div>
     </div>
   </section>
 
   <section class="section section--warm">
     <div class="section__inner">
-      <h2 class="section__headline section__headline--center">How Exit to Client Works</h2>
-      <div class="steps">
-        <div class="step reveal">
-          <div class="step__num">1</div>
-          <div>
-            <h3 class="step__title">Evaluate</h3>
-            <div class="step__body"><p>We help you assess your practice's true value — not just the revenue multiple, but the client relationships, the trust capital, and the community you've built over decades.</p></div>
-          </div>
+      <h2 class="section__headline section__headline--center">What "responsible" actually means here</h2>
+      <div class="features">
+        <div class="feature reveal">
+          <div class="feature__icon" aria-hidden="true">🤖</div>
+          <h3 class="feature__title">Agents, Not Chatbots</h3>
+          <div class="feature__body"><p>Real agentic workflows that act — not just prompts that chat. Built, tested, and deployed with guardrails.</p></div>
         </div>
-        <div class="step reveal reveal-d1">
-          <div class="step__num">2</div>
-          <div>
-            <h3 class="step__title">Design the Ownership Structure</h3>
-            <div class="step__body"><p>We build a model that lets your clients buy in — either as a group or through a structured vehicle. They become owners. You become free. The practice stays in the hands of the people who love it.</p></div>
-          </div>
+        <div class="feature reveal reveal-d1">
+          <div class="feature__icon" aria-hidden="true">🛡️</div>
+          <h3 class="feature__title">Risk First</h3>
+          <div class="feature__body"><p>Before any agent touches real work: what can go wrong, what's the blast radius, and how do you verify? Always.</p></div>
         </div>
-        <div class="step reveal reveal-d2">
-          <div class="step__num">3</div>
-          <div>
-            <h3 class="step__title">Transition on Your Terms</h3>
-            <div class="step__body"><p>You set the timeline. You stay as long as you want — or leave as soon as you're ready. The transition happens when it's right for you, your clients, and your legacy.</p></div>
-          </div>
+        <div class="feature reveal">
+          <div class="feature__icon" aria-hidden="true">🔍</div>
+          <h3 class="feature__title">Verifiable Outputs</h3>
+          <div class="feature__body"><p>Agents that hallucinate quietly are worse than no agents. We mentor on checking, auditing, and validating every output.</p></div>
+        </div>
+        <div class="feature reveal reveal-d1">
+          <div class="feature__icon" aria-hidden="true">👥</div>
+          <h3 class="feature__title">Human in the Loop</h3>
+          <div class="feature__body"><p>Automation that serves people, not replaces them. The circle debates the ethics, not just the tech.</p></div>
         </div>
       </div>
     </div>
@@ -236,14 +213,16 @@
 
   <section class="cta-section">
     <div class="cta-section__inner">
-      <h2 class="cta-section__headline reveal">Ready to explore Exit to Client?</h2>
-      <div class="cta-section__body reveal reveal-d1"><p>Tell us about your practice. We'll show you what Exit to Client looks like for your specific situation.</p></div>
+      <h2 class="cta-section__headline reveal">Twelve dollars. One year. Real mentorship.</h2>
+      <div class="cta-section__body reveal reveal-d1"><p>If you're building with agentic AI, you shouldn't build alone. Join the circle.</p></div>
       <div class="cta-section__actions reveal reveal-d2">
-        <a href="demo-contact.html" class="btn btn--white btn--arrow">Start the Conversation About Exit to Client →</a>
+        <a href="demo-contact.html" class="btn btn--white btn--arrow">Request to Join →</a>
       </div>
     </div>
   </section>
+
 </main>
+
 <footer class="site-footer" role="contentinfo">
   <div class="site-footer__inner">
     <div class="site-footer__content">
@@ -257,11 +236,9 @@
     <p class="site-footer__copyright">&copy; 2026 YonksTEAM. All rights reserved.</p>
   </div>
 </footer>
+
 <script>
-  (function() {
-    var h = document.getElementById('site-header'), t = false;
-    window.addEventListener('scroll', function() { if (!t) { requestAnimationFrame(function() { h.classList.toggle('scrolled', window.scrollY > 20); t = false; }); t = true; } });
-  })();
+  (function() { var h = document.getElementById('site-header'), t = false; window.addEventListener('scroll', function() { if (!t) { requestAnimationFrame(function() { h.classList.toggle('scrolled', window.scrollY > 20); t = false; }); t = true; } }); })();
 
   (function() {
     var toggle = document.querySelector('.nav-toggle');

@@ -10,7 +10,9 @@
     { "source": "/about", "destination": "/demo-about.html" },
     { "source": "/newsletter", "destination": "/demo-newsletter.html" },
     { "source": "/blog", "destination": "/demo-blog.html" },
-    { "source": "/contact", "destination": "/demo-contact.html" }
+    { "source": "/contact", "destination": "/demo-contact.html" },
+    { "source": "/inner-circle", "destination": "/demo-inner-circle.html" },
+    { "source": "/aop", "destination": "/demo-aop.html" }
   ],
   "cleanUrls": true
 }
