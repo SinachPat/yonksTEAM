@@ -10,13 +10,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1a1a2e',
-        secondary: '#c97b3a',
-        accent: '#d4946a',
-        background: '#faf8f5',
-        surface: '#f5f0eb',
-        foreground: '#1a1a2e',
-        muted: '#6b6b7d',
+        primary: '#0b2a4a',
+        secondary: '#2563eb',
+        accent: '#38bdf8',
+        background: '#f5f9fd',
+        surface: '#e8f1fa',
+        foreground: '#0b2a4a',
+        muted: '#5b6b84',
       },
       fontFamily: {
         heading: ['Chronicle Display', 'Georgia', 'serif'],

@@ -5,37 +5,37 @@
       "palette": [
         {
           "slug": "primary",
-          "color": "#1a1a2e",
-          "name": "Deep Navy"
+          "color": "#0b2a4a",
+          "name": "Deep Blue"
         },
         {
           "slug": "secondary",
-          "color": "#c97b3a",
-          "name": "Warm Amber"
+          "color": "#2563eb",
+          "name": "Vivid Blue"
         },
         {
           "slug": "accent",
-          "color": "#d4946a",
-          "name": "Terracotta"
+          "color": "#38bdf8",
+          "name": "Sky Blue"
         },
         {
           "slug": "background",
-          "color": "#faf8f5",
-          "name": "Warm Off-White"
+          "color": "#f5f9fd",
+          "name": "Cool Off-White"
         },
         {
           "slug": "surface",
-          "color": "#f5f0eb",
-          "name": "Light Warm"
+          "color": "#e8f1fa",
+          "name": "Light Blue-Gray"
         },
         {
           "slug": "foreground",
-          "color": "#1a1a2e",
+          "color": "#0b2a4a",
           "name": "Text Primary"
         },
         {
           "slug": "muted",
-          "color": "#6b6b7d",
+          "color": "#5b6b84",
           "name": "Text Muted"
         },
         {
@@ -48,9 +48,9 @@
     "typography": {
       "fontFamilies": [
         {
-          "fontFamily": "\"Chronicle Display\", Georgia, \"Times New Roman\", serif",
+          "fontFamily": "\"Playfair Display\", Georgia, \"Times New Roman\", serif",
           "slug": "heading",
-          "name": "Chronicle (Headings)"
+          "name": "Playfair Display (Headings)"
         },
         {
           "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",

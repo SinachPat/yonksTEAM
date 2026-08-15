@@ -1,0 +1,65 @@
+{
+  "key": "group_yonksteam_success-failure-split",
+  "title": "Success / Failure Split Fields",
+  "fields": [
+    {
+      "key": "field_split_headline",
+      "label": "Headline",
+      "name": "headline",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_split_success_items",
+      "label": "Success Items",
+      "name": "success_items",
+      "type": "repeater",
+      "layout": "table",
+      "button_label": "Add Success Item",
+      "sub_fields": [
+        {
+          "key": "field_split_success_item_text",
+          "label": "Item Text",
+          "name": "text",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "field_split_failure_items",
+      "label": "Failure Items",
+      "name": "failure_items",
+      "type": "repeater",
+      "layout": "table",
+      "button_label": "Add Failure Item",
+      "sub_fields": [
+        {
+          "key": "field_split_failure_item_text",
+          "label": "Item Text",
+          "name": "text",
+          "type": "text",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/success-failure-split"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0
+}

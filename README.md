@@ -2,6 +2,46 @@
 
 YonksTEAM is the WordPress-powered brand site for Jason and Tyler Younker, helping burned-out advisors get their lives back.
 
+**Current theme version: 2.1.0** — modern blue design system, 12 page templates, 10 custom ACF blocks, Inner Circle & Agent Operator product pages.
+
+---
+
+## 🚀 One-Click Theme Install (ZIP)
+
+Grab the latest release ZIP (`yonksteam-2.1.0.zip`) from the GitHub Releases page or build it yourself:
+
+```bash
+bash release-zip.sh
+```
+
+Then in WordPress: **Appearance → Themes → Add New → Upload Theme**, upload the ZIP, activate.
+
+### Required plugins (activate before/after — blocks degrade gracefully without them)
+- **ACF Pro** (required — powers the 10 custom blocks)
+- **Gravity Forms** (required for contact/newsletter forms)
+- **Yoast SEO** (recommended)
+
+After activating: go to **Custom Fields → Field Groups** and click **Sync** to load the 10 field groups from `acf-json/`.
+
+---
+
+## 📄 Pages & Templates
+
+| Page | Template | Built with |
+|------|----------|-----------|
+| Home | `templates/home.html` | ACF blocks + patterns |
+| For Advisors | `templates/page-for-advisors.html` | ACF blocks |
+| Exit to Client | `templates/page-exit-to-client.html` | ACF blocks |
+| Inner Circle | `templates/page-inner-circle.html` | ACF hero + core blocks |
+| Agent Operator | `templates/page-agent-operator.html` | ACF hero + core blocks |
+| About | `templates/page-about.html` | ACF blocks |
+| Newsletter | `templates/page-newsletter.html` | ACF hero + pattern |
+| Contact | `templates/page-contact.html` | ACF hero + Gravity Forms |
+| Blog archive | `templates/archive.html` | Query loop |
+| Blog post | `templates/single.html` | Post content |
+
+Create WordPress pages with the matching slugs (`inner-circle`, `agent-operator`, `for-advisors`, etc.) and the templates apply automatically.
+
 ---
 
 ## 🚀 Option A — One-Click Install (Composer)
