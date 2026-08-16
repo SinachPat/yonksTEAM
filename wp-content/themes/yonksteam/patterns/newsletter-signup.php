@@ -20,7 +20,7 @@
         <p class="has-text-align-center newsletter-signup__body">Join hundreds of advisors who read our honest, no-fluff take on escaping the grind and building a life you actually want.</p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:gravityforms/form {"formId":1,"title":false,"description":false,"ajax":true} /-->
+        <!-- wp:fluentform/form {"formId":1,"renderer":"classic"} /-->
 
         <!-- wp:paragraph {"align":"center","fontSize":"small"} -->
         <p class="has-text-align-center has-small-font-size" style="margin-top:1rem;">No spam. Unsubscribe anytime. We mean it.</p>

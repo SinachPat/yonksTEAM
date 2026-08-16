@@ -17,9 +17,11 @@ bash release-zip.sh
 Then in WordPress: **Appearance → Themes → Add New → Upload Theme**, upload the ZIP, activate.
 
 ### Required plugins (activate before/after — blocks degrade gracefully without them)
-- **ACF Pro** (required — powers the 10 custom blocks)
-- **Gravity Forms** (required for contact/newsletter forms)
-- **Yoast SEO** (recommended)
+- **ACF (free or Pro)** — powers the 10 custom blocks. Pro unlocks repeater fields & inline field editing in blocks; the free version works for most blocks but the success/failure repeater and two-paths links need Pro for full editor control.
+- **Fluent Forms (free)** — contact + newsletter forms (`wp:fluentform/form` blocks)
+- **Yoast SEO (free)** — recommended
+- **FluentCRM (free tier)** — newsletter list management (optional, recommended)
+- **FluentCart** — for the Inner Circle ($12/yr) and Agent Operator ($97) product checkouts
 
 After activating: go to **Custom Fields → Field Groups** and click **Sync** to load the 10 field groups from `acf-json/`.
 
@@ -36,7 +38,7 @@ After activating: go to **Custom Fields → Field Groups** and click **Sync** to
 | Agent Operator | `templates/page-agent-operator.html` | ACF hero + core blocks |
 | About | `templates/page-about.html` | ACF blocks |
 | Newsletter | `templates/page-newsletter.html` | ACF hero + pattern |
-| Contact | `templates/page-contact.html` | ACF hero + Gravity Forms |
+| Contact | `templates/page-contact.html` | ACF hero + Fluent Forms |
 | Blog archive | `templates/archive.html` | Query loop |
 | Blog post | `templates/single.html` | Post content |
 
