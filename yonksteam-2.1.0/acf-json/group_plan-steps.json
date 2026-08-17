@@ -1,0 +1,82 @@
+{
+  "key": "group_yonksteam_plan-steps",
+  "title": "Plan Steps Fields",
+  "fields": [
+    {
+      "key": "field_plan_headline",
+      "label": "Headline",
+      "name": "headline",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_plan_subheadline",
+      "label": "Subheadline",
+      "name": "subheadline",
+      "type": "text"
+    },
+    {
+      "key": "field_plan_step_1_title",
+      "label": "Step 1 Title",
+      "name": "step_1_title",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_plan_step_1_body",
+      "label": "Step 1 Body",
+      "name": "step_1_body",
+      "type": "textarea",
+      "required": true,
+      "new_lines": "wpautop"
+    },
+    {
+      "key": "field_plan_step_2_title",
+      "label": "Step 2 Title",
+      "name": "step_2_title",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_plan_step_2_body",
+      "label": "Step 2 Body",
+      "name": "step_2_body",
+      "type": "textarea",
+      "required": true,
+      "new_lines": "wpautop"
+    },
+    {
+      "key": "field_plan_step_3_title",
+      "label": "Step 3 Title",
+      "name": "step_3_title",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_plan_step_3_body",
+      "label": "Step 3 Body",
+      "name": "step_3_body",
+      "type": "textarea",
+      "required": true,
+      "new_lines": "wpautop"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/plan-steps"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0
+}

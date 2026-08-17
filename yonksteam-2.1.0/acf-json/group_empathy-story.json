@@ -1,0 +1,77 @@
+{
+  "key": "group_yonksteam_empathy-story",
+  "title": "Empathy Story Fields",
+  "fields": [
+    {
+      "key": "field_empathy_headline",
+      "label": "Headline",
+      "name": "headline",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_empathy_story_1_title",
+      "label": "Story 1 Title",
+      "name": "story_1_title",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_empathy_story_1_body",
+      "label": "Story 1 Body",
+      "name": "story_1_body",
+      "type": "textarea",
+      "required": true,
+      "new_lines": "wpautop"
+    },
+    {
+      "key": "field_empathy_story_1_image",
+      "label": "Story 1 Image",
+      "name": "story_1_image",
+      "type": "image",
+      "return_format": "array",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_empathy_story_2_title",
+      "label": "Story 2 Title",
+      "name": "story_2_title",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_empathy_story_2_body",
+      "label": "Story 2 Body",
+      "name": "story_2_body",
+      "type": "textarea",
+      "required": true,
+      "new_lines": "wpautop"
+    },
+    {
+      "key": "field_empathy_story_2_image",
+      "label": "Story 2 Image",
+      "name": "story_2_image",
+      "type": "image",
+      "return_format": "array",
+      "preview_size": "medium"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/empathy-story"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0
+}
