@@ -1,0 +1,54 @@
+{
+  "name": "acf/testimonial-block",
+  "title": "Testimonial Block",
+  "description": "Single testimonial with quote, attribution, and optional photo.",
+  "category": "yonksteam",
+  "icon": "format-quote",
+  "keywords": ["testimonial", "quote", "review"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "mode": true,
+    "jsx": false
+  },
+  "fields": [
+    {
+      "key": "field_testimonial_quote",
+      "label": "Quote",
+      "name": "quote",
+      "type": "textarea",
+      "required": true,
+      "new_lines": "wpautop"
+    },
+    {
+      "key": "field_testimonial_name",
+      "label": "Name",
+      "name": "name",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_testimonial_title",
+      "label": "Title",
+      "name": "title",
+      "type": "text"
+    },
+    {
+      "key": "field_testimonial_photo",
+      "label": "Photo",
+      "name": "photo",
+      "type": "image",
+      "return_format": "array",
+      "preview_size": "thumbnail"
+    },
+    {
+      "key": "field_testimonial_link",
+      "label": "Link",
+      "name": "link",
+      "type": "link"
+    }
+  ]
+}

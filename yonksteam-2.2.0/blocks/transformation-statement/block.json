@@ -1,0 +1,41 @@
+{
+  "name": "acf/transformation-statement",
+  "title": "Transformation Statement",
+  "description": "From / To statement with a visual arrow or divider.",
+  "category": "yonksteam",
+  "icon": "randomize",
+  "keywords": ["transformation", "from", "to", "change"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "mode": true,
+    "jsx": false
+  },
+  "fields": [
+    {
+      "key": "field_transform_from_text",
+      "label": "From Text",
+      "name": "from_text",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_transform_to_text",
+      "label": "To Text",
+      "name": "to_text",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_transform_body",
+      "label": "Body",
+      "name": "body",
+      "type": "wysiwyg",
+      "tabs": "visual",
+      "media_upload": false
+    }
+  ]
+}

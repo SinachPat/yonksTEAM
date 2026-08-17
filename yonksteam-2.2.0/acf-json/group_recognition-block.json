@@ -1,0 +1,39 @@
+{
+  "key": "group_yonksteam_recognition-block",
+  "title": "Recognition Block Fields",
+  "fields": [
+    {
+      "key": "field_recognition_headline",
+      "label": "Headline",
+      "name": "headline",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_recognition_body",
+      "label": "Body",
+      "name": "body",
+      "type": "wysiwyg",
+      "tabs": "visual",
+      "media_upload": false
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/recognition-block"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0
+}
