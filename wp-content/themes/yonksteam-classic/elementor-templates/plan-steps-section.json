@@ -1,330 +1,326 @@
-{
-  "title": "Plan Steps Section",
-  "type": "section",
-  "content": [
-    {
-      "type": "section",
-      "id": "plan-steps-section",
-      "settings": {
-        "background_background": "gradient",
-        "background_color": "#0b2a4a",
-        "background_color_stop": "0",
-        "background_gradient_type": "linear",
-        "background_gradient_angle": "165",
-        "background_gradient_color_b": "#123a63",
-        "background_gradient_color_b_stop": "100",
-        "padding": {
-          "top": "96",
-          "bottom": "96",
-          "left": "24",
-          "right": "24",
-          "unit": "px"
-        }
+[
+  {
+    "type": "section",
+    "id": "plan-steps-section",
+    "settings": {
+      "background_background": "gradient",
+      "background_color": "#0b2a4a",
+      "background_color_stop": "0",
+      "background_gradient_type": "linear",
+      "background_gradient_angle": "165",
+      "background_gradient_color_b": "#123a63",
+      "background_gradient_color_b_stop": "100",
+      "padding": {
+        "top": "96",
+        "bottom": "96",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      }
+    },
+    "elements": [
+      {
+        "id": "plan-headline-col",
+        "type": "column",
+        "settings": {
+          "_column_size": "100",
+          "_inline_size": "100"
+        },
+        "elements": [
+          {
+            "id": "plan-headline",
+            "type": "heading",
+            "settings": {
+              "title": "Here's how it works.",
+              "header_size": "h2",
+              "align": "center",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "48",
+                "unit": "px"
+              },
+              "typography_font_weight": "700"
+            }
+          },
+          {
+            "id": "plan-subheadline",
+            "type": "text",
+            "settings": {
+              "editor": "<p style='text-align: center; font-style: italic;'>Three steps. Not a program. A path.</p>",
+              "text_color": "#2563eb",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "20",
+                "unit": "px"
+              }
+            }
+          }
+        ]
       },
-      "elements": [
-        {
-          "id": "plan-headline-col",
-          "type": "column",
-          "settings": {
-            "_column_size": "100",
-            "_inline_size": "100"
+      {
+        "id": "plan-step-1",
+        "type": "column",
+        "settings": {
+          "_column_size": "33",
+          "_inline_size": "33.33",
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.04)",
+          "border_border": "solid",
+          "border_width": {
+            "size": "1",
+            "unit": "px"
           },
-          "elements": [
-            {
-              "id": "plan-headline",
-              "type": "heading",
-              "settings": {
-                "title": "Here's how it works.",
-                "header_size": "h2",
-                "align": "center",
-                "text_color": "#ffffff",
-                "typography_typography": "custom",
-                "typography_font_family": "Playfair Display",
-                "typography_font_size": {
-                  "size": "48",
-                  "unit": "px"
-                },
-                "typography_font_weight": "700"
-              }
-            },
-            {
-              "id": "plan-subheadline",
-              "type": "text",
-              "settings": {
-                "editor": "<p style='text-align: center; font-style: italic;'>Three steps. Not a program. A path.</p>",
-                "text_color": "#2563eb",
-                "typography_typography": "custom",
-                "typography_font_family": "Playfair Display",
-                "typography_font_size": {
-                  "size": "20",
-                  "unit": "px"
-                }
-              }
-            }
-          ]
+          "border_color": "rgba(255,255,255,0.06)",
+          "border_radius": {
+            "size": "12",
+            "unit": "px"
+          },
+          "padding": {
+            "top": "32",
+            "bottom": "32",
+            "left": "32",
+            "right": "32",
+            "unit": "px"
+          }
         },
-        {
-          "id": "plan-step-1",
-          "type": "column",
-          "settings": {
-            "_column_size": "33",
-            "_inline_size": "33.33",
-            "background_background": "classic",
-            "background_color": "rgba(255,255,255,0.04)",
-            "border_border": "solid",
-            "border_width": {
-              "size": "1",
-              "unit": "px"
-            },
-            "border_color": "rgba(255,255,255,0.06)",
-            "border_radius": {
-              "size": "12",
-              "unit": "px"
-            },
-            "padding": {
-              "top": "32",
-              "bottom": "32",
-              "left": "32",
-              "right": "32",
-              "unit": "px"
+        "elements": [
+          {
+            "id": "plan-1-num",
+            "type": "heading",
+            "settings": {
+              "title": "1",
+              "header_size": "h1",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "20",
+                "unit": "px"
+              },
+              "typography_font_weight": "700",
+              "background_background": "classic",
+              "background_color": "#2563eb",
+              "border_radius": {
+                "size": "50",
+                "unit": "%"
+              },
+              "padding": {
+                "top": "12",
+                "bottom": "12",
+                "left": "12",
+                "right": "12",
+                "unit": "px"
+              },
+              "width": {
+                "size": "48",
+                "unit": "px"
+              },
+              "align": "center"
             }
           },
-          "elements": [
-            {
-              "id": "plan-1-num",
-              "type": "heading",
-              "settings": {
-                "title": "1",
-                "header_size": "h1",
-                "text_color": "#ffffff",
-                "typography_typography": "custom",
-                "typography_font_family": "Playfair Display",
-                "typography_font_size": {
-                  "size": "20",
-                  "unit": "px"
-                },
-                "typography_font_weight": "700",
-                "background_background": "classic",
-                "background_color": "#2563eb",
-                "border_radius": {
-                  "size": "50",
-                  "unit": "%"
-                },
-                "padding": {
-                  "top": "12",
-                  "bottom": "12",
-                  "left": "12",
-                  "right": "12",
-                  "unit": "px"
-                },
-                "width": {
-                  "size": "48",
-                  "unit": "px"
-                },
-                "align": "center"
-              }
-            },
-            {
-              "id": "plan-1-title",
-              "type": "heading",
-              "settings": {
-                "title": "Say it out loud.",
-                "header_size": "h3",
-                "text_color": "#ffffff",
-                "typography_typography": "custom",
-                "typography_font_family": "Playfair Display",
-                "typography_font_size": {
-                  "size": "24",
-                  "unit": "px"
-                },
-                "typography_font_weight": "600"
-              }
-            },
-            {
-              "id": "plan-1-body",
-              "type": "text",
-              "settings": {
-                "editor": "<p>Admit how you really feel about the thing you built \u2014 to people who have felt it too. This is the hardest step, and the one you can't do alone.</p>",
-                "text_color": "rgba(255,255,255,0.7)"
-              }
+          {
+            "id": "plan-1-title",
+            "type": "heading",
+            "settings": {
+              "title": "Say it out loud.",
+              "header_size": "h3",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "24",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
             }
-          ]
+          },
+          {
+            "id": "plan-1-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p>Admit how you really feel about the thing you built \u2014 to people who have felt it too. This is the hardest step, and the one you can't do alone.</p>",
+              "text_color": "rgba(255,255,255,0.7)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "plan-step-2",
+        "type": "column",
+        "settings": {
+          "_column_size": "33",
+          "_inline_size": "33.33",
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.04)",
+          "border_border": "solid",
+          "border_width": {
+            "size": "1",
+            "unit": "px"
+          },
+          "border_color": "rgba(255,255,255,0.06)",
+          "border_radius": {
+            "size": "12",
+            "unit": "px"
+          },
+          "padding": {
+            "top": "32",
+            "bottom": "32",
+            "left": "32",
+            "right": "32",
+            "unit": "px"
+          }
         },
-        {
-          "id": "plan-step-2",
-          "type": "column",
-          "settings": {
-            "_column_size": "33",
-            "_inline_size": "33.33",
-            "background_background": "classic",
-            "background_color": "rgba(255,255,255,0.04)",
-            "border_border": "solid",
-            "border_width": {
-              "size": "1",
-              "unit": "px"
-            },
-            "border_color": "rgba(255,255,255,0.06)",
-            "border_radius": {
-              "size": "12",
-              "unit": "px"
-            },
-            "padding": {
-              "top": "32",
-              "bottom": "32",
-              "left": "32",
-              "right": "32",
-              "unit": "px"
+        "elements": [
+          {
+            "id": "plan-2-num",
+            "type": "heading",
+            "settings": {
+              "title": "2",
+              "header_size": "h1",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "20",
+                "unit": "px"
+              },
+              "typography_font_weight": "700",
+              "background_background": "classic",
+              "background_color": "#2563eb",
+              "border_radius": {
+                "size": "50",
+                "unit": "%"
+              },
+              "padding": {
+                "top": "12",
+                "bottom": "12",
+                "left": "12",
+                "right": "12",
+                "unit": "px"
+              },
+              "width": {
+                "size": "48",
+                "unit": "px"
+              },
+              "align": "center"
             }
           },
-          "elements": [
-            {
-              "id": "plan-2-num",
-              "type": "heading",
-              "settings": {
-                "title": "2",
-                "header_size": "h1",
-                "text_color": "#ffffff",
-                "typography_typography": "custom",
-                "typography_font_family": "Playfair Display",
-                "typography_font_size": {
-                  "size": "20",
-                  "unit": "px"
-                },
-                "typography_font_weight": "700",
-                "background_background": "classic",
-                "background_color": "#2563eb",
-                "border_radius": {
-                  "size": "50",
-                  "unit": "%"
-                },
-                "padding": {
-                  "top": "12",
-                  "bottom": "12",
-                  "left": "12",
-                  "right": "12",
-                  "unit": "px"
-                },
-                "width": {
-                  "size": "48",
-                  "unit": "px"
-                },
-                "align": "center"
-              }
-            },
-            {
-              "id": "plan-2-title",
-              "type": "heading",
-              "settings": {
-                "title": "Picture what replaces it.",
-                "header_size": "h3",
-                "text_color": "#ffffff",
-                "typography_typography": "custom",
-                "typography_font_family": "Playfair Display",
-                "typography_font_size": {
-                  "size": "24",
-                  "unit": "px"
-                },
-                "typography_font_weight": "600"
-              }
-            },
-            {
-              "id": "plan-2-body",
-              "type": "text",
-              "settings": {
-                "editor": "<p>Get concrete about the life you want next. What does it need to earn? Do you want the practice rebuilt around that life \u2014 or do you want to walk away?</p>",
-                "text_color": "rgba(255,255,255,0.7)"
-              }
+          {
+            "id": "plan-2-title",
+            "type": "heading",
+            "settings": {
+              "title": "Picture what replaces it.",
+              "header_size": "h3",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "24",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
             }
-          ]
+          },
+          {
+            "id": "plan-2-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p>Get concrete about the life you want next. What does it need to earn? Do you want the practice rebuilt around that life \u2014 or do you want to walk away?</p>",
+              "text_color": "rgba(255,255,255,0.7)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "plan-step-3",
+        "type": "column",
+        "settings": {
+          "_column_size": "33",
+          "_inline_size": "33.33",
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.04)",
+          "border_border": "solid",
+          "border_width": {
+            "size": "1",
+            "unit": "px"
+          },
+          "border_color": "rgba(255,255,255,0.06)",
+          "border_radius": {
+            "size": "12",
+            "unit": "px"
+          },
+          "padding": {
+            "top": "32",
+            "bottom": "32",
+            "left": "32",
+            "right": "32",
+            "unit": "px"
+          }
         },
-        {
-          "id": "plan-step-3",
-          "type": "column",
-          "settings": {
-            "_column_size": "33",
-            "_inline_size": "33.33",
-            "background_background": "classic",
-            "background_color": "rgba(255,255,255,0.04)",
-            "border_border": "solid",
-            "border_width": {
-              "size": "1",
-              "unit": "px"
-            },
-            "border_color": "rgba(255,255,255,0.06)",
-            "border_radius": {
-              "size": "12",
-              "unit": "px"
-            },
-            "padding": {
-              "top": "32",
-              "bottom": "32",
-              "left": "32",
-              "right": "32",
-              "unit": "px"
+        "elements": [
+          {
+            "id": "plan-3-num",
+            "type": "heading",
+            "settings": {
+              "title": "3",
+              "header_size": "h1",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "20",
+                "unit": "px"
+              },
+              "typography_font_weight": "700",
+              "background_background": "classic",
+              "background_color": "#2563eb",
+              "border_radius": {
+                "size": "50",
+                "unit": "%"
+              },
+              "padding": {
+                "top": "12",
+                "bottom": "12",
+                "left": "12",
+                "right": "12",
+                "unit": "px"
+              },
+              "width": {
+                "size": "48",
+                "unit": "px"
+              },
+              "align": "center"
             }
           },
-          "elements": [
-            {
-              "id": "plan-3-num",
-              "type": "heading",
-              "settings": {
-                "title": "3",
-                "header_size": "h1",
-                "text_color": "#ffffff",
-                "typography_typography": "custom",
-                "typography_font_family": "Playfair Display",
-                "typography_font_size": {
-                  "size": "20",
-                  "unit": "px"
-                },
-                "typography_font_weight": "700",
-                "background_background": "classic",
-                "background_color": "#2563eb",
-                "border_radius": {
-                  "size": "50",
-                  "unit": "%"
-                },
-                "padding": {
-                  "top": "12",
-                  "bottom": "12",
-                  "left": "12",
-                  "right": "12",
-                  "unit": "px"
-                },
-                "width": {
-                  "size": "48",
-                  "unit": "px"
-                },
-                "align": "center"
-              }
-            },
-            {
-              "id": "plan-3-title",
-              "type": "heading",
-              "settings": {
-                "title": "Wake up wanting the day.",
-                "header_size": "h3",
-                "text_color": "#ffffff",
-                "typography_typography": "custom",
-                "typography_font_family": "Playfair Display",
-                "typography_font_size": {
-                  "size": "24",
-                  "unit": "px"
-                },
-                "typography_font_weight": "600"
-              }
-            },
-            {
-              "id": "plan-3-body",
-              "type": "text",
-              "settings": {
-                "editor": "<p>Every change we help you make points at that one outcome. Not a retirement number. Not a valuation multiple. A day you actually want to show up for.</p>",
-                "text_color": "rgba(255,255,255,0.7)"
-              }
+          {
+            "id": "plan-3-title",
+            "type": "heading",
+            "settings": {
+              "title": "Wake up wanting the day.",
+              "header_size": "h3",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "24",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
             }
-          ]
-        }
-      ]
-    }
-  ]
-}
+          },
+          {
+            "id": "plan-3-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p>Every change we help you make points at that one outcome. Not a retirement number. Not a valuation multiple. A day you actually want to show up for.</p>",
+              "text_color": "rgba(255,255,255,0.7)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,73 +1,69 @@
-{
-  "title": "Recognition Section",
-  "type": "section",
-  "content": [
-    {
-      "type": "section",
-      "id": "recognition-section",
-      "settings": {
-        "background_background": "classic",
-        "background_color": "#f5f9fd",
-        "padding": {
-          "top": "96",
-          "bottom": "96",
-          "left": "24",
-          "right": "24",
-          "unit": "px"
-        },
-        "content_width": "boxed",
-        "content_max_width": "720"
+[
+  {
+    "type": "section",
+    "id": "recognition-section",
+    "settings": {
+      "background_background": "classic",
+      "background_color": "#f5f9fd",
+      "padding": {
+        "top": "96",
+        "bottom": "96",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
       },
-      "elements": [
-        {
-          "id": "recognition-column",
-          "type": "column",
-          "settings": {
-            "_column_size": "100",
-            "_inline_size": "100"
-          },
-          "elements": [
-            {
-              "id": "recognition-headline",
-              "type": "heading",
-              "settings": {
-                "title": "A practice you built to fund your life shouldn't be the thing keeping you from living it.",
-                "header_size": "h2",
-                "align": "center",
-                "text_color": "#0b2a4a",
-                "typography_typography": "custom",
-                "typography_font_family": "Playfair Display",
-                "typography_font_size": {
-                  "size": "40",
-                  "unit": "px"
-                },
-                "typography_font_weight": "600",
-                "typography_line_height": {
-                  "size": "1.2",
-                  "unit": "em"
-                }
-              }
-            },
-            {
-              "id": "recognition-body",
-              "type": "text",
-              "settings": {
-                "editor": "<p>If you're a CPA or financial advisor 25 years into a successful practice, there's a good chance this sounds familiar: The phone rings all day. The practice can't run a week without you. You can't slow down without the income slowing too. And the work? You used to love it. Now you're not sure you even like it. But complaining about a successful practice sounds ungrateful, so you keep quiet and keep going.</p>",
-                "text_color": "#5b6b84",
-                "typography_typography": "custom",
-                "typography_font_size": {
-                  "size": "18",
-                  "unit": "px"
-                },
-                "typography_line_height": {
-                  "size": "1.8",
-                  "unit": "em"
-                }
+      "content_width": "boxed",
+      "content_max_width": "720"
+    },
+    "elements": [
+      {
+        "id": "recognition-column",
+        "type": "column",
+        "settings": {
+          "_column_size": "100",
+          "_inline_size": "100"
+        },
+        "elements": [
+          {
+            "id": "recognition-headline",
+            "type": "heading",
+            "settings": {
+              "title": "A practice you built to fund your life shouldn't be the thing keeping you from living it.",
+              "header_size": "h2",
+              "align": "center",
+              "text_color": "#0b2a4a",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "40",
+                "unit": "px"
+              },
+              "typography_font_weight": "600",
+              "typography_line_height": {
+                "size": "1.2",
+                "unit": "em"
               }
             }
-          ]
-        }
-      ]
-    }
-  ]
-}
+          },
+          {
+            "id": "recognition-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p>If you're a CPA or financial advisor 25 years into a successful practice, there's a good chance this sounds familiar: The phone rings all day. The practice can't run a week without you. You can't slow down without the income slowing too. And the work? You used to love it. Now you're not sure you even like it. But complaining about a successful practice sounds ungrateful, so you keep quiet and keep going.</p>",
+              "text_color": "#5b6b84",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "size": "18",
+                "unit": "px"
+              },
+              "typography_line_height": {
+                "size": "1.8",
+                "unit": "em"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
