@@ -42,7 +42,26 @@
             }
           }
         ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "empathy-stories",
+    "settings": {
+      "background_background": "classic",
+      "background_color": "#e8f1fa",
+      "padding": {
+        "top": "0",
+        "bottom": "0",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
       },
+      "content_width": "boxed",
+      "content_max_width": "1140"
+    },
+    "elements": [
       {
         "id": "empathy-story-1",
         "type": "column",
@@ -172,7 +191,26 @@
             }
           }
         ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "empathy-connecting-section",
+    "settings": {
+      "background_background": "classic",
+      "background_color": "#e8f1fa",
+      "padding": {
+        "top": "48",
+        "bottom": "96",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
       },
+      "content_width": "boxed",
+      "content_max_width": "720"
+    },
+    "elements": [
       {
         "id": "empathy-connecting-col",
         "type": "column",

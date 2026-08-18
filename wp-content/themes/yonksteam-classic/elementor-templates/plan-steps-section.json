@@ -59,7 +59,31 @@
             }
           }
         ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "plan-steps-list",
+    "settings": {
+      "background_background": "gradient",
+      "background_color": "#0b2a4a",
+      "background_color_stop": "0",
+      "background_gradient_type": "linear",
+      "background_gradient_angle": "165",
+      "background_gradient_color_b": "#123a63",
+      "background_gradient_color_b_stop": "100",
+      "padding": {
+        "top": "0",
+        "bottom": "96",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
       },
+      "content_width": "boxed",
+      "content_max_width": "1140"
+    },
+    "elements": [
       {
         "id": "plan-step-1",
         "type": "column",
