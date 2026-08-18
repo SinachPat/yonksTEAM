@@ -256,9 +256,67 @@
                   "type": "column",
                   "settings": {
                     "_column_size": "100",
-                    "_inline_size": "100"
+                    "_inline_size": "100",
+                    "background_background": "classic",
+                    "background_color": "#ffffff",
+                    "border_border": "solid",
+                    "border_width": {
+                      "size": "2",
+                      "unit": "px"
+                    },
+                    "border_color": "#2563eb",
+                    "border_radius": {
+                      "size": "12",
+                      "unit": "px"
+                    },
+                    "padding": {
+                      "top": "48",
+                      "bottom": "48",
+                      "left": "48",
+                      "right": "48",
+                      "unit": "px"
+                    },
+                    "content_position": "center"
                   },
                   "elements": [
+                    {
+                      "id": "ic-pricing-badge",
+                      "type": "heading",
+                      "settings": {
+                        "title": "Membership",
+                        "header_size": "h6",
+                        "align": "center",
+                        "text_color": "#ffffff",
+                        "background_background": "classic",
+                        "background_color": "#2563eb",
+                        "border_radius": {
+                          "size": "100",
+                          "unit": "px"
+                        },
+                        "padding": {
+                          "top": "6",
+                          "bottom": "6",
+                          "left": "16",
+                          "right": "16",
+                          "unit": "px"
+                        },
+                        "typography_typography": "custom",
+                        "typography_font_size": {
+                          "size": "12",
+                          "unit": "px"
+                        },
+                        "typography_font_weight": "600",
+                        "typography_text_transform": "uppercase",
+                        "typography_letter_spacing": {
+                          "size": "1",
+                          "unit": "px"
+                        },
+                        "width": {
+                          "size": "auto",
+                          "unit": "%"
+                        }
+                      }
+                    },
                     {
                       "id": "ic-pricing-title",
                       "type": "heading",

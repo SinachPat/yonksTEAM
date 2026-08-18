@@ -54,22 +54,24 @@
                   "type": "column",
                   "settings": {
                     "_column_size": "50",
-                    "_inline_size": "50"
+                    "_inline_size": "50",
+                    "background_background": "classic",
+                    "background_color": "#f0faf0",
+                    "border_border": "solid",
+                    "border_width": {
+                      "size": "1",
+                      "unit": "px"
+                    },
+                    "border_color": "rgba(76,175,80,0.15)",
+                    "padding": {
+                      "top": "40",
+                      "bottom": "40",
+                      "left": "40",
+                      "right": "40",
+                      "unit": "px"
+                    }
                   },
                   "elements": [
-                    {
-                      "id": "split-success-icon",
-                      "type": "text",
-                      "settings": {
-                        "editor": "<p>\u2713</p>",
-                        "text_color": "#4caf50",
-                        "typography_typography": "custom",
-                        "typography_font_size": {
-                          "size": "48",
-                          "unit": "px"
-                        }
-                      }
-                    },
                     {
                       "id": "split-success-label",
                       "type": "heading",
@@ -101,22 +103,24 @@
                   "type": "column",
                   "settings": {
                     "_column_size": "50",
-                    "_inline_size": "50"
+                    "_inline_size": "50",
+                    "background_background": "classic",
+                    "background_color": "#fdf0f0",
+                    "border_border": "solid",
+                    "border_width": {
+                      "size": "1",
+                      "unit": "px"
+                    },
+                    "border_color": "rgba(229,57,53,0.12)",
+                    "padding": {
+                      "top": "40",
+                      "bottom": "40",
+                      "left": "40",
+                      "right": "40",
+                      "unit": "px"
+                    }
                   },
                   "elements": [
-                    {
-                      "id": "split-failure-icon",
-                      "type": "text",
-                      "settings": {
-                        "editor": "<p>\u2717</p>",
-                        "text_color": "#e53935",
-                        "typography_typography": "custom",
-                        "typography_font_size": {
-                          "size": "48",
-                          "unit": "px"
-                        }
-                      }
-                    },
                     {
                       "id": "split-failure-label",
                       "type": "heading",

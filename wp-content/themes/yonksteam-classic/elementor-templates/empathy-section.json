@@ -57,7 +57,26 @@
                   "type": "column",
                   "settings": {
                     "_column_size": "50",
-                    "_inline_size": "50"
+                    "_inline_size": "50",
+                    "background_background": "classic",
+                    "background_color": "#ffffff",
+                    "border_border": "solid",
+                    "border_width": {
+                      "size": "1",
+                      "unit": "px"
+                    },
+                    "border_color": "#e8f1fa",
+                    "border_radius": {
+                      "size": "12",
+                      "unit": "px"
+                    },
+                    "padding": {
+                      "top": "40",
+                      "bottom": "40",
+                      "left": "40",
+                      "right": "40",
+                      "unit": "px"
+                    }
                   },
                   "elements": [
                     {
@@ -103,7 +122,26 @@
                   "type": "column",
                   "settings": {
                     "_column_size": "50",
-                    "_inline_size": "50"
+                    "_inline_size": "50",
+                    "background_background": "classic",
+                    "background_color": "#ffffff",
+                    "border_border": "solid",
+                    "border_width": {
+                      "size": "1",
+                      "unit": "px"
+                    },
+                    "border_color": "#e8f1fa",
+                    "border_radius": {
+                      "size": "12",
+                      "unit": "px"
+                    },
+                    "padding": {
+                      "top": "40",
+                      "bottom": "40",
+                      "left": "40",
+                      "right": "40",
+                      "unit": "px"
+                    }
                   },
                   "elements": [
                     {

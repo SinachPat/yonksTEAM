@@ -118,30 +118,95 @@
               }
             },
             {
-              "id": "hero-buttons",
-              "type": "button",
+              "id": "hero-buttons-row",
+              "type": "inner-section",
               "settings": {
-                "button_size": "lg",
-                "button_text": "Start the Conversation \u2192",
-                "button_link": {
-                  "url": "/contact"
+                "structure": "custom",
+                "content_width": "full"
+              },
+              "elements": [
+                {
+                  "id": "hero-btn-primary-col",
+                  "type": "column",
+                  "settings": {
+                    "_column_size": "50",
+                    "_inline_size": "auto",
+                    "_inline_size_tablet": "auto"
+                  },
+                  "elements": [
+                    {
+                      "id": "hero-btn-primary",
+                      "type": "button",
+                      "settings": {
+                        "button_size": "lg",
+                        "button_text": "Start the Conversation \u2192",
+                        "button_link": {
+                          "url": "/contact"
+                        },
+                        "button_background_color": "#2563eb",
+                        "button_text_color": "#ffffff",
+                        "border_radius": {
+                          "size": "6",
+                          "unit": "px"
+                        },
+                        "button_padding": {
+                          "top": "14",
+                          "bottom": "14",
+                          "left": "32",
+                          "right": "32",
+                          "unit": "px"
+                        },
+                        "hover_background_color": "#1d4ed8",
+                        "hover_animation": "grow"
+                      }
+                    }
+                  ]
                 },
-                "button_background_color": "#2563eb",
-                "button_text_color": "#ffffff",
-                "border_radius": {
-                  "size": "6",
-                  "unit": "px"
-                },
-                "button_padding": {
-                  "top": "14",
-                  "bottom": "14",
-                  "left": "32",
-                  "right": "32",
-                  "unit": "px"
-                },
-                "hover_animation": "grow",
-                "hover_background_color": "#1d4ed8"
-              }
+                {
+                  "id": "hero-btn-secondary-col",
+                  "type": "column",
+                  "settings": {
+                    "_column_size": "50",
+                    "_inline_size": "auto",
+                    "_inline_size_tablet": "auto"
+                  },
+                  "elements": [
+                    {
+                      "id": "hero-btn-secondary",
+                      "type": "button",
+                      "settings": {
+                        "button_size": "lg",
+                        "button_text": "Read Our Story \u2192",
+                        "button_link": {
+                          "url": "/about"
+                        },
+                        "button_background_color": "transparent",
+                        "button_text_color": "#0b2a4a",
+                        "border_radius": {
+                          "size": "6",
+                          "unit": "px"
+                        },
+                        "border_border": "solid",
+                        "border_width": {
+                          "size": "2",
+                          "unit": "px"
+                        },
+                        "border_color": "#0b2a4a",
+                        "button_padding": {
+                          "top": "14",
+                          "bottom": "14",
+                          "left": "32",
+                          "right": "32",
+                          "unit": "px"
+                        },
+                        "hover_background_color": "#0b2a4a",
+                        "hover_text_color": "#ffffff",
+                        "hover_animation": "grow"
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
