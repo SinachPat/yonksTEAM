@@ -1,0 +1,46 @@
+{
+  "type": "section",
+  "id": "empathy-section",
+  "settings": {
+    "background_background": "classic",
+    "background_color": "#e8f1fa",
+    "padding": {
+      "top": "96",
+      "bottom": "96",
+      "left": "24",
+      "right": "24",
+      "unit": "px"
+    },
+    "content_width": "boxed",
+    "content_max_width": "1140"
+  },
+  "elements": [
+    {
+      "id": "empathy-headline-col",
+      "type": "column",
+      "settings": {
+        "_column_size": "100",
+        "_inline_size": "100"
+      },
+      "elements": [
+        {
+          "id": "empathy-headline",
+          "type": "heading",
+          "settings": {
+            "title": "We know exactly what that feels like.",
+            "header_size": "h2",
+            "align": "center",
+            "text_color": "#0b2a4a",
+            "typography_typography": "custom",
+            "typography_font_family": "Playfair Display",
+            "typography_font_size": {
+              "size": "40",
+              "unit": "px"
+            },
+            "typography_font_weight": "600"
+          }
+        }
+      ]
+    }
+  ]
+}

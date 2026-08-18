@@ -1,0 +1,43 @@
+{
+  "type": "section",
+  "id": "empathy-connecting-section",
+  "settings": {
+    "background_background": "classic",
+    "background_color": "#e8f1fa",
+    "padding": {
+      "top": "48",
+      "bottom": "96",
+      "left": "24",
+      "right": "24",
+      "unit": "px"
+    },
+    "content_width": "boxed",
+    "content_max_width": "720"
+  },
+  "elements": [
+    {
+      "id": "empathy-connecting-col",
+      "type": "column",
+      "settings": {
+        "_column_size": "100",
+        "_inline_size": "100"
+      },
+      "elements": [
+        {
+          "id": "empathy-connecting",
+          "type": "text",
+          "settings": {
+            "editor": "<p style='text-align: center; font-style: italic;'>We know what it's like to have everything and hate your life anyway. We also know what it's like to get out.</p>",
+            "text_color": "#2563eb",
+            "typography_typography": "custom",
+            "typography_font_family": "Playfair Display",
+            "typography_font_size": {
+              "size": "20",
+              "unit": "px"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

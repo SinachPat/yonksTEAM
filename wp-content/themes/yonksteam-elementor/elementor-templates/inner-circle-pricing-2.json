@@ -1,0 +1,111 @@
+{
+  "type": "section",
+  "id": "ic-features-1",
+  "settings": {
+    "background_background": "classic",
+    "background_color": "#f5f9fd",
+    "padding": {
+      "top": "0",
+      "bottom": "0",
+      "left": "24",
+      "right": "24",
+      "unit": "px"
+    },
+    "content_width": "boxed",
+    "content_max_width": "1140"
+  },
+  "elements": [
+    {
+      "id": "ic-f1",
+      "type": "column",
+      "settings": {
+        "_column_size": "50",
+        "_inline_size": "50"
+      },
+      "elements": [
+        {
+          "id": "ic-f1-icon",
+          "type": "text",
+          "settings": {
+            "editor": "<p>\ud83e\udd16</p>",
+            "typography_typography": "custom",
+            "typography_font_size": {
+              "size": "24",
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "ic-f1-title",
+          "type": "heading",
+          "settings": {
+            "title": "Agents, Not Chatbots",
+            "header_size": "h3",
+            "text_color": "#0b2a4a",
+            "typography_typography": "custom",
+            "typography_font_family": "Playfair Display",
+            "typography_font_size": {
+              "size": "20",
+              "unit": "px"
+            },
+            "typography_font_weight": "600"
+          }
+        },
+        {
+          "id": "ic-f1-body",
+          "type": "text",
+          "settings": {
+            "editor": "<p>Real agentic workflows that act \u2014 not just prompts that chat. Built, tested, and deployed with guardrails.</p>",
+            "text_color": "#5b6b84"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ic-f2",
+      "type": "column",
+      "settings": {
+        "_column_size": "50",
+        "_inline_size": "50"
+      },
+      "elements": [
+        {
+          "id": "ic-f2-icon",
+          "type": "text",
+          "settings": {
+            "editor": "<p>\ud83d\udee1\ufe0f</p>",
+            "typography_typography": "custom",
+            "typography_font_size": {
+              "size": "24",
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "ic-f2-title",
+          "type": "heading",
+          "settings": {
+            "title": "Risk First",
+            "header_size": "h3",
+            "text_color": "#0b2a4a",
+            "typography_typography": "custom",
+            "typography_font_family": "Playfair Display",
+            "typography_font_size": {
+              "size": "20",
+              "unit": "px"
+            },
+            "typography_font_weight": "600"
+          }
+        },
+        {
+          "id": "ic-f2-body",
+          "type": "text",
+          "settings": {
+            "editor": "<p>Before any agent touches real work: what can go wrong, what's the blast radius, and how do you verify? Always.</p>",
+            "text_color": "#5b6b84"
+          }
+        }
+      ]
+    }
+  ]
+}

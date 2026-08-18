@@ -1,0 +1,208 @@
+{
+  "type": "section",
+  "id": "authority-cards",
+  "settings": {
+    "background_background": "classic",
+    "background_color": "#f5f9fd",
+    "padding": {
+      "top": "0",
+      "bottom": "96",
+      "left": "24",
+      "right": "24",
+      "unit": "px"
+    },
+    "content_width": "boxed",
+    "content_max_width": "1140"
+  },
+  "elements": [
+    {
+      "id": "auth-card-1",
+      "type": "column",
+      "settings": {
+        "_column_size": "33",
+        "_inline_size": "33.33",
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "border_border": "solid",
+        "border_width": {
+          "top": "3",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "unit": "px"
+        },
+        "border_color": "#e8f1fa",
+        "border_radius": {
+          "size": "12",
+          "unit": "px"
+        },
+        "padding": {
+          "top": "40",
+          "bottom": "40",
+          "left": "40",
+          "right": "40",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "auth-1-icon",
+          "type": "text",
+          "settings": {
+            "editor": "<p>\ud83c\udf0d</p>"
+          }
+        },
+        {
+          "id": "auth-1-title",
+          "type": "heading",
+          "settings": {
+            "title": "Eight years of freedom",
+            "header_size": "h3",
+            "text_color": "#0b2a4a",
+            "typography_typography": "custom",
+            "typography_font_family": "Playfair Display",
+            "typography_font_size": {
+              "size": "22",
+              "unit": "px"
+            },
+            "typography_font_weight": "600"
+          }
+        },
+        {
+          "id": "auth-1-body",
+          "type": "text",
+          "settings": {
+            "editor": "<p>We traded careers for income-producing assets. We've been full-time travelers ever since, raising a five-year-old who thinks it's normal to ask which city she'll live in tomorrow.</p>",
+            "text_color": "#5b6b84"
+          }
+        }
+      ]
+    },
+    {
+      "id": "auth-card-2",
+      "type": "column",
+      "settings": {
+        "_column_size": "33",
+        "_inline_size": "33.33",
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "border_border": "solid",
+        "border_width": {
+          "top": "3",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "unit": "px"
+        },
+        "border_color": "#e8f1fa",
+        "border_radius": {
+          "size": "12",
+          "unit": "px"
+        },
+        "padding": {
+          "top": "40",
+          "bottom": "40",
+          "left": "40",
+          "right": "40",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "auth-2-icon",
+          "type": "text",
+          "settings": {
+            "editor": "<p>\ud83c\udfdb\ufe0f</p>"
+          }
+        },
+        {
+          "id": "auth-2-title",
+          "type": "heading",
+          "settings": {
+            "title": "$3 billion \u2014 institutionally",
+            "header_size": "h3",
+            "text_color": "#0b2a4a",
+            "typography_typography": "custom",
+            "typography_font_family": "Playfair Display",
+            "typography_font_size": {
+              "size": "22",
+              "unit": "px"
+            },
+            "typography_font_weight": "600"
+          }
+        },
+        {
+          "id": "auth-2-body",
+          "type": "text",
+          "settings": {
+            "editor": "<p>Before that season, Tyler raised $3 billion institutionally \u2014 her clients were financial advisors and stockbrokers, never retail investors. Today she serves as a FINRA arbitrator.</p>",
+            "text_color": "#5b6b84"
+          }
+        }
+      ]
+    },
+    {
+      "id": "auth-card-3",
+      "type": "column",
+      "settings": {
+        "_column_size": "33",
+        "_inline_size": "33.33",
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "border_border": "solid",
+        "border_width": {
+          "top": "3",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "unit": "px"
+        },
+        "border_color": "#e8f1fa",
+        "border_radius": {
+          "size": "12",
+          "unit": "px"
+        },
+        "padding": {
+          "top": "40",
+          "bottom": "40",
+          "left": "40",
+          "right": "40",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "auth-3-icon",
+          "type": "text",
+          "settings": {
+            "editor": "<p>\ud83c\udf93</p>"
+          }
+        },
+        {
+          "id": "auth-3-title",
+          "type": "heading",
+          "settings": {
+            "title": "Certified Exit Planning Advisor",
+            "header_size": "h3",
+            "text_color": "#0b2a4a",
+            "typography_typography": "custom",
+            "typography_font_family": "Playfair Display",
+            "typography_font_size": {
+              "size": "22",
+              "unit": "px"
+            },
+            "typography_font_weight": "600"
+          }
+        },
+        {
+          "id": "auth-3-body",
+          "type": "text",
+          "settings": {
+            "editor": "<p>Jason is training as a Certified Exit Planning Advisor (CEPA). We've spent the years since our own escape building ownership models designed to buy other people the same freedom.</p>",
+            "text_color": "#5b6b84"
+          }
+        }
+      ]
+    }
+  ]
+}

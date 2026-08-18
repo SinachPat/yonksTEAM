@@ -1,0 +1,139 @@
+[
+  {
+    "type": "section",
+    "id": "cta-section",
+    "settings": {
+      "background_background": "gradient",
+      "background_color": "#0b2a4a",
+      "background_color_stop": "0",
+      "background_gradient_type": "linear",
+      "background_gradient_angle": "165",
+      "background_gradient_color_b": "#0e2f52",
+      "background_gradient_color_b_stop": "100",
+      "padding": {
+        "top": "96",
+        "bottom": "96",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      }
+    },
+    "elements": [
+      {
+        "id": "cta-col",
+        "type": "column",
+        "settings": {
+          "_column_size": "100",
+          "_inline_size": "100"
+        },
+        "elements": [
+          {
+            "id": "cta-headline",
+            "type": "heading",
+            "settings": {
+              "title": "Ready to want the day again?",
+              "header_size": "h2",
+              "align": "center",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "48",
+                "unit": "px"
+              },
+              "typography_font_weight": "700"
+            }
+          },
+          {
+            "id": "cta-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p style='text-align: center;'>One conversation could change everything. No pressure. No pitch. Just honesty from people who have been there.</p>",
+              "text_color": "rgba(255,255,255,0.7)",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "size": "18",
+                "unit": "px"
+              }
+            }
+          },
+          {
+            "id": "cta-btn-primary",
+            "type": "button",
+            "settings": {
+              "button_size": "lg",
+              "button_text": "Start the Conversation \u2192",
+              "button_link": {
+                "url": "/contact"
+              },
+              "button_background_color": "#ffffff",
+              "button_text_color": "#0b2a4a",
+              "border_radius": {
+                "size": "6",
+                "unit": "px"
+              },
+              "button_padding": {
+                "top": "14",
+                "bottom": "14",
+                "left": "32",
+                "right": "32",
+                "unit": "px"
+              },
+              "hover_background_color": "#ffffff",
+              "hover_text_color": "#0b2a4a",
+              "hover_animation": "grow"
+            }
+          },
+          {
+            "id": "cta-btn-secondary",
+            "type": "button",
+            "settings": {
+              "button_size": "lg",
+              "button_text": "Join the Newsletter \u2192",
+              "button_link": {
+                "url": "/newsletter"
+              },
+              "button_background_color": "transparent",
+              "button_text_color": "#ffffff",
+              "border_radius": {
+                "size": "6",
+                "unit": "px"
+              },
+              "border_border": "solid",
+              "border_width": {
+                "size": "2",
+                "unit": "px"
+              },
+              "border_color": "rgba(255,255,255,0.4)",
+              "button_padding": {
+                "top": "14",
+                "bottom": "14",
+                "left": "32",
+                "right": "32",
+                "unit": "px"
+              },
+              "hover_background_color": "rgba(255,255,255,0.15)",
+              "hover_text_color": "#ffffff",
+              "hover_border_color": "#ffffff",
+              "hover_animation": "grow"
+            }
+          },
+          {
+            "id": "cta-tagline",
+            "type": "text",
+            "settings": {
+              "editor": "<p style='text-align: center; font-style: italic;'>One list. From the two of us. About the next season.</p>",
+              "text_color": "rgba(255,255,255,0.3)",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "14",
+                "unit": "px"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

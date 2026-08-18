@@ -1,200 +1,198 @@
-[
-  {
-    "type": "section",
-    "id": "hero-section",
-    "settings": {
-      "background_background": "gradient",
-      "background_color": "#f5f9fd",
-      "background_color_stop": "0",
-      "background_gradient_type": "linear",
-      "background_gradient_angle": "165",
-      "background_gradient_color_b": "#e8f1fa",
-      "background_gradient_color_b_stop": "100",
-      "padding": {
-        "top": "100",
-        "bottom": "80",
-        "left": "24",
-        "right": "24",
-        "unit": "px"
-      },
-      "content_width": "boxed",
-      "content_max_width": "1140"
+{
+  "type": "section",
+  "id": "hero-section",
+  "settings": {
+    "background_background": "gradient",
+    "background_color": "#f5f9fd",
+    "background_color_stop": "0",
+    "background_gradient_type": "linear",
+    "background_gradient_angle": "165",
+    "background_gradient_color_b": "#e8f1fa",
+    "background_gradient_color_b_stop": "100",
+    "padding": {
+      "top": "100",
+      "bottom": "80",
+      "left": "24",
+      "right": "24",
+      "unit": "px"
     },
-    "elements": [
-      {
-        "id": "hero-left",
-        "type": "column",
-        "settings": {
-          "_column_size": "50",
-          "_inline_size": "50"
-        },
-        "elements": [
-          {
-            "id": "hero-eyebrow",
-            "type": "heading",
-            "settings": {
-              "title": "Jason & Tyler Younker",
-              "header_size": "h6",
-              "text_color": "#2563eb",
-              "typography_typography": "custom",
-              "typography_font_size": {
-                "size": "12",
-                "unit": "px"
-              },
-              "typography_text_transform": "uppercase",
-              "typography_letter_spacing": {
-                "size": "2",
-                "unit": "px"
-              },
-              "typography_font_weight": "600"
-            }
-          },
-          {
-            "id": "hero-headline",
-            "type": "heading",
-            "settings": {
-              "title": "You hate work you used to love.",
-              "header_size": "h1",
-              "text_color": "#0b2a4a",
-              "typography_typography": "custom",
-              "typography_font_family": "Playfair Display",
-              "typography_font_size": {
-                "size": "72",
-                "unit": "px"
-              },
-              "typography_font_weight": "700",
-              "typography_line_height": {
-                "size": "1.05",
-                "unit": "em"
-              },
-              "typography_letter_spacing": {
-                "size": "-0.5",
-                "unit": "px"
-              }
-            }
-          },
-          {
-            "id": "hero-subheadline",
-            "type": "heading",
-            "settings": {
-              "title": "You can say that here.",
-              "header_size": "h2",
-              "text_color": "#2563eb",
-              "typography_typography": "custom",
-              "typography_font_family": "Playfair Display",
-              "typography_font_style": "italic",
-              "typography_font_size": {
-                "size": "24",
-                "unit": "px"
-              },
-              "typography_font_weight": "400"
-            }
-          },
-          {
-            "id": "hero-body",
-            "type": "text",
-            "settings": {
-              "editor": "<p>You built a successful practice. It was supposed to fund your life \u2014 not be the thing that keeps you from living it. You're not ungrateful. You're trapped. And we know exactly how to get you out.</p>",
-              "text_color": "#5b6b84",
-              "typography_typography": "custom",
-              "typography_font_size": {
-                "size": "18",
-                "unit": "px"
-              },
-              "typography_line_height": {
-                "size": "1.8",
-                "unit": "em"
-              }
-            }
-          },
-          {
-            "id": "hero-btn-primary",
-            "type": "button",
-            "settings": {
-              "button_size": "lg",
-              "button_text": "Start the Conversation \u2192",
-              "button_link": {
-                "url": "/contact"
-              },
-              "button_background_color": "#2563eb",
-              "button_text_color": "#ffffff",
-              "border_radius": {
-                "size": "6",
-                "unit": "px"
-              },
-              "button_padding": {
-                "top": "14",
-                "bottom": "14",
-                "left": "32",
-                "right": "32",
-                "unit": "px"
-              },
-              "hover_background_color": "#1d4ed8",
-              "hover_animation": "grow"
-            }
-          },
-          {
-            "id": "hero-btn-secondary",
-            "type": "button",
-            "settings": {
-              "button_size": "lg",
-              "button_text": "Read Our Story \u2192",
-              "button_link": {
-                "url": "/about"
-              },
-              "button_background_color": "transparent",
-              "button_text_color": "#0b2a4a",
-              "border_radius": {
-                "size": "6",
-                "unit": "px"
-              },
-              "border_border": "solid",
-              "border_width": {
-                "size": "2",
-                "unit": "px"
-              },
-              "border_color": "#0b2a4a",
-              "button_padding": {
-                "top": "14",
-                "bottom": "14",
-                "left": "32",
-                "right": "32",
-                "unit": "px"
-              },
-              "hover_background_color": "#0b2a4a",
-              "hover_text_color": "#ffffff",
-              "hover_animation": "grow"
-            }
-          }
-        ]
+    "content_width": "boxed",
+    "content_max_width": "1140"
+  },
+  "elements": [
+    {
+      "id": "hero-left",
+      "type": "column",
+      "settings": {
+        "_column_size": "50",
+        "_inline_size": "50"
       },
-      {
-        "id": "hero-right",
-        "type": "column",
-        "settings": {
-          "_column_size": "50",
-          "_inline_size": "50"
+      "elements": [
+        {
+          "id": "hero-eyebrow",
+          "type": "heading",
+          "settings": {
+            "title": "Jason & Tyler Younker",
+            "header_size": "h6",
+            "text_color": "#2563eb",
+            "typography_typography": "custom",
+            "typography_font_size": {
+              "size": "12",
+              "unit": "px"
+            },
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+              "size": "2",
+              "unit": "px"
+            },
+            "typography_font_weight": "600"
+          }
         },
-        "elements": [
-          {
-            "id": "hero-image",
-            "type": "image",
-            "settings": {
-              "image": null,
-              "image_size": "full",
-              "border_radius": {
-                "size": "16",
-                "unit": "px"
-              },
-              "hover_animation": "grow",
-              "width": {
-                "size": "100",
-                "unit": "%"
-              }
+        {
+          "id": "hero-headline",
+          "type": "heading",
+          "settings": {
+            "title": "You hate work you used to love.",
+            "header_size": "h1",
+            "text_color": "#0b2a4a",
+            "typography_typography": "custom",
+            "typography_font_family": "Playfair Display",
+            "typography_font_size": {
+              "size": "72",
+              "unit": "px"
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+              "size": "1.05",
+              "unit": "em"
+            },
+            "typography_letter_spacing": {
+              "size": "-0.5",
+              "unit": "px"
             }
           }
-        ]
-      }
-    ]
-  }
-]
+        },
+        {
+          "id": "hero-subheadline",
+          "type": "heading",
+          "settings": {
+            "title": "You can say that here.",
+            "header_size": "h2",
+            "text_color": "#2563eb",
+            "typography_typography": "custom",
+            "typography_font_family": "Playfair Display",
+            "typography_font_style": "italic",
+            "typography_font_size": {
+              "size": "24",
+              "unit": "px"
+            },
+            "typography_font_weight": "400"
+          }
+        },
+        {
+          "id": "hero-body",
+          "type": "text",
+          "settings": {
+            "editor": "<p>You built a successful practice. It was supposed to fund your life \u2014 not be the thing that keeps you from living it. You're not ungrateful. You're trapped. And we know exactly how to get you out.</p>",
+            "text_color": "#5b6b84",
+            "typography_typography": "custom",
+            "typography_font_size": {
+              "size": "18",
+              "unit": "px"
+            },
+            "typography_line_height": {
+              "size": "1.8",
+              "unit": "em"
+            }
+          }
+        },
+        {
+          "id": "hero-btn-primary",
+          "type": "button",
+          "settings": {
+            "button_size": "lg",
+            "button_text": "Start the Conversation \u2192",
+            "button_link": {
+              "url": "/contact"
+            },
+            "button_background_color": "#2563eb",
+            "button_text_color": "#ffffff",
+            "border_radius": {
+              "size": "6",
+              "unit": "px"
+            },
+            "button_padding": {
+              "top": "14",
+              "bottom": "14",
+              "left": "32",
+              "right": "32",
+              "unit": "px"
+            },
+            "hover_background_color": "#1d4ed8",
+            "hover_animation": "grow"
+          }
+        },
+        {
+          "id": "hero-btn-secondary",
+          "type": "button",
+          "settings": {
+            "button_size": "lg",
+            "button_text": "Read Our Story \u2192",
+            "button_link": {
+              "url": "/about"
+            },
+            "button_background_color": "transparent",
+            "button_text_color": "#0b2a4a",
+            "border_radius": {
+              "size": "6",
+              "unit": "px"
+            },
+            "border_border": "solid",
+            "border_width": {
+              "size": "2",
+              "unit": "px"
+            },
+            "border_color": "#0b2a4a",
+            "button_padding": {
+              "top": "14",
+              "bottom": "14",
+              "left": "32",
+              "right": "32",
+              "unit": "px"
+            },
+            "hover_background_color": "#0b2a4a",
+            "hover_text_color": "#ffffff",
+            "hover_animation": "grow"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hero-right",
+      "type": "column",
+      "settings": {
+        "_column_size": "50",
+        "_inline_size": "50"
+      },
+      "elements": [
+        {
+          "id": "hero-image",
+          "type": "image",
+          "settings": {
+            "image": null,
+            "image_size": "full",
+            "border_radius": {
+              "size": "16",
+              "unit": "px"
+            },
+            "hover_animation": "grow",
+            "width": {
+              "size": "100",
+              "unit": "%"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

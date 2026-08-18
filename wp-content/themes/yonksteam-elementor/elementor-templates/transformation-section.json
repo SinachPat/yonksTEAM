@@ -1,94 +1,92 @@
-[
-  {
-    "type": "section",
-    "id": "transformation-section",
-    "settings": {
-      "background_background": "classic",
-      "background_color": "#e8f1fa",
-      "padding": {
-        "top": "96",
-        "bottom": "96",
-        "left": "24",
-        "right": "24",
-        "unit": "px"
-      }
-    },
-    "elements": [
-      {
-        "id": "trans-column",
-        "type": "column",
-        "settings": {
-          "_column_size": "100",
-          "_inline_size": "100"
-        },
-        "elements": [
-          {
-            "id": "trans-from",
-            "type": "text",
-            "settings": {
-              "editor": "<p style='text-align: center; text-decoration: line-through; font-style: italic;'>The perfect life on paper, and done inside.</p>",
-              "text_color": "#5b6b84",
-              "typography_typography": "custom",
-              "typography_font_family": "Playfair Display",
-              "typography_font_size": {
-                "size": "24",
-                "unit": "px"
-              }
-            }
-          },
-          {
-            "id": "trans-arrow",
-            "type": "text",
-            "settings": {
-              "editor": "<p style='text-align: center;'>\u2192</p>",
-              "text_color": "#2563eb",
-              "typography_typography": "custom",
-              "typography_font_size": {
-                "size": "32",
-                "unit": "px"
-              }
-            }
-          },
-          {
-            "id": "trans-to",
-            "type": "heading",
-            "settings": {
-              "title": "A life that feels as good as it looks.",
-              "header_size": "h2",
-              "align": "center",
-              "text_color": "#0b2a4a",
-              "typography_typography": "custom",
-              "typography_font_family": "Playfair Display",
-              "typography_font_size": {
-                "size": "56",
-                "unit": "px"
-              },
-              "typography_font_weight": "700",
-              "typography_line_height": {
-                "size": "1.1",
-                "unit": "em"
-              }
-            }
-          },
-          {
-            "id": "trans-body",
-            "type": "text",
-            "settings": {
-              "editor": "<p style='text-align: center;'>This is what we do. We help you cross that gap. Not with a framework. Not with a workbook. With a conversation, a plan, and a partner who's already been where you are.</p>",
-              "text_color": "#5b6b84",
-              "typography_typography": "custom",
-              "typography_font_size": {
-                "size": "18",
-                "unit": "px"
-              },
-              "typography_line_height": {
-                "size": "1.8",
-                "unit": "em"
-              }
+{
+  "type": "section",
+  "id": "transformation-section",
+  "settings": {
+    "background_background": "classic",
+    "background_color": "#e8f1fa",
+    "padding": {
+      "top": "96",
+      "bottom": "96",
+      "left": "24",
+      "right": "24",
+      "unit": "px"
+    }
+  },
+  "elements": [
+    {
+      "id": "trans-column",
+      "type": "column",
+      "settings": {
+        "_column_size": "100",
+        "_inline_size": "100"
+      },
+      "elements": [
+        {
+          "id": "trans-from",
+          "type": "text",
+          "settings": {
+            "editor": "<p style='text-align: center; text-decoration: line-through; font-style: italic;'>The perfect life on paper, and done inside.</p>",
+            "text_color": "#5b6b84",
+            "typography_typography": "custom",
+            "typography_font_family": "Playfair Display",
+            "typography_font_size": {
+              "size": "24",
+              "unit": "px"
             }
           }
-        ]
-      }
-    ]
-  }
-]
+        },
+        {
+          "id": "trans-arrow",
+          "type": "text",
+          "settings": {
+            "editor": "<p style='text-align: center;'>\u2192</p>",
+            "text_color": "#2563eb",
+            "typography_typography": "custom",
+            "typography_font_size": {
+              "size": "32",
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "trans-to",
+          "type": "heading",
+          "settings": {
+            "title": "A life that feels as good as it looks.",
+            "header_size": "h2",
+            "align": "center",
+            "text_color": "#0b2a4a",
+            "typography_typography": "custom",
+            "typography_font_family": "Playfair Display",
+            "typography_font_size": {
+              "size": "56",
+              "unit": "px"
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+              "size": "1.1",
+              "unit": "em"
+            }
+          }
+        },
+        {
+          "id": "trans-body",
+          "type": "text",
+          "settings": {
+            "editor": "<p style='text-align: center;'>This is what we do. We help you cross that gap. Not with a framework. Not with a workbook. With a conversation, a plan, and a partner who's already been where you are.</p>",
+            "text_color": "#5b6b84",
+            "typography_typography": "custom",
+            "typography_font_size": {
+              "size": "18",
+              "unit": "px"
+            },
+            "typography_line_height": {
+              "size": "1.8",
+              "unit": "em"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

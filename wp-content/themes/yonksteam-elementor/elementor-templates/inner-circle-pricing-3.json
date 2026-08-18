@@ -1,0 +1,111 @@
+{
+  "type": "section",
+  "id": "ic-features-2",
+  "settings": {
+    "background_background": "classic",
+    "background_color": "#f5f9fd",
+    "padding": {
+      "top": "0",
+      "bottom": "48",
+      "left": "24",
+      "right": "24",
+      "unit": "px"
+    },
+    "content_width": "boxed",
+    "content_max_width": "1140"
+  },
+  "elements": [
+    {
+      "id": "ic-f3",
+      "type": "column",
+      "settings": {
+        "_column_size": "50",
+        "_inline_size": "50"
+      },
+      "elements": [
+        {
+          "id": "ic-f3-icon",
+          "type": "text",
+          "settings": {
+            "editor": "<p>\ud83d\udd0d</p>",
+            "typography_typography": "custom",
+            "typography_font_size": {
+              "size": "24",
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "ic-f3-title",
+          "type": "heading",
+          "settings": {
+            "title": "Verifiable Outputs",
+            "header_size": "h3",
+            "text_color": "#0b2a4a",
+            "typography_typography": "custom",
+            "typography_font_family": "Playfair Display",
+            "typography_font_size": {
+              "size": "20",
+              "unit": "px"
+            },
+            "typography_font_weight": "600"
+          }
+        },
+        {
+          "id": "ic-f3-body",
+          "type": "text",
+          "settings": {
+            "editor": "<p>Agents that hallucinate quietly are worse than no agents. We mentor on checking, auditing, and validating every output.</p>",
+            "text_color": "#5b6b84"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ic-f4",
+      "type": "column",
+      "settings": {
+        "_column_size": "50",
+        "_inline_size": "50"
+      },
+      "elements": [
+        {
+          "id": "ic-f4-icon",
+          "type": "text",
+          "settings": {
+            "editor": "<p>\ud83d\udc65</p>",
+            "typography_typography": "custom",
+            "typography_font_size": {
+              "size": "24",
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "ic-f4-title",
+          "type": "heading",
+          "settings": {
+            "title": "Human in the Loop",
+            "header_size": "h3",
+            "text_color": "#0b2a4a",
+            "typography_typography": "custom",
+            "typography_font_family": "Playfair Display",
+            "typography_font_size": {
+              "size": "20",
+              "unit": "px"
+            },
+            "typography_font_weight": "600"
+          }
+        },
+        {
+          "id": "ic-f4-body",
+          "type": "text",
+          "settings": {
+            "editor": "<p>Automation that serves people, not replaces them. The circle debates the ethics, not just the tech.</p>",
+            "text_color": "#5b6b84"
+          }
+        }
+      ]
+    }
+  ]
+}
