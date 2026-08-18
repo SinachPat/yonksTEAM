@@ -1,21 +1,23 @@
 [
   {
     "type": "section",
-    "id": "aop-section",
+    "id": "ic-headline-section",
     "settings": {
       "background_background": "classic",
       "background_color": "#f5f9fd",
       "padding": {
         "top": "96",
-        "bottom": "96",
+        "bottom": "0",
         "left": "24",
         "right": "24",
         "unit": "px"
-      }
+      },
+      "content_width": "boxed",
+      "content_max_width": "720"
     },
     "elements": [
       {
-        "id": "aop-col",
+        "id": "ic-h-col",
         "type": "column",
         "settings": {
           "_column_size": "100",
@@ -23,10 +25,10 @@
         },
         "elements": [
           {
-            "id": "aop-headline",
+            "id": "ic-headline",
             "type": "heading",
             "settings": {
-              "title": "What's inside the Operator Playbook",
+              "title": "What you get in the circle",
               "header_size": "h2",
               "align": "center",
               "text_color": "#0b2a4a",
@@ -45,12 +47,12 @@
   },
   {
     "type": "section",
-    "id": "aop-features-1",
+    "id": "ic-features-1",
     "settings": {
       "background_background": "classic",
       "background_color": "#f5f9fd",
       "padding": {
-        "top": "0",
+        "top": "48",
         "bottom": "0",
         "left": "24",
         "right": "24",
@@ -61,7 +63,7 @@
     },
     "elements": [
       {
-        "id": "aop-f1",
+        "id": "ic-f1",
         "type": "column",
         "settings": {
           "_column_size": "50",
@@ -69,10 +71,10 @@
         },
         "elements": [
           {
-            "id": "aop-f1-icon",
+            "id": "ic-f1-icon",
             "type": "text",
             "settings": {
-              "editor": "<p>\u2699\ufe0f</p>",
+              "editor": "<p>\ud83e\udd16</p>",
               "typography_typography": "custom",
               "typography_font_size": {
                 "size": "24",
@@ -81,10 +83,10 @@
             }
           },
           {
-            "id": "aop-f1-title",
+            "id": "ic-f1-title",
             "type": "heading",
             "settings": {
-              "title": "The Operator Playbook",
+              "title": "Agents, Not Chatbots",
               "header_size": "h3",
               "text_color": "#0b2a4a",
               "typography_typography": "custom",
@@ -97,17 +99,17 @@
             }
           },
           {
-            "id": "aop-f1-body",
+            "id": "ic-f1-body",
             "type": "text",
             "settings": {
-              "editor": "<p>Complete guide to designing, deploying, and maintaining AI agents in regulated environments.</p>",
+              "editor": "<p>Real agentic workflows that act \u2014 not just prompts that chat. Built, tested, and deployed with guardrails.</p>",
               "text_color": "#5b6b84"
             }
           }
         ]
       },
       {
-        "id": "aop-f2",
+        "id": "ic-f2",
         "type": "column",
         "settings": {
           "_column_size": "50",
@@ -115,10 +117,10 @@
         },
         "elements": [
           {
-            "id": "aop-f2-icon",
+            "id": "ic-f2-icon",
             "type": "text",
             "settings": {
-              "editor": "<p>\ud83e\udde0</p>",
+              "editor": "<p>\ud83d\udee1\ufe0f</p>",
               "typography_typography": "custom",
               "typography_font_size": {
                 "size": "24",
@@ -127,10 +129,10 @@
             }
           },
           {
-            "id": "aop-f2-title",
+            "id": "ic-f2-title",
             "type": "heading",
             "settings": {
-              "title": "Agent Templates",
+              "title": "Risk First",
               "header_size": "h3",
               "text_color": "#0b2a4a",
               "typography_typography": "custom",
@@ -143,10 +145,10 @@
             }
           },
           {
-            "id": "aop-f2-body",
+            "id": "ic-f2-body",
             "type": "text",
             "settings": {
-              "editor": "<p>Ready-to-use agent blueprints for common advisory workflows.</p>",
+              "editor": "<p>Before any agent touches real work: what can go wrong, what's the blast radius, and how do you verify?</p>",
               "text_color": "#5b6b84"
             }
           }
@@ -156,7 +158,7 @@
   },
   {
     "type": "section",
-    "id": "aop-features-2",
+    "id": "ic-features-2",
     "settings": {
       "background_background": "classic",
       "background_color": "#f5f9fd",
@@ -172,7 +174,7 @@
     },
     "elements": [
       {
-        "id": "aop-f3",
+        "id": "ic-f3",
         "type": "column",
         "settings": {
           "_column_size": "50",
@@ -180,10 +182,10 @@
         },
         "elements": [
           {
-            "id": "aop-f3-icon",
+            "id": "ic-f3-icon",
             "type": "text",
             "settings": {
-              "editor": "<p>\ud83d\udee0\ufe0f</p>",
+              "editor": "<p>\ud83d\udd0d</p>",
               "typography_typography": "custom",
               "typography_font_size": {
                 "size": "24",
@@ -192,10 +194,10 @@
             }
           },
           {
-            "id": "aop-f3-title",
+            "id": "ic-f3-title",
             "type": "heading",
             "settings": {
-              "title": "Tooling & Stack",
+              "title": "Verifiable Outputs",
               "header_size": "h3",
               "text_color": "#0b2a4a",
               "typography_typography": "custom",
@@ -208,17 +210,17 @@
             }
           },
           {
-            "id": "aop-f3-body",
+            "id": "ic-f3-body",
             "type": "text",
             "settings": {
-              "editor": "<p>Curated toolchain recommendations and infrastructure patterns that work in practice.</p>",
+              "editor": "<p>Agents that hallucinate quietly are worse than no agents. We mentor on checking and validating every output.</p>",
               "text_color": "#5b6b84"
             }
           }
         ]
       },
       {
-        "id": "aop-f4",
+        "id": "ic-f4",
         "type": "column",
         "settings": {
           "_column_size": "50",
@@ -226,10 +228,10 @@
         },
         "elements": [
           {
-            "id": "aop-f4-icon",
+            "id": "ic-f4-icon",
             "type": "text",
             "settings": {
-              "editor": "<p>\ud83d\udcc8</p>",
+              "editor": "<p>\ud83d\udc65</p>",
               "typography_typography": "custom",
               "typography_font_size": {
                 "size": "24",
@@ -238,10 +240,10 @@
             }
           },
           {
-            "id": "aop-f4-title",
+            "id": "ic-f4-title",
             "type": "heading",
             "settings": {
-              "title": "Real-World Case Studies",
+              "title": "Human in the Loop",
               "header_size": "h3",
               "text_color": "#0b2a4a",
               "typography_typography": "custom",
@@ -254,10 +256,10 @@
             }
           },
           {
-            "id": "aop-f4-body",
+            "id": "ic-f4-body",
             "type": "text",
             "settings": {
-              "editor": "<p>Detailed breakdowns of agent deployments in advisory practices.</p>",
+              "editor": "<p>Automation that serves people, not replaces them. The circle debates the ethics, not just the tech.</p>",
               "text_color": "#5b6b84"
             }
           }
@@ -267,7 +269,7 @@
   },
   {
     "type": "section",
-    "id": "aop-pricing",
+    "id": "ic-pricing-col",
     "settings": {
       "background_background": "classic",
       "background_color": "#f5f9fd",
@@ -283,7 +285,7 @@
     },
     "elements": [
       {
-        "id": "aop-pricing-col",
+        "id": "ic-pricing-card",
         "type": "column",
         "settings": {
           "_column_size": "100",
@@ -312,10 +314,10 @@
         },
         "elements": [
           {
-            "id": "aop-badge",
+            "id": "ic-pricing-badge",
             "type": "heading",
             "settings": {
-              "title": "Instant Access",
+              "title": "Membership",
               "header_size": "h6",
               "align": "center",
               "text_color": "#ffffff",
@@ -350,10 +352,10 @@
             }
           },
           {
-            "id": "aop-amount",
+            "id": "ic-pricing-amount",
             "type": "heading",
             "settings": {
-              "title": "$97",
+              "title": "$12/yr",
               "header_size": "h1",
               "align": "center",
               "text_color": "#0b2a4a",
@@ -367,28 +369,20 @@
             }
           },
           {
-            "id": "aop-desc",
+            "id": "ic-pricing-list",
             "type": "text",
             "settings": {
-              "editor": "<p style='text-align: center;'>One-time purchase. Lifetime access. Everything you need to build and operate production AI agents.</p>",
-              "text_color": "#5b6b84"
-            }
-          },
-          {
-            "id": "aop-list",
-            "type": "text",
-            "settings": {
-              "editor": "<ul style='list-style-type: none; padding-left: 0;'><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 The complete Operator Playbook</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Ready-to-use agent templates</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Curated tooling & stack recommendations</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Real-world case studies & breakdowns</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Lifetime updates</li></ul>",
+              "editor": "<ul style='list-style-type: none; padding-left: 0;'><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Monthly live mentoring with Jason & Tyler</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Responsible AI frameworks & checklists</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Private community of serious practitioners</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Early access to tools, experiments & case studies</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 No upsells \u2014 ever</li></ul>",
               "text_color": "#0b2a4a"
             }
           },
           {
-            "id": "aop-btn",
+            "id": "ic-pricing-btn",
             "type": "button",
             "settings": {
-              "button_text": "Get Agent Operator \u2192",
+              "button_text": "Request to Join \u2192",
               "button_link": {
-                "url": "#"
+                "url": "/contact"
               },
               "button_background_color": "#2563eb",
               "button_text_color": "#ffffff",

@@ -1,0 +1,1501 @@
+[
+  {
+    "type": "section",
+    "id": "hero-section",
+    "settings": {
+      "background_background": "gradient",
+      "background_color": "#f5f9fd",
+      "background_color_stop": "0",
+      "background_gradient_type": "linear",
+      "background_gradient_angle": "165",
+      "background_gradient_color_b": "#e8f1fa",
+      "background_gradient_color_b_stop": "100",
+      "padding": {
+        "top": "100",
+        "bottom": "80",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      },
+      "content_width": "boxed",
+      "content_max_width": "1140"
+    },
+    "elements": [
+      {
+        "id": "hero-left",
+        "type": "column",
+        "settings": {
+          "_column_size": "50",
+          "_inline_size": "50"
+        },
+        "elements": [
+          {
+            "id": "hero-eyebrow",
+            "type": "heading",
+            "settings": {
+              "title": "Jason & Tyler Younker",
+              "header_size": "h6",
+              "text_color": "#2563eb",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "size": "12",
+                "unit": "px"
+              },
+              "typography_text_transform": "uppercase",
+              "typography_letter_spacing": {
+                "size": "2",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "hero-headline",
+            "type": "heading",
+            "settings": {
+              "title": "You hate work you used to love.",
+              "header_size": "h1",
+              "text_color": "#0b2a4a",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "72",
+                "unit": "px"
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "size": "1.05",
+                "unit": "em"
+              },
+              "typography_letter_spacing": {
+                "size": "-0.5",
+                "unit": "px"
+              }
+            }
+          },
+          {
+            "id": "hero-subheadline",
+            "type": "heading",
+            "settings": {
+              "title": "You can say that here.",
+              "header_size": "h2",
+              "text_color": "#2563eb",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_style": "italic",
+              "typography_font_size": {
+                "size": "24",
+                "unit": "px"
+              },
+              "typography_font_weight": "400"
+            }
+          },
+          {
+            "id": "hero-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p>You built a successful practice. It was supposed to fund your life \u2014 not be the thing that keeps you from living it. You're not ungrateful. You're trapped. And we know exactly how to get you out.</p>",
+              "text_color": "#5b6b84",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "size": "18",
+                "unit": "px"
+              },
+              "typography_line_height": {
+                "size": "1.8",
+                "unit": "em"
+              }
+            }
+          },
+          {
+            "id": "hero-btn-primary",
+            "type": "button",
+            "settings": {
+              "button_size": "lg",
+              "button_text": "Start the Conversation \u2192",
+              "button_link": {
+                "url": "/contact"
+              },
+              "button_background_color": "#2563eb",
+              "button_text_color": "#ffffff",
+              "border_radius": {
+                "size": "6",
+                "unit": "px"
+              },
+              "button_padding": {
+                "top": "14",
+                "bottom": "14",
+                "left": "32",
+                "right": "32",
+                "unit": "px"
+              },
+              "hover_background_color": "#1d4ed8",
+              "hover_animation": "grow"
+            }
+          },
+          {
+            "id": "hero-btn-secondary",
+            "type": "button",
+            "settings": {
+              "button_size": "lg",
+              "button_text": "Read Our Story \u2192",
+              "button_link": {
+                "url": "/about"
+              },
+              "button_background_color": "transparent",
+              "button_text_color": "#0b2a4a",
+              "border_radius": {
+                "size": "6",
+                "unit": "px"
+              },
+              "border_border": "solid",
+              "border_width": {
+                "size": "2",
+                "unit": "px"
+              },
+              "border_color": "#0b2a4a",
+              "button_padding": {
+                "top": "14",
+                "bottom": "14",
+                "left": "32",
+                "right": "32",
+                "unit": "px"
+              },
+              "hover_background_color": "#0b2a4a",
+              "hover_text_color": "#ffffff",
+              "hover_animation": "grow"
+            }
+          }
+        ]
+      },
+      {
+        "id": "hero-right",
+        "type": "column",
+        "settings": {
+          "_column_size": "50",
+          "_inline_size": "50"
+        },
+        "elements": [
+          {
+            "id": "hero-image",
+            "type": "image",
+            "settings": {
+              "image": null,
+              "image_size": "full",
+              "border_radius": {
+                "size": "16",
+                "unit": "px"
+              },
+              "hover_animation": "grow",
+              "width": {
+                "size": "100",
+                "unit": "%"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "recognition-section",
+    "settings": {
+      "background_background": "classic",
+      "background_color": "#f5f9fd",
+      "padding": {
+        "top": "96",
+        "bottom": "96",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      },
+      "content_width": "boxed",
+      "content_max_width": "720"
+    },
+    "elements": [
+      {
+        "id": "recognition-column",
+        "type": "column",
+        "settings": {
+          "_column_size": "100",
+          "_inline_size": "100"
+        },
+        "elements": [
+          {
+            "id": "recognition-headline",
+            "type": "heading",
+            "settings": {
+              "title": "A practice you built to fund your life shouldn't be the thing keeping you from living it.",
+              "header_size": "h2",
+              "align": "center",
+              "text_color": "#0b2a4a",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "40",
+                "unit": "px"
+              },
+              "typography_font_weight": "600",
+              "typography_line_height": {
+                "size": "1.2",
+                "unit": "em"
+              }
+            }
+          },
+          {
+            "id": "recognition-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p>If you're a CPA or financial advisor 25 years into a successful practice, there's a good chance this sounds familiar: The phone rings all day. The practice can't run a week without you. You can't slow down without the income slowing too. And the work? You used to love it. Now you're not sure you even like it. But complaining about a successful practice sounds ungrateful, so you keep quiet and keep going.</p>",
+              "text_color": "#5b6b84",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "size": "18",
+                "unit": "px"
+              },
+              "typography_line_height": {
+                "size": "1.8",
+                "unit": "em"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "empathy-headline-section",
+    "settings": {
+      "background_background": "classic",
+      "background_color": "#e8f1fa",
+      "padding": {
+        "top": "96",
+        "bottom": "0",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      },
+      "content_width": "boxed",
+      "content_max_width": "720"
+    },
+    "elements": [
+      {
+        "id": "empathy-h-col",
+        "type": "column",
+        "settings": {
+          "_column_size": "100",
+          "_inline_size": "100"
+        },
+        "elements": [
+          {
+            "id": "empathy-headline",
+            "type": "heading",
+            "settings": {
+              "title": "We know exactly what that feels like.",
+              "header_size": "h2",
+              "align": "center",
+              "text_color": "#0b2a4a",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "40",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "empathy-stories",
+    "settings": {
+      "background_background": "classic",
+      "background_color": "#e8f1fa",
+      "padding": {
+        "top": "48",
+        "bottom": "0",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      },
+      "content_width": "boxed",
+      "content_max_width": "1140"
+    },
+    "elements": [
+      {
+        "id": "empathy-story-1",
+        "type": "column",
+        "settings": {
+          "_column_size": "50",
+          "_inline_size": "50",
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_border": "solid",
+          "border_width": {
+            "size": "1",
+            "unit": "px"
+          },
+          "border_color": "#e8f1fa",
+          "border_radius": {
+            "size": "12",
+            "unit": "px"
+          },
+          "padding": {
+            "top": "40",
+            "bottom": "40",
+            "left": "40",
+            "right": "40",
+            "unit": "px"
+          }
+        },
+        "elements": [
+          {
+            "id": "empathy-1-image",
+            "type": "image",
+            "settings": {
+              "image": null,
+              "image_size": "full",
+              "border_radius": {
+                "size": "8",
+                "unit": "px"
+              }
+            }
+          },
+          {
+            "id": "empathy-1-title",
+            "type": "heading",
+            "settings": {
+              "title": "Tyler's Story",
+              "header_size": "h3",
+              "text_color": "#0b2a4a",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "24",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "empathy-1-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p>Tyler spent eight years in sales chasing a number nobody in company history had ever hit. The year she finally hit it, she wanted a marching band down the hall, cheerleaders, glitter falling from the sky. She got a congratulations email and a nice lunch. And in January, her ticker flipped back to zero.</p>",
+              "text_color": "#5b6b84"
+            }
+          }
+        ]
+      },
+      {
+        "id": "empathy-story-2",
+        "type": "column",
+        "settings": {
+          "_column_size": "50",
+          "_inline_size": "50",
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_border": "solid",
+          "border_width": {
+            "size": "1",
+            "unit": "px"
+          },
+          "border_color": "#e8f1fa",
+          "border_radius": {
+            "size": "12",
+            "unit": "px"
+          },
+          "padding": {
+            "top": "40",
+            "bottom": "40",
+            "left": "40",
+            "right": "40",
+            "unit": "px"
+          }
+        },
+        "elements": [
+          {
+            "id": "empathy-2-image",
+            "type": "image",
+            "settings": {
+              "image": null,
+              "image_size": "full",
+              "border_radius": {
+                "size": "8",
+                "unit": "px"
+              }
+            }
+          },
+          {
+            "id": "empathy-2-title",
+            "type": "heading",
+            "settings": {
+              "title": "Jason's Story",
+              "header_size": "h3",
+              "text_color": "#0b2a4a",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "24",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "empathy-2-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p>Jason burned out on his IT career in 2017. He started driving Uber just to buy back a little freedom.</p>",
+              "text_color": "#5b6b84"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "empathy-connecting-section",
+    "settings": {
+      "background_background": "classic",
+      "background_color": "#e8f1fa",
+      "padding": {
+        "top": "48",
+        "bottom": "96",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      },
+      "content_width": "boxed",
+      "content_max_width": "720"
+    },
+    "elements": [
+      {
+        "id": "empathy-connecting-col",
+        "type": "column",
+        "settings": {
+          "_column_size": "100",
+          "_inline_size": "100"
+        },
+        "elements": [
+          {
+            "id": "empathy-connecting",
+            "type": "text",
+            "settings": {
+              "editor": "<p style='text-align: center; font-style: italic;'>We know what it's like to have everything and hate your life anyway. We also know what it's like to get out.</p>",
+              "text_color": "#2563eb",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "20",
+                "unit": "px"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "auth-headline-section",
+    "settings": {
+      "background_background": "classic",
+      "background_color": "#f5f9fd",
+      "padding": {
+        "top": "96",
+        "bottom": "0",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      },
+      "content_width": "boxed",
+      "content_max_width": "720"
+    },
+    "elements": [
+      {
+        "id": "auth-h-col",
+        "type": "column",
+        "settings": {
+          "_column_size": "100",
+          "_inline_size": "100"
+        },
+        "elements": [
+          {
+            "id": "authority-headline",
+            "type": "heading",
+            "settings": {
+              "title": "The way out we teach is the way we took.",
+              "header_size": "h2",
+              "align": "center",
+              "text_color": "#0b2a4a",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "40",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "authority-cards",
+    "settings": {
+      "background_background": "classic",
+      "background_color": "#f5f9fd",
+      "padding": {
+        "top": "48",
+        "bottom": "96",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      },
+      "content_width": "boxed",
+      "content_max_width": "1140"
+    },
+    "elements": [
+      {
+        "id": "auth-card-1",
+        "type": "column",
+        "settings": {
+          "_column_size": "33",
+          "_inline_size": "33.33",
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_border": "solid",
+          "border_width": {
+            "top": "3",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "unit": "px"
+          },
+          "border_color": "#e8f1fa",
+          "border_radius": {
+            "size": "12",
+            "unit": "px"
+          },
+          "padding": {
+            "top": "40",
+            "bottom": "40",
+            "left": "40",
+            "right": "40",
+            "unit": "px"
+          }
+        },
+        "elements": [
+          {
+            "id": "auth-1-icon",
+            "type": "text",
+            "settings": {
+              "editor": "<p>\ud83c\udf0d</p>"
+            }
+          },
+          {
+            "id": "auth-1-title",
+            "type": "heading",
+            "settings": {
+              "title": "Eight years of freedom",
+              "header_size": "h3",
+              "text_color": "#0b2a4a",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "22",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "auth-1-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p>We traded careers for income-producing assets. We've been full-time travelers ever since.</p>",
+              "text_color": "#5b6b84"
+            }
+          }
+        ]
+      },
+      {
+        "id": "auth-card-2",
+        "type": "column",
+        "settings": {
+          "_column_size": "33",
+          "_inline_size": "33.33",
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_border": "solid",
+          "border_width": {
+            "top": "3",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "unit": "px"
+          },
+          "border_color": "#e8f1fa",
+          "border_radius": {
+            "size": "12",
+            "unit": "px"
+          },
+          "padding": {
+            "top": "40",
+            "bottom": "40",
+            "left": "40",
+            "right": "40",
+            "unit": "px"
+          }
+        },
+        "elements": [
+          {
+            "id": "auth-2-icon",
+            "type": "text",
+            "settings": {
+              "editor": "<p>\ud83c\udfdb\ufe0f</p>"
+            }
+          },
+          {
+            "id": "auth-2-title",
+            "type": "heading",
+            "settings": {
+              "title": "$3 billion \u2014 institutionally",
+              "header_size": "h3",
+              "text_color": "#0b2a4a",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "22",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "auth-2-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p>Before that season, Tyler raised $3 billion institutionally. Today she serves as a FINRA arbitrator.</p>",
+              "text_color": "#5b6b84"
+            }
+          }
+        ]
+      },
+      {
+        "id": "auth-card-3",
+        "type": "column",
+        "settings": {
+          "_column_size": "33",
+          "_inline_size": "33.33",
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_border": "solid",
+          "border_width": {
+            "top": "3",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "unit": "px"
+          },
+          "border_color": "#e8f1fa",
+          "border_radius": {
+            "size": "12",
+            "unit": "px"
+          },
+          "padding": {
+            "top": "40",
+            "bottom": "40",
+            "left": "40",
+            "right": "40",
+            "unit": "px"
+          }
+        },
+        "elements": [
+          {
+            "id": "auth-3-icon",
+            "type": "text",
+            "settings": {
+              "editor": "<p>\ud83c\udf93</p>"
+            }
+          },
+          {
+            "id": "auth-3-title",
+            "type": "heading",
+            "settings": {
+              "title": "Certified Exit Planning Advisor",
+              "header_size": "h3",
+              "text_color": "#0b2a4a",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "22",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "auth-3-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p>Jason is training as a Certified Exit Planning Advisor (CEPA). We've spent years building ownership models.</p>",
+              "text_color": "#5b6b84"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "plan-headline-section",
+    "settings": {
+      "background_background": "gradient",
+      "background_color": "#0b2a4a",
+      "background_color_stop": "0",
+      "background_gradient_type": "linear",
+      "background_gradient_angle": "165",
+      "background_gradient_color_b": "#123a63",
+      "background_gradient_color_b_stop": "100",
+      "padding": {
+        "top": "96",
+        "bottom": "0",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      },
+      "content_width": "boxed",
+      "content_max_width": "720"
+    },
+    "elements": [
+      {
+        "id": "plan-h-col",
+        "type": "column",
+        "settings": {
+          "_column_size": "100",
+          "_inline_size": "100"
+        },
+        "elements": [
+          {
+            "id": "plan-headline",
+            "type": "heading",
+            "settings": {
+              "title": "Here's how it works.",
+              "header_size": "h2",
+              "align": "center",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "48",
+                "unit": "px"
+              },
+              "typography_font_weight": "700"
+            }
+          },
+          {
+            "id": "plan-subheadline",
+            "type": "text",
+            "settings": {
+              "editor": "<p style='text-align: center; font-style: italic;'>Three steps. Not a program. A path.</p>",
+              "text_color": "#2563eb",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "20",
+                "unit": "px"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "plan-steps-list",
+    "settings": {
+      "background_background": "gradient",
+      "background_color": "#0b2a4a",
+      "background_color_stop": "0",
+      "background_gradient_type": "linear",
+      "background_gradient_angle": "165",
+      "background_gradient_color_b": "#123a63",
+      "background_gradient_color_b_stop": "100",
+      "padding": {
+        "top": "48",
+        "bottom": "96",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      },
+      "content_width": "boxed",
+      "content_max_width": "1140"
+    },
+    "elements": [
+      {
+        "id": "plan-step-1",
+        "type": "column",
+        "settings": {
+          "_column_size": "33",
+          "_inline_size": "33.33",
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.04)",
+          "border_border": "solid",
+          "border_width": {
+            "size": "1",
+            "unit": "px"
+          },
+          "border_color": "rgba(255,255,255,0.06)",
+          "border_radius": {
+            "size": "12",
+            "unit": "px"
+          },
+          "padding": {
+            "top": "32",
+            "bottom": "32",
+            "left": "32",
+            "right": "32",
+            "unit": "px"
+          }
+        },
+        "elements": [
+          {
+            "id": "plan-1-num",
+            "type": "heading",
+            "settings": {
+              "title": "1",
+              "header_size": "h1",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "20",
+                "unit": "px"
+              },
+              "typography_font_weight": "700",
+              "background_background": "classic",
+              "background_color": "#2563eb",
+              "border_radius": {
+                "size": "50",
+                "unit": "%"
+              },
+              "padding": {
+                "top": "12",
+                "bottom": "12",
+                "left": "12",
+                "right": "12",
+                "unit": "px"
+              },
+              "width": {
+                "size": "48",
+                "unit": "px"
+              },
+              "align": "center"
+            }
+          },
+          {
+            "id": "plan-1-title",
+            "type": "heading",
+            "settings": {
+              "title": "Say it out loud.",
+              "header_size": "h3",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "24",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "plan-1-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p>Admit how you really feel about the thing you built. This is the hardest step, and the one you can't do alone.</p>",
+              "text_color": "rgba(255,255,255,0.7)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "plan-step-2",
+        "type": "column",
+        "settings": {
+          "_column_size": "33",
+          "_inline_size": "33.33",
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.04)",
+          "border_border": "solid",
+          "border_width": {
+            "size": "1",
+            "unit": "px"
+          },
+          "border_color": "rgba(255,255,255,0.06)",
+          "border_radius": {
+            "size": "12",
+            "unit": "px"
+          },
+          "padding": {
+            "top": "32",
+            "bottom": "32",
+            "left": "32",
+            "right": "32",
+            "unit": "px"
+          }
+        },
+        "elements": [
+          {
+            "id": "plan-2-num",
+            "type": "heading",
+            "settings": {
+              "title": "2",
+              "header_size": "h1",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "20",
+                "unit": "px"
+              },
+              "typography_font_weight": "700",
+              "background_background": "classic",
+              "background_color": "#2563eb",
+              "border_radius": {
+                "size": "50",
+                "unit": "%"
+              },
+              "padding": {
+                "top": "12",
+                "bottom": "12",
+                "left": "12",
+                "right": "12",
+                "unit": "px"
+              },
+              "width": {
+                "size": "48",
+                "unit": "px"
+              },
+              "align": "center"
+            }
+          },
+          {
+            "id": "plan-2-title",
+            "type": "heading",
+            "settings": {
+              "title": "Picture what replaces it.",
+              "header_size": "h3",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "24",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "plan-2-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p>Get concrete about the life you want next. Do you want to rebuild or walk away? Either way, you get your life back.</p>",
+              "text_color": "rgba(255,255,255,0.7)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "plan-step-3",
+        "type": "column",
+        "settings": {
+          "_column_size": "33",
+          "_inline_size": "33.33",
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.04)",
+          "border_border": "solid",
+          "border_width": {
+            "size": "1",
+            "unit": "px"
+          },
+          "border_color": "rgba(255,255,255,0.06)",
+          "border_radius": {
+            "size": "12",
+            "unit": "px"
+          },
+          "padding": {
+            "top": "32",
+            "bottom": "32",
+            "left": "32",
+            "right": "32",
+            "unit": "px"
+          }
+        },
+        "elements": [
+          {
+            "id": "plan-3-num",
+            "type": "heading",
+            "settings": {
+              "title": "3",
+              "header_size": "h1",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "20",
+                "unit": "px"
+              },
+              "typography_font_weight": "700",
+              "background_background": "classic",
+              "background_color": "#2563eb",
+              "border_radius": {
+                "size": "50",
+                "unit": "%"
+              },
+              "padding": {
+                "top": "12",
+                "bottom": "12",
+                "left": "12",
+                "right": "12",
+                "unit": "px"
+              },
+              "width": {
+                "size": "48",
+                "unit": "px"
+              },
+              "align": "center"
+            }
+          },
+          {
+            "id": "plan-3-title",
+            "type": "heading",
+            "settings": {
+              "title": "Wake up wanting the day.",
+              "header_size": "h3",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "24",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "plan-3-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p>Every change we help you make points at that one outcome. Not a retirement number. Not a valuation. A day you actually want to show up for.</p>",
+              "text_color": "rgba(255,255,255,0.7)"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "split-headline-section",
+    "settings": {
+      "background_background": "classic",
+      "background_color": "#f5f9fd",
+      "padding": {
+        "top": "96",
+        "bottom": "0",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      },
+      "content_width": "boxed",
+      "content_max_width": "720"
+    },
+    "elements": [
+      {
+        "id": "split-h-col",
+        "type": "column",
+        "settings": {
+          "_column_size": "100",
+          "_inline_size": "100"
+        },
+        "elements": [
+          {
+            "id": "split-headline",
+            "type": "heading",
+            "settings": {
+              "title": "What winning looks like. What losing looks like.",
+              "header_size": "h2",
+              "align": "center",
+              "text_color": "#0b2a4a",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "40",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "split-columns",
+    "settings": {
+      "background_background": "classic",
+      "background_color": "#f5f9fd",
+      "padding": {
+        "top": "48",
+        "bottom": "96",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      },
+      "content_width": "boxed",
+      "content_max_width": "1140"
+    },
+    "elements": [
+      {
+        "id": "split-success-col",
+        "type": "column",
+        "settings": {
+          "_column_size": "50",
+          "_inline_size": "50",
+          "background_background": "classic",
+          "background_color": "#f0faf0",
+          "border_border": "solid",
+          "border_width": {
+            "size": "1",
+            "unit": "px"
+          },
+          "border_color": "rgba(76,175,80,0.15)",
+          "padding": {
+            "top": "40",
+            "bottom": "40",
+            "left": "40",
+            "right": "40",
+            "unit": "px"
+          }
+        },
+        "elements": [
+          {
+            "id": "split-success-label",
+            "type": "heading",
+            "settings": {
+              "title": "What Winning Looks Like",
+              "header_size": "h3",
+              "text_color": "#2e7d32",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "28",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "split-success-list",
+            "type": "text",
+            "settings": {
+              "editor": "<ul style='list-style-type: none; padding-left: 0;'><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2713 You stop dreading the phone.</li><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2713 Your week fits around your life.</li><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2713 Your income stops depending on your calendar.</li><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2713 You can answer 'what's next' with something you can't wait to start.</li></ul>",
+              "text_color": "#0b2a4a"
+            }
+          }
+        ]
+      },
+      {
+        "id": "split-failure-col",
+        "type": "column",
+        "settings": {
+          "_column_size": "50",
+          "_inline_size": "50",
+          "background_background": "classic",
+          "background_color": "#fdf0f0",
+          "border_border": "solid",
+          "border_width": {
+            "size": "1",
+            "unit": "px"
+          },
+          "border_color": "rgba(229,57,53,0.12)",
+          "padding": {
+            "top": "40",
+            "bottom": "40",
+            "left": "40",
+            "right": "40",
+            "unit": "px"
+          }
+        },
+        "elements": [
+          {
+            "id": "split-failure-label",
+            "type": "heading",
+            "settings": {
+              "title": "What Losing Looks Like",
+              "header_size": "h3",
+              "text_color": "#c62828",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "28",
+                "unit": "px"
+              },
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "split-failure-list",
+            "type": "text",
+            "settings": {
+              "editor": "<ul style='list-style-type: none; padding-left: 0;'><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2717 Keep white-knuckling toward a retirement date that keeps moving.</li><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2717 Let the practice keep eating evenings and weekends.</li><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2717 Sell in a hurry to whoever shows up with a check.</li><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2717 Keep hating it quietly while everyone keeps congratulating you.</li></ul>",
+              "text_color": "#0b2a4a"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "transformation-section",
+    "settings": {
+      "background_background": "classic",
+      "background_color": "#e8f1fa",
+      "padding": {
+        "top": "96",
+        "bottom": "96",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      }
+    },
+    "elements": [
+      {
+        "id": "trans-column",
+        "type": "column",
+        "settings": {
+          "_column_size": "100",
+          "_inline_size": "100"
+        },
+        "elements": [
+          {
+            "id": "trans-from",
+            "type": "text",
+            "settings": {
+              "editor": "<p style='text-align: center; text-decoration: line-through; font-style: italic;'>The perfect life on paper, and done inside.</p>",
+              "text_color": "#5b6b84",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "24",
+                "unit": "px"
+              }
+            }
+          },
+          {
+            "id": "trans-arrow",
+            "type": "text",
+            "settings": {
+              "editor": "<p style='text-align: center;'>\u2192</p>",
+              "text_color": "#2563eb",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "size": "32",
+                "unit": "px"
+              }
+            }
+          },
+          {
+            "id": "trans-to",
+            "type": "heading",
+            "settings": {
+              "title": "A life that feels as good as it looks.",
+              "header_size": "h2",
+              "align": "center",
+              "text_color": "#0b2a4a",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "56",
+                "unit": "px"
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "size": "1.1",
+                "unit": "em"
+              }
+            }
+          },
+          {
+            "id": "trans-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p style='text-align: center;'>This is what we do. We help you cross that gap. Not with a framework. Not with a workbook. With a conversation, a plan, and a partner who's already been where you are.</p>",
+              "text_color": "#5b6b84",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "size": "18",
+                "unit": "px"
+              },
+              "typography_line_height": {
+                "size": "1.8",
+                "unit": "em"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "id": "cta-section",
+    "settings": {
+      "background_background": "gradient",
+      "background_color": "#0b2a4a",
+      "background_color_stop": "0",
+      "background_gradient_type": "linear",
+      "background_gradient_angle": "165",
+      "background_gradient_color_b": "#0e2f52",
+      "background_gradient_color_b_stop": "100",
+      "padding": {
+        "top": "96",
+        "bottom": "96",
+        "left": "24",
+        "right": "24",
+        "unit": "px"
+      }
+    },
+    "elements": [
+      {
+        "id": "cta-col",
+        "type": "column",
+        "settings": {
+          "_column_size": "100",
+          "_inline_size": "100"
+        },
+        "elements": [
+          {
+            "id": "cta-headline",
+            "type": "heading",
+            "settings": {
+              "title": "Ready to want the day again?",
+              "header_size": "h2",
+              "align": "center",
+              "text_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "48",
+                "unit": "px"
+              },
+              "typography_font_weight": "700"
+            }
+          },
+          {
+            "id": "cta-body",
+            "type": "text",
+            "settings": {
+              "editor": "<p style='text-align: center;'>One conversation could change everything. No pressure. No pitch. Just honesty from people who have been there.</p>",
+              "text_color": "rgba(255,255,255,0.7)",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "size": "18",
+                "unit": "px"
+              }
+            }
+          },
+          {
+            "id": "cta-btn-primary",
+            "type": "button",
+            "settings": {
+              "button_size": "lg",
+              "button_text": "Start the Conversation \u2192",
+              "button_link": {
+                "url": "/contact"
+              },
+              "button_background_color": "#ffffff",
+              "button_text_color": "#0b2a4a",
+              "border_radius": {
+                "size": "6",
+                "unit": "px"
+              },
+              "button_padding": {
+                "top": "14",
+                "bottom": "14",
+                "left": "32",
+                "right": "32",
+                "unit": "px"
+              },
+              "hover_background_color": "#ffffff",
+              "hover_text_color": "#0b2a4a",
+              "hover_animation": "grow"
+            }
+          },
+          {
+            "id": "cta-btn-secondary",
+            "type": "button",
+            "settings": {
+              "button_size": "lg",
+              "button_text": "Join the Newsletter \u2192",
+              "button_link": {
+                "url": "/newsletter"
+              },
+              "button_background_color": "transparent",
+              "button_text_color": "#ffffff",
+              "border_radius": {
+                "size": "6",
+                "unit": "px"
+              },
+              "border_border": "solid",
+              "border_width": {
+                "size": "2",
+                "unit": "px"
+              },
+              "border_color": "rgba(255,255,255,0.4)",
+              "button_padding": {
+                "top": "14",
+                "bottom": "14",
+                "left": "32",
+                "right": "32",
+                "unit": "px"
+              },
+              "hover_background_color": "rgba(255,255,255,0.15)",
+              "hover_text_color": "#ffffff",
+              "hover_border_color": "#ffffff",
+              "hover_animation": "grow"
+            }
+          },
+          {
+            "id": "cta-tagline",
+            "type": "text",
+            "settings": {
+              "editor": "<p style='text-align: center; font-style: italic;'>One list. From the two of us. About the next season.</p>",
+              "text_color": "rgba(255,255,255,0.3)",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "size": "14",
+                "unit": "px"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
