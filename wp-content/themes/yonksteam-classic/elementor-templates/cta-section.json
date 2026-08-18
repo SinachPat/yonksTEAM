@@ -23,7 +23,7 @@
       },
       "elements": [
         {
-          "id": "cta-column",
+          "id": "cta-col",
           "type": "column",
           "settings": {
             "_column_size": "100",
@@ -57,11 +57,68 @@
                 "typography_font_size": {
                   "size": "18",
                   "unit": "px"
-                },
-                "typography_line_height": {
-                  "size": "1.8",
-                  "unit": "em"
                 }
+              }
+            },
+            {
+              "id": "cta-btn-primary",
+              "type": "button",
+              "settings": {
+                "button_size": "lg",
+                "button_text": "Start the Conversation \u2192",
+                "button_link": {
+                  "url": "/contact"
+                },
+                "button_background_color": "#ffffff",
+                "button_text_color": "#0b2a4a",
+                "border_radius": {
+                  "size": "6",
+                  "unit": "px"
+                },
+                "button_padding": {
+                  "top": "14",
+                  "bottom": "14",
+                  "left": "32",
+                  "right": "32",
+                  "unit": "px"
+                },
+                "hover_background_color": "#ffffff",
+                "hover_text_color": "#0b2a4a",
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "cta-btn-secondary",
+              "type": "button",
+              "settings": {
+                "button_size": "lg",
+                "button_text": "Join the Newsletter \u2192",
+                "button_link": {
+                  "url": "/newsletter"
+                },
+                "button_background_color": "transparent",
+                "button_text_color": "#ffffff",
+                "border_radius": {
+                  "size": "6",
+                  "unit": "px"
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "size": "2",
+                  "unit": "px"
+                },
+                "border_color": "rgba(255,255,255,0.4)",
+                "button_padding": {
+                  "top": "14",
+                  "bottom": "14",
+                  "left": "32",
+                  "right": "32",
+                  "unit": "px"
+                },
+                "hover_background_color": "rgba(255,255,255,0.15)",
+                "hover_text_color": "#ffffff",
+                "hover_border_color": "#ffffff",
+                "hover_animation": "grow"
               }
             },
             {
@@ -77,97 +134,6 @@
                   "unit": "px"
                 }
               }
-            },
-            {
-              "id": "cta-buttons-row",
-              "type": "inner-section",
-              "settings": {
-                "structure": "custom",
-                "content_width": "full"
-              },
-              "elements": [
-                {
-                  "id": "cta-btn-primary-col",
-                  "type": "column",
-                  "settings": {
-                    "_column_size": "50",
-                    "_inline_size": "auto"
-                  },
-                  "elements": [
-                    {
-                      "id": "cta-btn-primary",
-                      "type": "button",
-                      "settings": {
-                        "button_size": "lg",
-                        "button_text": "Start the Conversation \u2192",
-                        "button_link": {
-                          "url": "/contact"
-                        },
-                        "button_background_color": "#ffffff",
-                        "button_text_color": "#0b2a4a",
-                        "border_radius": {
-                          "size": "6",
-                          "unit": "px"
-                        },
-                        "button_padding": {
-                          "top": "14",
-                          "bottom": "14",
-                          "left": "32",
-                          "right": "32",
-                          "unit": "px"
-                        },
-                        "hover_background_color": "#ffffff",
-                        "hover_text_color": "#0b2a4a",
-                        "hover_animation": "grow"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "cta-btn-secondary-col",
-                  "type": "column",
-                  "settings": {
-                    "_column_size": "50",
-                    "_inline_size": "auto"
-                  },
-                  "elements": [
-                    {
-                      "id": "cta-btn-secondary",
-                      "type": "button",
-                      "settings": {
-                        "button_size": "lg",
-                        "button_text": "Join the Newsletter \u2192",
-                        "button_link": {
-                          "url": "/newsletter"
-                        },
-                        "button_background_color": "transparent",
-                        "button_text_color": "#ffffff",
-                        "border_radius": {
-                          "size": "6",
-                          "unit": "px"
-                        },
-                        "border_border": "solid",
-                        "border_width": {
-                          "size": "2",
-                          "unit": "px"
-                        },
-                        "border_color": "rgba(255,255,255,0.4)",
-                        "button_padding": {
-                          "top": "14",
-                          "bottom": "14",
-                          "left": "32",
-                          "right": "32",
-                          "unit": "px"
-                        },
-                        "hover_background_color": "rgba(255,255,255,0.15)",
-                        "hover_text_color": "#ffffff",
-                        "hover_border_color": "#ffffff",
-                        "hover_animation": "grow"
-                      }
-                    }
-                  ]
-                }
-              ]
             }
           ]
         }

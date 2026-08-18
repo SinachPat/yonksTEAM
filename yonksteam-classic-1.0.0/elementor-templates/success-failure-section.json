@@ -1,0 +1,157 @@
+{
+  "title": "Success/Failure Split Section",
+  "type": "section",
+  "content": [
+    {
+      "type": "section",
+      "id": "split-section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f5f9fd",
+        "padding": {
+          "top": "96",
+          "bottom": "96",
+          "left": "24",
+          "right": "24",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "split-column",
+          "type": "column",
+          "settings": {
+            "_column_size": "100",
+            "_inline_size": "100"
+          },
+          "elements": [
+            {
+              "id": "split-headline",
+              "type": "heading",
+              "settings": {
+                "title": "What winning looks like. What losing looks like.",
+                "header_size": "h2",
+                "align": "center",
+                "text_color": "#0b2a4a",
+                "typography_typography": "custom",
+                "typography_font_family": "Playfair Display",
+                "typography_font_size": {
+                  "size": "40",
+                  "unit": "px"
+                },
+                "typography_font_weight": "600"
+              }
+            },
+            {
+              "id": "split-inner",
+              "type": "inner-section",
+              "settings": {
+                "structure": "50_50"
+              },
+              "elements": [
+                {
+                  "id": "split-success",
+                  "type": "column",
+                  "settings": {
+                    "_column_size": "50",
+                    "_inline_size": "50",
+                    "background_background": "classic",
+                    "background_color": "#f0faf0",
+                    "border_border": "solid",
+                    "border_width": {
+                      "size": "1",
+                      "unit": "px"
+                    },
+                    "border_color": "rgba(76,175,80,0.15)",
+                    "padding": {
+                      "top": "40",
+                      "bottom": "40",
+                      "left": "40",
+                      "right": "40",
+                      "unit": "px"
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "split-success-label",
+                      "type": "heading",
+                      "settings": {
+                        "title": "What Winning Looks Like",
+                        "header_size": "h3",
+                        "text_color": "#2e7d32",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Playfair Display",
+                        "typography_font_size": {
+                          "size": "28",
+                          "unit": "px"
+                        },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "split-success-list",
+                      "type": "text",
+                      "settings": {
+                        "editor": "<ul><li>You stop dreading the phone.</li><li>Your week fits around your life instead of the other way around.</li><li>Your income stops depending on your calendar.</li><li>You can answer 'what's next' with something you can't wait to start.</li><li>When you do hand the practice off, it happens on your terms and your timeline.</li></ul>",
+                        "text_color": "#0b2a4a"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "split-failure",
+                  "type": "column",
+                  "settings": {
+                    "_column_size": "50",
+                    "_inline_size": "50",
+                    "background_background": "classic",
+                    "background_color": "#fdf0f0",
+                    "border_border": "solid",
+                    "border_width": {
+                      "size": "1",
+                      "unit": "px"
+                    },
+                    "border_color": "rgba(229,57,53,0.12)",
+                    "padding": {
+                      "top": "40",
+                      "bottom": "40",
+                      "left": "40",
+                      "right": "40",
+                      "unit": "px"
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "split-failure-label",
+                      "type": "heading",
+                      "settings": {
+                        "title": "What Losing Looks Like",
+                        "header_size": "h3",
+                        "text_color": "#c62828",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Playfair Display",
+                        "typography_font_size": {
+                          "size": "28",
+                          "unit": "px"
+                        },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "split-failure-list",
+                      "type": "text",
+                      "settings": {
+                        "editor": "<ul><li>Keep white-knuckling toward a retirement date that keeps moving.</li><li>Let the practice keep eating evenings and weekends.</li><li>Sell in a hurry to whoever shows up with a check.</li><li>Keep hating it quietly while everyone keeps congratulating you.</li></ul>",
+                        "text_color": "#0b2a4a"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
