@@ -1,22 +1,20 @@
 {
   "type": "section",
-  "id": "split-headline-section",
+  "id": "split-section",
   "settings": {
     "background_background": "classic",
     "background_color": "#f5f9fd",
     "padding": {
       "top": "96",
-      "bottom": "0",
+      "bottom": "96",
       "left": "24",
       "right": "24",
       "unit": "px"
-    },
-    "content_width": "boxed",
-    "content_max_width": "720"
+    }
   },
   "elements": [
     {
-      "id": "split-h-col",
+      "id": "split-headline-col",
       "type": "column",
       "settings": {
         "_column_size": "100",

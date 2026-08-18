@@ -1,22 +1,20 @@
 {
   "type": "section",
-  "id": "split-headline-section",
+  "id": "authority-section",
   "settings": {
     "background_background": "classic",
     "background_color": "#f5f9fd",
     "padding": {
       "top": "96",
-      "bottom": "0",
+      "bottom": "96",
       "left": "24",
       "right": "24",
       "unit": "px"
-    },
-    "content_width": "boxed",
-    "content_max_width": "720"
+    }
   },
   "elements": [
     {
-      "id": "split-h-col",
+      "id": "auth-headline-col",
       "type": "column",
       "settings": {
         "_column_size": "100",
@@ -24,10 +22,10 @@
       },
       "elements": [
         {
-          "id": "split-headline",
+          "id": "authority-headline",
           "type": "heading",
           "settings": {
-            "title": "What winning looks like. What losing looks like.",
+            "title": "The way out we teach is the way we took.",
             "header_size": "h2",
             "align": "center",
             "text_color": "#0b2a4a",

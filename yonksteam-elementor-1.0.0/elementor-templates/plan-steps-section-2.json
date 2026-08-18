@@ -10,7 +10,7 @@
     "background_gradient_color_b": "#123a63",
     "background_gradient_color_b_stop": "100",
     "padding": {
-      "top": "48",
+      "top": "0",
       "bottom": "96",
       "left": "24",
       "right": "24",
@@ -101,7 +101,7 @@
           "id": "plan-1-body",
           "type": "text",
           "settings": {
-            "editor": "<p>Admit how you really feel about the thing you built. This is the hardest step, and the one you can't do alone.</p>",
+            "editor": "<p>Admit how you really feel about the thing you built \u2014 to people who have felt it too. This is the hardest step, and the one you can't do alone.</p>",
             "text_color": "rgba(255,255,255,0.7)"
           }
         }
@@ -188,7 +188,7 @@
           "id": "plan-2-body",
           "type": "text",
           "settings": {
-            "editor": "<p>Get concrete about the life you want next. Do you want to rebuild or walk away? Either way, you get your life back.</p>",
+            "editor": "<p>Get concrete about the life you want next. What does it need to earn? Do you want the practice rebuilt around that life \u2014 or do you want to walk away?</p>",
             "text_color": "rgba(255,255,255,0.7)"
           }
         }
@@ -275,7 +275,7 @@
           "id": "plan-3-body",
           "type": "text",
           "settings": {
-            "editor": "<p>Every change we help you make points at that one outcome. Not a retirement number. Not a valuation. A day you actually want to show up for.</p>",
+            "editor": "<p>Every change we help you make points at that one outcome. Not a retirement number. Not a valuation multiple. A day you actually want to show up for.</p>",
             "text_color": "rgba(255,255,255,0.7)"
           }
         }

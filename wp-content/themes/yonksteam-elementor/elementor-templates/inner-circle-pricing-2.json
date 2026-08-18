@@ -5,7 +5,7 @@
     "background_background": "classic",
     "background_color": "#f5f9fd",
     "padding": {
-      "top": "0",
+      "top": "48",
       "bottom": "0",
       "left": "24",
       "right": "24",
@@ -101,7 +101,7 @@
           "id": "ic-f2-body",
           "type": "text",
           "settings": {
-            "editor": "<p>Before any agent touches real work: what can go wrong, what's the blast radius, and how do you verify? Always.</p>",
+            "editor": "<p>Before any agent touches real work: what can go wrong, what's the blast radius, and how do you verify?</p>",
             "text_color": "#5b6b84"
           }
         }

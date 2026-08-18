@@ -16,7 +16,7 @@
   },
   "elements": [
     {
-      "id": "aop-pricing-card",
+      "id": "aop-pricing-col",
       "type": "column",
       "settings": {
         "_column_size": "100",
@@ -97,6 +97,14 @@
               "unit": "px"
             },
             "typography_font_weight": "700"
+          }
+        },
+        {
+          "id": "aop-desc",
+          "type": "text",
+          "settings": {
+            "editor": "<p style='text-align: center;'>One-time purchase. Lifetime access. Everything you need to build and operate production AI agents.</p>",
+            "text_color": "#5b6b84"
           }
         },
         {

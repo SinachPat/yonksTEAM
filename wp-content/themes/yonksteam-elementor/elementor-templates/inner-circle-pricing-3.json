@@ -55,7 +55,7 @@
           "id": "ic-f3-body",
           "type": "text",
           "settings": {
-            "editor": "<p>Agents that hallucinate quietly are worse than no agents. We mentor on checking, auditing, and validating every output.</p>",
+            "editor": "<p>Agents that hallucinate quietly are worse than no agents. We mentor on checking and validating every output.</p>",
             "text_color": "#5b6b84"
           }
         }

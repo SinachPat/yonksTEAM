@@ -1,6 +1,6 @@
 {
   "type": "section",
-  "id": "plan-headline-section",
+  "id": "plan-steps-section",
   "settings": {
     "background_background": "gradient",
     "background_color": "#0b2a4a",
@@ -11,17 +11,15 @@
     "background_gradient_color_b_stop": "100",
     "padding": {
       "top": "96",
-      "bottom": "0",
+      "bottom": "96",
       "left": "24",
       "right": "24",
       "unit": "px"
-    },
-    "content_width": "boxed",
-    "content_max_width": "720"
+    }
   },
   "elements": [
     {
-      "id": "plan-h-col",
+      "id": "plan-headline-col",
       "type": "column",
       "settings": {
         "_column_size": "100",

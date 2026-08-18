@@ -5,7 +5,7 @@
     "background_background": "classic",
     "background_color": "#f5f9fd",
     "padding": {
-      "top": "48",
+      "top": "0",
       "bottom": "96",
       "left": "24",
       "right": "24",
@@ -72,7 +72,7 @@
           "id": "auth-1-body",
           "type": "text",
           "settings": {
-            "editor": "<p>We traded careers for income-producing assets. We've been full-time travelers ever since.</p>",
+            "editor": "<p>We traded careers for income-producing assets. We've been full-time travelers ever since, raising a five-year-old who thinks it's normal to ask which city she'll live in tomorrow.</p>",
             "text_color": "#5b6b84"
           }
         }
@@ -135,7 +135,7 @@
           "id": "auth-2-body",
           "type": "text",
           "settings": {
-            "editor": "<p>Before that season, Tyler raised $3 billion institutionally. Today she serves as a FINRA arbitrator.</p>",
+            "editor": "<p>Before that season, Tyler raised $3 billion institutionally \u2014 her clients were financial advisors and stockbrokers, never retail investors. Today she serves as a FINRA arbitrator.</p>",
             "text_color": "#5b6b84"
           }
         }
@@ -198,7 +198,7 @@
           "id": "auth-3-body",
           "type": "text",
           "settings": {
-            "editor": "<p>Jason is training as a Certified Exit Planning Advisor (CEPA). We've spent years building ownership models.</p>",
+            "editor": "<p>Jason is training as a Certified Exit Planning Advisor (CEPA). We've spent the years since our own escape building ownership models designed to buy other people the same freedom.</p>",
             "text_color": "#5b6b84"
           }
         }

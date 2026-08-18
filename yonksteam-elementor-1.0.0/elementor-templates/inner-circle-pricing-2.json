@@ -1,11 +1,11 @@
 {
   "type": "section",
-  "id": "aop-features-1",
+  "id": "ic-features-1",
   "settings": {
     "background_background": "classic",
     "background_color": "#f5f9fd",
     "padding": {
-      "top": "48",
+      "top": "0",
       "bottom": "0",
       "left": "24",
       "right": "24",
@@ -16,7 +16,7 @@
   },
   "elements": [
     {
-      "id": "aop-f1",
+      "id": "ic-f1",
       "type": "column",
       "settings": {
         "_column_size": "50",
@@ -24,10 +24,10 @@
       },
       "elements": [
         {
-          "id": "aop-f1-icon",
+          "id": "ic-f1-icon",
           "type": "text",
           "settings": {
-            "editor": "<p>\u2699\ufe0f</p>",
+            "editor": "<p>\ud83e\udd16</p>",
             "typography_typography": "custom",
             "typography_font_size": {
               "size": "24",
@@ -36,10 +36,10 @@
           }
         },
         {
-          "id": "aop-f1-title",
+          "id": "ic-f1-title",
           "type": "heading",
           "settings": {
-            "title": "The Operator Playbook",
+            "title": "Agents, Not Chatbots",
             "header_size": "h3",
             "text_color": "#0b2a4a",
             "typography_typography": "custom",
@@ -52,17 +52,17 @@
           }
         },
         {
-          "id": "aop-f1-body",
+          "id": "ic-f1-body",
           "type": "text",
           "settings": {
-            "editor": "<p>Complete guide to designing, deploying, and maintaining AI agents in regulated environments.</p>",
+            "editor": "<p>Real agentic workflows that act \u2014 not just prompts that chat. Built, tested, and deployed with guardrails.</p>",
             "text_color": "#5b6b84"
           }
         }
       ]
     },
     {
-      "id": "aop-f2",
+      "id": "ic-f2",
       "type": "column",
       "settings": {
         "_column_size": "50",
@@ -70,10 +70,10 @@
       },
       "elements": [
         {
-          "id": "aop-f2-icon",
+          "id": "ic-f2-icon",
           "type": "text",
           "settings": {
-            "editor": "<p>\ud83e\udde0</p>",
+            "editor": "<p>\ud83d\udee1\ufe0f</p>",
             "typography_typography": "custom",
             "typography_font_size": {
               "size": "24",
@@ -82,10 +82,10 @@
           }
         },
         {
-          "id": "aop-f2-title",
+          "id": "ic-f2-title",
           "type": "heading",
           "settings": {
-            "title": "Agent Templates",
+            "title": "Risk First",
             "header_size": "h3",
             "text_color": "#0b2a4a",
             "typography_typography": "custom",
@@ -98,10 +98,10 @@
           }
         },
         {
-          "id": "aop-f2-body",
+          "id": "ic-f2-body",
           "type": "text",
           "settings": {
-            "editor": "<p>Ready-to-use agent blueprints for common advisory workflows.</p>",
+            "editor": "<p>Before any agent touches real work: what can go wrong, what's the blast radius, and how do you verify? Always.</p>",
             "text_color": "#5b6b84"
           }
         }

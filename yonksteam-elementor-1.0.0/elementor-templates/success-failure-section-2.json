@@ -5,7 +5,7 @@
     "background_background": "classic",
     "background_color": "#f5f9fd",
     "padding": {
-      "top": "48",
+      "top": "0",
       "bottom": "96",
       "left": "24",
       "right": "24",
@@ -58,7 +58,7 @@
           "id": "split-success-list",
           "type": "text",
           "settings": {
-            "editor": "<ul style='list-style-type: none; padding-left: 0;'><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2713 You stop dreading the phone.</li><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2713 Your week fits around your life.</li><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2713 Your income stops depending on your calendar.</li><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2713 You can answer 'what's next' with something you can't wait to start.</li></ul>",
+            "editor": "<ul style='list-style-type: none; padding-left: 0;'><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2713 You stop dreading the phone.</li><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2713 Your week fits around your life instead of the other way around.</li><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2713 Your income stops depending on your calendar.</li><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2713 You can answer 'what's next' with something you can't wait to start.</li><li style='padding-left: 24px; position: relative; margin-bottom: 12px;'>\u2713 When you do hand the practice off, it happens on your terms and your timeline.</li></ul>",
             "text_color": "#0b2a4a"
           }
         }

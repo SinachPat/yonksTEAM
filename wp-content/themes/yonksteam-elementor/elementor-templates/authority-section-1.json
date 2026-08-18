@@ -1,20 +1,22 @@
 {
   "type": "section",
-  "id": "authority-section",
+  "id": "auth-headline-section",
   "settings": {
     "background_background": "classic",
     "background_color": "#f5f9fd",
     "padding": {
       "top": "96",
-      "bottom": "96",
+      "bottom": "0",
       "left": "24",
       "right": "24",
       "unit": "px"
-    }
+    },
+    "content_width": "boxed",
+    "content_max_width": "720"
   },
   "elements": [
     {
-      "id": "auth-headline-col",
+      "id": "auth-h-col",
       "type": "column",
       "settings": {
         "_column_size": "100",

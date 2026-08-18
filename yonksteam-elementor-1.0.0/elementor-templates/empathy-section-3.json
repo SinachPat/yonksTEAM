@@ -1,12 +1,12 @@
 {
   "type": "section",
-  "id": "split-headline-section",
+  "id": "empathy-connecting-section",
   "settings": {
     "background_background": "classic",
-    "background_color": "#f5f9fd",
+    "background_color": "#e8f1fa",
     "padding": {
-      "top": "96",
-      "bottom": "0",
+      "top": "48",
+      "bottom": "96",
       "left": "24",
       "right": "24",
       "unit": "px"
@@ -16,7 +16,7 @@
   },
   "elements": [
     {
-      "id": "split-h-col",
+      "id": "empathy-connecting-col",
       "type": "column",
       "settings": {
         "_column_size": "100",
@@ -24,20 +24,17 @@
       },
       "elements": [
         {
-          "id": "split-headline",
-          "type": "heading",
+          "id": "empathy-connecting",
+          "type": "text",
           "settings": {
-            "title": "What winning looks like. What losing looks like.",
-            "header_size": "h2",
-            "align": "center",
-            "text_color": "#0b2a4a",
+            "editor": "<p style='text-align: center; font-style: italic;'>We know what it's like to have everything and hate your life anyway. We also know what it's like to get out.</p>",
+            "text_color": "#2563eb",
             "typography_typography": "custom",
             "typography_font_family": "Playfair Display",
             "typography_font_size": {
-              "size": "40",
+              "size": "20",
               "unit": "px"
-            },
-            "typography_font_weight": "600"
+            }
           }
         }
       ]

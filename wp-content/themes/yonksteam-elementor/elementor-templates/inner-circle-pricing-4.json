@@ -1,6 +1,6 @@
 {
   "type": "section",
-  "id": "ic-pricing",
+  "id": "ic-pricing-col",
   "settings": {
     "background_background": "classic",
     "background_color": "#f5f9fd",
@@ -16,7 +16,7 @@
   },
   "elements": [
     {
-      "id": "ic-pricing-col",
+      "id": "ic-pricing-card",
       "type": "column",
       "settings": {
         "_column_size": "100",
@@ -97,14 +97,6 @@
               "unit": "px"
             },
             "typography_font_weight": "700"
-          }
-        },
-        {
-          "id": "ic-pricing-desc",
-          "type": "text",
-          "settings": {
-            "editor": "<p style='text-align: center;'>Less than a coffee a month. Lifetime access to mentoring, frameworks, and community.</p>",
-            "text_color": "#5b6b84"
           }
         },
         {

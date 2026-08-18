@@ -1,6 +1,6 @@
 {
   "type": "section",
-  "id": "aop-pricing",
+  "id": "ic-pricing",
   "settings": {
     "background_background": "classic",
     "background_color": "#f5f9fd",
@@ -16,7 +16,7 @@
   },
   "elements": [
     {
-      "id": "aop-pricing-card",
+      "id": "ic-pricing-col",
       "type": "column",
       "settings": {
         "_column_size": "100",
@@ -45,10 +45,10 @@
       },
       "elements": [
         {
-          "id": "aop-badge",
+          "id": "ic-pricing-badge",
           "type": "heading",
           "settings": {
-            "title": "Instant Access",
+            "title": "Membership",
             "header_size": "h6",
             "align": "center",
             "text_color": "#ffffff",
@@ -83,10 +83,10 @@
           }
         },
         {
-          "id": "aop-amount",
+          "id": "ic-pricing-amount",
           "type": "heading",
           "settings": {
-            "title": "$97",
+            "title": "$12/yr",
             "header_size": "h1",
             "align": "center",
             "text_color": "#0b2a4a",
@@ -100,20 +100,28 @@
           }
         },
         {
-          "id": "aop-list",
+          "id": "ic-pricing-desc",
           "type": "text",
           "settings": {
-            "editor": "<ul style='list-style-type: none; padding-left: 0;'><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 The complete Operator Playbook</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Ready-to-use agent templates</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Curated tooling & stack recommendations</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Real-world case studies & breakdowns</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Lifetime updates</li></ul>",
+            "editor": "<p style='text-align: center;'>Less than a coffee a month. Lifetime access to mentoring, frameworks, and community.</p>",
+            "text_color": "#5b6b84"
+          }
+        },
+        {
+          "id": "ic-pricing-list",
+          "type": "text",
+          "settings": {
+            "editor": "<ul style='list-style-type: none; padding-left: 0;'><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Monthly live mentoring with Jason & Tyler</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Responsible AI frameworks & checklists</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Private community of serious practitioners</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Early access to tools, experiments & case studies</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 No upsells \u2014 ever</li></ul>",
             "text_color": "#0b2a4a"
           }
         },
         {
-          "id": "aop-btn",
+          "id": "ic-pricing-btn",
           "type": "button",
           "settings": {
-            "button_text": "Get Agent Operator \u2192",
+            "button_text": "Request to Join \u2192",
             "button_link": {
-              "url": "#"
+              "url": "/contact"
             },
             "button_background_color": "#2563eb",
             "button_text_color": "#ffffff",

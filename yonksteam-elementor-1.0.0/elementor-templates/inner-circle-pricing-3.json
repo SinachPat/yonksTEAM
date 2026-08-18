@@ -1,12 +1,12 @@
 {
   "type": "section",
-  "id": "aop-features-1",
+  "id": "ic-features-2",
   "settings": {
     "background_background": "classic",
     "background_color": "#f5f9fd",
     "padding": {
-      "top": "48",
-      "bottom": "0",
+      "top": "0",
+      "bottom": "48",
       "left": "24",
       "right": "24",
       "unit": "px"
@@ -16,7 +16,7 @@
   },
   "elements": [
     {
-      "id": "aop-f1",
+      "id": "ic-f3",
       "type": "column",
       "settings": {
         "_column_size": "50",
@@ -24,10 +24,10 @@
       },
       "elements": [
         {
-          "id": "aop-f1-icon",
+          "id": "ic-f3-icon",
           "type": "text",
           "settings": {
-            "editor": "<p>\u2699\ufe0f</p>",
+            "editor": "<p>\ud83d\udd0d</p>",
             "typography_typography": "custom",
             "typography_font_size": {
               "size": "24",
@@ -36,10 +36,10 @@
           }
         },
         {
-          "id": "aop-f1-title",
+          "id": "ic-f3-title",
           "type": "heading",
           "settings": {
-            "title": "The Operator Playbook",
+            "title": "Verifiable Outputs",
             "header_size": "h3",
             "text_color": "#0b2a4a",
             "typography_typography": "custom",
@@ -52,17 +52,17 @@
           }
         },
         {
-          "id": "aop-f1-body",
+          "id": "ic-f3-body",
           "type": "text",
           "settings": {
-            "editor": "<p>Complete guide to designing, deploying, and maintaining AI agents in regulated environments.</p>",
+            "editor": "<p>Agents that hallucinate quietly are worse than no agents. We mentor on checking, auditing, and validating every output.</p>",
             "text_color": "#5b6b84"
           }
         }
       ]
     },
     {
-      "id": "aop-f2",
+      "id": "ic-f4",
       "type": "column",
       "settings": {
         "_column_size": "50",
@@ -70,10 +70,10 @@
       },
       "elements": [
         {
-          "id": "aop-f2-icon",
+          "id": "ic-f4-icon",
           "type": "text",
           "settings": {
-            "editor": "<p>\ud83e\udde0</p>",
+            "editor": "<p>\ud83d\udc65</p>",
             "typography_typography": "custom",
             "typography_font_size": {
               "size": "24",
@@ -82,10 +82,10 @@
           }
         },
         {
-          "id": "aop-f2-title",
+          "id": "ic-f4-title",
           "type": "heading",
           "settings": {
-            "title": "Agent Templates",
+            "title": "Human in the Loop",
             "header_size": "h3",
             "text_color": "#0b2a4a",
             "typography_typography": "custom",
@@ -98,10 +98,10 @@
           }
         },
         {
-          "id": "aop-f2-body",
+          "id": "ic-f4-body",
           "type": "text",
           "settings": {
-            "editor": "<p>Ready-to-use agent blueprints for common advisory workflows.</p>",
+            "editor": "<p>Automation that serves people, not replaces them. The circle debates the ethics, not just the tech.</p>",
             "text_color": "#5b6b84"
           }
         }
