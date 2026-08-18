@@ -89,7 +89,7 @@ li {
 
 a {
   color: var(--wp--preset--color--secondary);
-  text-decoration: underline;
+  text-decoration: none;
   transition: color 0.15s ease;
 }
 a:hover {
@@ -1473,6 +1473,19 @@ p.has-small-font-size {
 .wp-block-button.is-style-outline .wp-block-button__link:hover {
   background-color: var(--wp--preset--color--primary);
   color: var(--wp--preset--color--white);
+}
+
+/* ---- CTA on dark background: white outline buttons ---- */
+.has-primary-background-color .wp-block-button.is-style-outline .wp-block-button__link,
+.has-white-color.has-text-color.is-style-outline .wp-block-button__link {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  background: transparent !important;
+  color: #fff !important;
+}
+
+.has-primary-background-color .wp-block-button.is-style-outline .wp-block-button__link:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: #fff !important;
 }
 
 /* ---- Core Columns ---- */
