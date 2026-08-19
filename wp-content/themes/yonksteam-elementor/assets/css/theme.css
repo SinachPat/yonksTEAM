@@ -1,6 +1,6 @@
 /* ==========================================================================
-   YonksTEAM Classic — Theme Stylesheet
-   Fully compatible with Elementor, WPForms, Yoast, FluentCRM, FluentCart
+   YonksTEAM Elementor — Theme Stylesheet
+   Chrome + fallbacks. Elementor owns page layout.
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -19,7 +19,19 @@
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --content-width: 720px;
   --wide-width: 1140px;
-  --transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --primary: var(--color-primary);
+  --secondary: var(--color-secondary);
+  --accent: var(--color-accent);
+  --background: var(--color-background);
+  --surface: var(--color-surface);
+  --foreground: var(--color-foreground);
+  --muted: var(--color-muted);
+  --white: var(--color-white);
+  --heading: var(--font-heading);
+  --body: var(--font-body);
+  --content: var(--content-width);
+  --wide: var(--wide-width);
 }
 
 /* --------------------------------------------------------------------------
@@ -58,6 +70,10 @@ img { max-width: 100%; height: auto; }
 .container-narrow { max-width: var(--content-width); margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
 .section-padding { padding-top: 6rem; padding-bottom: 6rem; }
 .site-main { min-height: 50vh; }
+body.has-fixed-header { padding-top: 72px; }
+body.elementor-template-canvas,
+body.elementor-page.elementor-template-canvas { padding-top: 0; }
+.error-404 { text-align: center; }
 
 /* --------------------------------------------------------------------------
    4. Site Header
@@ -86,7 +102,8 @@ img { max-width: 100%; height: auto; }
   justify-content: space-between;
   height: 72px;
 }
-.site-header__logo {
+.site-header__logo,
+.custom-logo-link {
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 700;
@@ -94,8 +111,17 @@ img { max-width: 100%; height: auto; }
   text-decoration: none;
   letter-spacing: -0.02em;
   transition: color var(--transition);
+  display: flex;
+  align-items: center;
 }
-.site-header__logo:hover { color: var(--color-secondary); }
+.site-header__logo:hover,
+.custom-logo-link:hover { color: var(--color-secondary); }
+.custom-logo,
+.site-header__logo img {
+  display: block;
+  max-height: 40px;
+  width: auto;
+}
 .site-header__nav {
   display: flex;
   align-items: center;
@@ -122,7 +148,29 @@ img { max-width: 100%; height: auto; }
   margin: 0;
   padding: 0;
 }
-.site-header__menu li { margin: 0; }
+.site-header__menu li { margin: 0; position: relative; }
+.site-header__menu .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  margin: 0;
+  padding: 0.5rem 0;
+  list-style: none;
+  background: var(--color-white);
+  border: 1px solid var(--border, rgba(0,0,0,0.07));
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.05);
+  z-index: 20;
+}
+.site-header__menu li:hover > .sub-menu,
+.site-header__menu li:focus-within > .sub-menu { display: block; }
+.site-header__menu .sub-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  white-space: nowrap;
+}
 
 /* Nav Toggle (mobile) */
 .nav-toggle {
@@ -277,6 +325,11 @@ img { max-width: 100%; height: auto; }
   margin-top: 1.5rem;
   margin-bottom: 0;
 }
+.site-footer__widgets {
+  margin-top: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.site-footer .widget-title { color: var(--color-white); font-size: 1rem; }
 
 /* --------------------------------------------------------------------------
    7. Blog Grid
@@ -372,16 +425,48 @@ img { max-width: 100%; height: auto; }
 /* --------------------------------------------------------------------------
    9. Elementor Content Area
    -------------------------------------------------------------------------- */
-.elementor-content {
-  padding-top: 72px; /* offset for fixed header */
+.is-elementor-page .site-main,
+.elementor-page .site-main {
+  max-width: none;
+  padding: 0;
 }
-.elementor-content .elementor-section:first-child {
-  padding-top: 4rem;
+.is-elementor-page .elementor-section .elementor-container {
+  max-width: none;
+  margin: 0;
 }
-
-/* Elementor compatibility fixes */
-.elementor-widget-container p:last-child {
+.is-elementor-page .elementor-column-gap-default > .elementor-column > .elementor-element-populated,
+.is-elementor-page .elementor-column-gap-no > .elementor-column > .elementor-element-populated,
+.is-elementor-page .elementor-widget-html .elementor-widget-container {
+  padding: 0;
+}
+.is-elementor-page .elementor-widget:not(:last-child) {
   margin-bottom: 0;
+}
+.elementor-section .elementor-widget-container p:last-child {
+  margin-bottom: 0;
+}
+.pagination .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.pagination .page-numbers {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.25rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  color: var(--color-primary);
+  background: var(--color-white);
+  border: 1px solid var(--color-surface);
+}
+.pagination .page-numbers.current,
+.pagination .page-numbers:hover {
+  background: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-white);
 }
 
 /* --------------------------------------------------------------------------
@@ -500,6 +585,15 @@ textarea:focus-visible {
     width: 100%;
   }
   .nav-toggle { display: flex; }
+  .site-header__menu .sub-menu {
+    position: static;
+    display: block;
+    min-width: 0;
+    box-shadow: none;
+    border: 0;
+    background: transparent;
+    padding: 0 0 0 1rem;
+  }
   .site-footer__content { flex-direction: column; text-align: center; }
   .blog-grid { grid-template-columns: 1fr; }
   .section-padding { padding-top: 3rem; padding-bottom: 3rem; }
@@ -508,4 +602,5 @@ textarea:focus-visible {
 @media (max-width: 600px) {
   .site-header__inner { height: 64px; }
   .site-header__logo { font-size: 1.25rem; }
+  body.has-fixed-header { padding-top: 64px; }
 }

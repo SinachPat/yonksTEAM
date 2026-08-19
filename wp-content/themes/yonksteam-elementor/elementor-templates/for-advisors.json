@@ -1,0 +1,172 @@
+{
+  "version": "0.4",
+  "title": "YonksTEAM — For Advisors",
+  "type": "page",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "642d77b",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "fafe1b6",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "d1ec3fe",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"hero-interior\"><div class=\"hero-interior__inner\"><div class=\"hero-interior__eyebrow\">For CPAs &amp; Financial Advisors</div><h1 class=\"hero-interior__headline\">You built a practice that clients trust. Now you need a way out that doesn't betray them.</h1><p class=\"hero-interior__subheadline\">Whether you want to rebuild the practice around the life you want, or sell it to the people who trust you most — we'll show you how.</p></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9632572",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "9204943",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "875bb64",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"section section--light\"><div class=\"section__inner--narrow\" style=\"text-align:center;\"><h2 class=\"section__headline\" style=\"text-align:center;\">The clock is ticking on the old model.</h2><div class=\"section__body section__body--center\"><p>You're watching the AI headlines. You know the writing is on the wall. Embrace it or watch the practice lose value. Meanwhile, the only exits on offer are ugly: sell to a bigger firm that scatters longtime clients (the kind of sale where clients find out from an email address change), or hold on and ride the value down.</p></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8ef666c",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "9e2acfa",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "3b30c51",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"section section--warm\"><div class=\"section__inner\"><h2 class=\"section__headline section__headline--center\">You have two paths forward.</h2><div class=\"two-paths__grid\"><div class=\"two-paths__card reveal\"><h3 class=\"two-paths__card-title\">Rebuild the Practice Around Your Life</h3><div class=\"two-paths__card-body\"><p>Keep the practice. Use AI (on your terms) to take the drudgery. Rebuild the schedule so the week fits around your life. The practice still runs — but it doesn't run you.</p></div><a href=\"demo-contact.html\" class=\"btn btn--primary\" style=\"align-self:flex-start;\">Talk About Rebuilding →</a></div><div class=\"two-paths__card reveal reveal-d1\"><h3 class=\"two-paths__card-title\">Exit to Client</h3><div class=\"two-paths__card-body\"><p>Sell the practice to the people who already know exactly what it's worth: your clients. They become owners instead of casualties of the sale. You walk away with the value you built, and the relationships you spent thirty years cultivating don't get scattered by strangers.</p></div><a href=\"demo-exit-to-client.html\" class=\"btn btn--primary\" style=\"align-self:flex-start;\">Learn About Exit to Client →</a></div></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc8cd5f",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "940b2aa",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "6855e68",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"cta-section\"><div class=\"cta-section__inner\"><h2 class=\"cta-section__headline reveal\">Not sure which path is yours?</h2><div class=\"cta-section__body reveal reveal-d1\"><p>That's exactly what the first conversation is for. Tell us where you are, and we'll help you see the way forward.</p></div><div class=\"cta-section__actions reveal reveal-d2\"><a href=\"demo-contact.html\" class=\"btn btn--white btn--arrow\">Start the Conversation →</a><a href=\"demo-newsletter.html\" class=\"btn btn--outline-white\">Join the Newsletter →</a></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

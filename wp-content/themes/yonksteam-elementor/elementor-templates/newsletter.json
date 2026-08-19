@@ -1,0 +1,90 @@
+{
+  "version": "0.4",
+  "title": "YonksTEAM — Newsletter",
+  "type": "page",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "642d77b",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "fafe1b6",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "d1ec3fe",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"hero-interior\"><div class=\"hero-interior__inner\"><div class=\"hero-interior__eyebrow\">The Next Season</div><h1 class=\"hero-interior__headline\">The Next Season.</h1><p class=\"hero-interior__subheadline\">One newsletter. From the two of us. About the life after the practice.</p><div class=\"hero-interior__body\"><p>No fluff. No \"5 tips for a better work-life balance.\" Real stories from people who've made the transition. Honest talk about what it takes to leave. And early access to events, conversations, and the Exit to Client model.</p></div><form class=\"newsletter-form\"><input type=\"email\" placeholder=\"Enter your email\" required><button type=\"submit\" class=\"btn btn--white\">Join The Next Season →</button></form></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9632572",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "9204943",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "875bb64",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"section section--warm\"><div class=\"section__inner--narrow\"><h2 class=\"section__headline section__headline--center\">What you'll get</h2><div class=\"features\"><div class=\"feature reveal\"><div class=\"feature__icon\">📖</div><h3 class=\"feature__title\">Real Transition Stories</h3><div class=\"feature__body\"><p>Advisors who've made the leap. What they did, what they learned, what they wish they'd known sooner.</p></div></div><div class=\"feature reveal reveal-d1\"><div class=\"feature__icon\">🔑</div><h3 class=\"feature__title\">Early Access</h3><div class=\"feature__body\"><p>Be the first to hear about Exit to Client developments, events, and conversations with people who've been where you are.</p></div></div><div class=\"feature reveal\"><div class=\"feature__icon\">💬</div><h3 class=\"feature__title\">Honest Talk</h3><div class=\"feature__body\"><p>The stuff nobody says at industry conferences. What it actually feels like to leave, what you'll miss, and what you won't.</p></div></div><div class=\"feature reveal reveal-d1\"><div class=\"feature__icon\">🌍</div><h3 class=\"feature__title\">From the Road</h3><div class=\"feature__body\"><p>Jason and Tyler's full-time traveler life — and the perspective it gives on what matters after the practice.</p></div></div></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

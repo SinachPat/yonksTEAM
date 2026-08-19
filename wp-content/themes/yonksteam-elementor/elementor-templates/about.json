@@ -1,0 +1,172 @@
+{
+  "version": "0.4",
+  "title": "YonksTEAM — About",
+  "type": "page",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "642d77b",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "fafe1b6",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "d1ec3fe",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"hero-interior\"><div class=\"hero-interior__inner\"><div class=\"hero-interior__content\"><div class=\"hero-interior__eyebrow\">Our Story</div><h1 class=\"hero-interior__headline\">We got out. We can show you how.</h1><p class=\"hero-interior__subheadline\">Jason &amp; Tyler Younker. A married duo who help successful but burned-out professionals get their lives back.</p></div><div class=\"hero-interior__media\"><div class=\"hero-interior__image-placeholder\" style=\"min-height: 360px;\">📸 Jason &amp; Tyler — on the road</div></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9632572",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "9204943",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "875bb64",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"section section--warm\"><div class=\"section__inner--narrow\"><h2 class=\"section__headline section__headline--center\">The Full Story</h2><div class=\"chapters\"><div class=\"chapter reveal\"><div class=\"chapter__num\">Chapter 1</div><h3 class=\"chapter__title\">The Burnout</h3><div class=\"chapter__body\"><p>Jason in IT, burning out in 2017. Driving Uber to buy back freedom. Tyler in sales, hitting the impossible number, getting a congratulations email and a nice lunch. Two different careers, one identical feeling: this can't be all there is.</p></div></div><div class=\"chapter reveal reveal-d1\"><div class=\"chapter__num\">Chapter 2</div><h3 class=\"chapter__title\">The Escape</h3><div class=\"chapter__body\"><p>Eight years ago, they traded careers for income-producing assets. Full-time travelers ever since. A five-year-old who thinks it's normal to ask which city she'll live in tomorrow. They didn't retire — they redesigned the relationship between work and life.</p></div></div><div class=\"chapter reveal reveal-d1\"><div class=\"chapter__num\">Chapter 3</div><h3 class=\"chapter__title\">The Credentials</h3><div class=\"chapter__body\"><p>Tyler's institutional career — $3 billion in sales, clients were financial advisors and stockbrokers. Today: FINRA arbitrator. Jason: Certified Exit Planning Advisor (in training). The authority is earned, not claimed.</p></div></div><div class=\"chapter reveal reveal-d2\"><div class=\"chapter__num\">Chapter 4</div><h3 class=\"chapter__title\">The Model</h3><div class=\"chapter__body\"><p>Seven years building ownership models. First vehicles, then real estate, now professional practices. Each model taught them something about how to transfer value without destroying it. Exit to Client was born from that journey.</p></div></div><div class=\"chapter reveal reveal-d2\"><div class=\"chapter__num\">Chapter 5</div><h3 class=\"chapter__title\">The Mission</h3><div class=\"chapter__body\"><p>To help every burned-out advisor who's ready to say it out loud. Not because they need saving — but because they've already done the hard part. They built something successful. Now they just need to see the way out.</p></div></div></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8ef666c",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "9e2acfa",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "3b30c51",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"section section--light\"><div class=\"section__inner\"><h2 class=\"section__headline section__headline--center\">Meet the Team</h2><div class=\"team-grid\"><div class=\"team-card reveal\"><div class=\"team-card__photo\">📸 Jason</div><div class=\"team-card__name\">Jason (yonks)</div><div class=\"team-card__role\">IT, burnout, Uber, CEPA (in training)</div><div class=\"team-card__bio\">The architect of the ownership models. Eight years of building income-producing assets, learning what works and what doesn't, so you don't have to.</div><div class=\"team-card__quote\">\"I know what it's like to have everything and hate your life anyway.\"</div></div><div class=\"team-card reveal reveal-d1\"><div class=\"team-card__photo\">📸 Tyler</div><div class=\"team-card__name\">Tyler (MrsYonks)</div><div class=\"team-card__role\">$3B institutional sales, FINRA arbitrator</div><div class=\"team-card__bio\">The institutional backbone. She spent decades serving the people you serve — and now she serves as an arbitrator, understanding exactly how the system works from the inside.</div><div class=\"team-card__quote\">\"I know what it's like to hit the number and still feel empty.\"</div></div></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc8cd5f",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "940b2aa",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "6855e68",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"cta-section\"><div class=\"cta-section__inner\"><h2 class=\"cta-section__headline reveal\">Ready to write your own story?</h2><div class=\"cta-section__body reveal reveal-d1\"><p>Every chapter starts with a single honest conversation. Let's have that conversation.</p></div><div class=\"cta-section__actions reveal reveal-d2\"><a href=\"demo-contact.html\" class=\"btn btn--white btn--arrow\">Start the Conversation →</a><a href=\"demo-newsletter.html\" class=\"btn btn--outline-white\">Join the Newsletter →</a></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

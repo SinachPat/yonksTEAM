@@ -3,11 +3,13 @@ Theme Name: YonksTEAM Elementor
 Theme URI: https://yonks.team
 Author: Jason & Tyler Younker
 Author URI: https://yonks.team
-Description: Elementor-compatible theme for YonksTEAM. Fully compatible with Elementor, WPForms, Yoast SEO, FluentCRM, and FluentCart.
-Version: 1.1.0
-Requires at least: 6.5
-Tested up to: 6.6
-Requires PHP: 8.1
+Description: Classic PHP theme built for Elementor. Includes a branded header/footer fallback, full-width and canvas page templates, and importable Elementor page kits.
+Version: 1.3.0
+Requires at least: 6.4
+Tested up to: 6.8
+Requires PHP: 8.0
 License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: yonksteam
+Tags: custom-logo, custom-menu, featured-images, full-width-template, one-column, translation-ready
 */

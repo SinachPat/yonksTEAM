@@ -1,402 +1,172 @@
-[
-  {
-    "type": "section",
-    "id": "ic-headline-section",
-    "settings": {
-      "background_background": "classic",
-      "background_color": "#f5f9fd",
-      "padding": {
-        "top": "96",
-        "bottom": "0",
-        "left": "24",
-        "right": "24",
-        "unit": "px"
+{
+  "version": "0.4",
+  "title": "YonksTEAM — Inner Circle",
+  "type": "page",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "642d77b",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
       },
-      "content_width": "boxed",
-      "content_max_width": "720"
+      "elements": [
+        {
+          "id": "fafe1b6",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "d1ec3fe",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"hero-interior\"><div class=\"hero-interior__inner\"><div class=\"hero-interior__eyebrow\">Responsible Agentic AI</div><h1 class=\"hero-interior__headline\">The Inner Circle.</h1><p class=\"hero-interior__subheadline\">A private mentoring circle for using agentic AI the right way — no hype, no shortcuts, no calling yourself an \"AI expert\" after one webinar.</p></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
     },
-    "elements": [
-      {
-        "id": "ic-h-col",
-        "type": "column",
-        "settings": {
-          "_column_size": "100",
-          "_inline_size": "100"
+    {
+      "id": "9632572",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
         },
-        "elements": [
-          {
-            "id": "ic-headline",
-            "type": "heading",
-            "settings": {
-              "title": "What you get in the circle",
-              "header_size": "h2",
-              "align": "center",
-              "text_color": "#0b2a4a",
-              "typography_typography": "custom",
-              "typography_font_family": "Playfair Display",
-              "typography_font_size": {
-                "size": "40",
-                "unit": "px"
-              },
-              "typography_font_weight": "600"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "section",
-    "id": "ic-features-1",
-    "settings": {
-      "background_background": "classic",
-      "background_color": "#f5f9fd",
-      "padding": {
-        "top": "48",
-        "bottom": "0",
-        "left": "24",
-        "right": "24",
-        "unit": "px"
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
       },
-      "content_width": "boxed",
-      "content_max_width": "1140"
+      "elements": [
+        {
+          "id": "9204943",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "875bb64",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"section section--warm\"><div class=\"section__inner\"><h2 class=\"section__headline section__headline--center\">What you get in the circle</h2><div class=\"features\"><div class=\"feature reveal\"><div class=\"feature__icon\" aria-hidden=\"true\">🤖</div><h3 class=\"feature__title\">Agents, Not Chatbots</h3><div class=\"feature__body\"><p>Real agentic workflows that act — not just prompts that chat. Built, tested, and deployed with guardrails.</p></div></div><div class=\"feature reveal reveal-d1\"><div class=\"feature__icon\" aria-hidden=\"true\">🛡️</div><h3 class=\"feature__title\">Risk First</h3><div class=\"feature__body\"><p>Before any agent touches real work: what can go wrong, what's the blast radius, and how do you verify? Always.</p></div></div><div class=\"feature reveal\"><div class=\"feature__icon\" aria-hidden=\"true\">🔍</div><h3 class=\"feature__title\">Verifiable Outputs</h3><div class=\"feature__body\"><p>Agents that hallucinate quietly are worse than no agents. We mentor on checking, auditing, and validating every output.</p></div></div><div class=\"feature reveal reveal-d1\"><div class=\"feature__icon\" aria-hidden=\"true\">👥</div><h3 class=\"feature__title\">Human in the Loop</h3><div class=\"feature__body\"><p>Automation that serves people, not replaces them. The circle debates the ethics, not just the tech.</p></div></div></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
     },
-    "elements": [
-      {
-        "id": "ic-f1",
-        "type": "column",
-        "settings": {
-          "_column_size": "50",
-          "_inline_size": "50"
+    {
+      "id": "8ef666c",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
         },
-        "elements": [
-          {
-            "id": "ic-f1-icon",
-            "type": "text",
-            "settings": {
-              "editor": "<p>\ud83e\udd16</p>",
-              "typography_typography": "custom",
-              "typography_font_size": {
-                "size": "24",
-                "unit": "px"
-              }
-            }
-          },
-          {
-            "id": "ic-f1-title",
-            "type": "heading",
-            "settings": {
-              "title": "Agents, Not Chatbots",
-              "header_size": "h3",
-              "text_color": "#0b2a4a",
-              "typography_typography": "custom",
-              "typography_font_family": "Playfair Display",
-              "typography_font_size": {
-                "size": "20",
-                "unit": "px"
-              },
-              "typography_font_weight": "600"
-            }
-          },
-          {
-            "id": "ic-f1-body",
-            "type": "text",
-            "settings": {
-              "editor": "<p>Real agentic workflows that act \u2014 not just prompts that chat. Built, tested, and deployed with guardrails.</p>",
-              "text_color": "#5b6b84"
-            }
-          }
-        ]
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
       },
-      {
-        "id": "ic-f2",
-        "type": "column",
-        "settings": {
-          "_column_size": "50",
-          "_inline_size": "50"
-        },
-        "elements": [
-          {
-            "id": "ic-f2-icon",
-            "type": "text",
-            "settings": {
-              "editor": "<p>\ud83d\udee1\ufe0f</p>",
-              "typography_typography": "custom",
-              "typography_font_size": {
-                "size": "24",
-                "unit": "px"
-              }
-            }
+      "elements": [
+        {
+          "id": "9e2acfa",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
           },
-          {
-            "id": "ic-f2-title",
-            "type": "heading",
-            "settings": {
-              "title": "Risk First",
-              "header_size": "h3",
-              "text_color": "#0b2a4a",
-              "typography_typography": "custom",
-              "typography_font_family": "Playfair Display",
-              "typography_font_size": {
-                "size": "20",
-                "unit": "px"
+          "elements": [
+            {
+              "id": "3b30c51",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"section section--light\"><div class=\"section__inner--narrow\"><h2 class=\"section__headline\" style=\"text-align:center;\">Join the Circle</h2><div class=\"section__body section__body--center\"><p>Agentic AI is the new wild west. Everyone's selling courses. Almost no one is mentoring. The Inner Circle is a small, private group where Jason &amp; Tyler actually walk with you — building agents responsibly, thinking through the risks, and skipping the hype entirely.</p></div><div class=\"pricing-card reveal\"><div class=\"pricing-card__badge\">Membership</div><div class=\"pricing-card__price\">$12<span>/yr</span></div><div class=\"pricing-card__period\">A year of responsible agentic AI mentorship. Less than a coffee a month.</div><ul class=\"pricing-card__list\"><li class=\"pricing-card__item\">Monthly live mentoring sessions with Jason &amp; Tyler</li><li class=\"pricing-card__item\">Responsible agentic AI frameworks &amp; checklists</li><li class=\"pricing-card__item\">Private community for honest questions</li><li class=\"pricing-card__item\">Early access to tools, experiments &amp; case studies</li><li class=\"pricing-card__item\">No upsells. No \"masterclass\" spam. Ever.</li></ul><a href=\"demo-contact.html\" class=\"btn btn--primary btn--arrow pricing-card__cta\">Request to Join →</a></div></div></div>"
               },
-              "typography_font_weight": "600"
+              "elements": []
             }
-          },
-          {
-            "id": "ic-f2-body",
-            "type": "text",
-            "settings": {
-              "editor": "<p>Before any agent touches real work: what can go wrong, what's the blast radius, and how do you verify?</p>",
-              "text_color": "#5b6b84"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "section",
-    "id": "ic-features-2",
-    "settings": {
-      "background_background": "classic",
-      "background_color": "#f5f9fd",
-      "padding": {
-        "top": "0",
-        "bottom": "48",
-        "left": "24",
-        "right": "24",
-        "unit": "px"
-      },
-      "content_width": "boxed",
-      "content_max_width": "1140"
+          ]
+        }
+      ]
     },
-    "elements": [
-      {
-        "id": "ic-f3",
-        "type": "column",
-        "settings": {
-          "_column_size": "50",
-          "_inline_size": "50"
+    {
+      "id": "bc8cd5f",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
         },
-        "elements": [
-          {
-            "id": "ic-f3-icon",
-            "type": "text",
-            "settings": {
-              "editor": "<p>\ud83d\udd0d</p>",
-              "typography_typography": "custom",
-              "typography_font_size": {
-                "size": "24",
-                "unit": "px"
-              }
-            }
-          },
-          {
-            "id": "ic-f3-title",
-            "type": "heading",
-            "settings": {
-              "title": "Verifiable Outputs",
-              "header_size": "h3",
-              "text_color": "#0b2a4a",
-              "typography_typography": "custom",
-              "typography_font_family": "Playfair Display",
-              "typography_font_size": {
-                "size": "20",
-                "unit": "px"
-              },
-              "typography_font_weight": "600"
-            }
-          },
-          {
-            "id": "ic-f3-body",
-            "type": "text",
-            "settings": {
-              "editor": "<p>Agents that hallucinate quietly are worse than no agents. We mentor on checking and validating every output.</p>",
-              "text_color": "#5b6b84"
-            }
-          }
-        ]
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
       },
-      {
-        "id": "ic-f4",
-        "type": "column",
-        "settings": {
-          "_column_size": "50",
-          "_inline_size": "50"
-        },
-        "elements": [
-          {
-            "id": "ic-f4-icon",
-            "type": "text",
-            "settings": {
-              "editor": "<p>\ud83d\udc65</p>",
-              "typography_typography": "custom",
-              "typography_font_size": {
-                "size": "24",
-                "unit": "px"
-              }
+      "elements": [
+        {
+          "id": "940b2aa",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "6855e68",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"cta-section\"><div class=\"cta-section__inner\"><h2 class=\"cta-section__headline reveal\">Twelve dollars. One year. Real mentorship.</h2><div class=\"cta-section__body reveal reveal-d1\"><p>If you're building with agentic AI, you shouldn't build alone. Join the circle.</p></div><div class=\"cta-section__actions reveal reveal-d2\"><a href=\"demo-contact.html\" class=\"btn btn--white btn--arrow\">Request to Join →</a></div></div></div>"
+              },
+              "elements": []
             }
-          },
-          {
-            "id": "ic-f4-title",
-            "type": "heading",
-            "settings": {
-              "title": "Human in the Loop",
-              "header_size": "h3",
-              "text_color": "#0b2a4a",
-              "typography_typography": "custom",
-              "typography_font_family": "Playfair Display",
-              "typography_font_size": {
-                "size": "20",
-                "unit": "px"
-              },
-              "typography_font_weight": "600"
-            }
-          },
-          {
-            "id": "ic-f4-body",
-            "type": "text",
-            "settings": {
-              "editor": "<p>Automation that serves people, not replaces them. The circle debates the ethics, not just the tech.</p>",
-              "text_color": "#5b6b84"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "section",
-    "id": "ic-pricing-col",
-    "settings": {
-      "background_background": "classic",
-      "background_color": "#f5f9fd",
-      "padding": {
-        "top": "0",
-        "bottom": "96",
-        "left": "24",
-        "right": "24",
-        "unit": "px"
-      },
-      "content_width": "boxed",
-      "content_max_width": "1140"
-    },
-    "elements": [
-      {
-        "id": "ic-pricing-card",
-        "type": "column",
-        "settings": {
-          "_column_size": "100",
-          "_inline_size": "100",
-          "background_background": "classic",
-          "background_color": "#ffffff",
-          "border_border": "solid",
-          "border_width": {
-            "size": "2",
-            "unit": "px"
-          },
-          "border_color": "#2563eb",
-          "border_radius": {
-            "size": "12",
-            "unit": "px"
-          },
-          "padding": {
-            "top": "48",
-            "bottom": "48",
-            "left": "48",
-            "right": "48",
-            "unit": "px"
-          },
-          "content_max_width": "480",
-          "content_width": "boxed"
-        },
-        "elements": [
-          {
-            "id": "ic-pricing-badge",
-            "type": "heading",
-            "settings": {
-              "title": "Membership",
-              "header_size": "h6",
-              "align": "center",
-              "text_color": "#ffffff",
-              "background_background": "classic",
-              "background_color": "#2563eb",
-              "border_radius": {
-                "size": "100",
-                "unit": "px"
-              },
-              "padding": {
-                "top": "6",
-                "bottom": "6",
-                "left": "16",
-                "right": "16",
-                "unit": "px"
-              },
-              "typography_typography": "custom",
-              "typography_font_size": {
-                "size": "12",
-                "unit": "px"
-              },
-              "typography_font_weight": "600",
-              "typography_text_transform": "uppercase",
-              "typography_letter_spacing": {
-                "size": "1",
-                "unit": "px"
-              },
-              "width": {
-                "size": "auto",
-                "unit": "%"
-              }
-            }
-          },
-          {
-            "id": "ic-pricing-amount",
-            "type": "heading",
-            "settings": {
-              "title": "$12/yr",
-              "header_size": "h1",
-              "align": "center",
-              "text_color": "#0b2a4a",
-              "typography_typography": "custom",
-              "typography_font_family": "Playfair Display",
-              "typography_font_size": {
-                "size": "64",
-                "unit": "px"
-              },
-              "typography_font_weight": "700"
-            }
-          },
-          {
-            "id": "ic-pricing-list",
-            "type": "text",
-            "settings": {
-              "editor": "<ul style='list-style-type: none; padding-left: 0;'><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Monthly live mentoring with Jason & Tyler</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Responsible AI frameworks & checklists</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Private community of serious practitioners</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 Early access to tools, experiments & case studies</li><li style='padding-left: 28px; position: relative; margin-bottom: 12px;'>\u2713 No upsells \u2014 ever</li></ul>",
-              "text_color": "#0b2a4a"
-            }
-          },
-          {
-            "id": "ic-pricing-btn",
-            "type": "button",
-            "settings": {
-              "button_text": "Request to Join \u2192",
-              "button_link": {
-                "url": "/contact"
-              },
-              "button_background_color": "#2563eb",
-              "button_text_color": "#ffffff",
-              "border_radius": {
-                "size": "6",
-                "unit": "px"
-              },
-              "hover_background_color": "#1d4ed8",
-              "hover_animation": "grow",
-              "button_size": "lg"
-            }
-          }
-        ]
-      }
-    ]
-  }
-]
+          ]
+        }
+      ]
+    }
+  ]
+}

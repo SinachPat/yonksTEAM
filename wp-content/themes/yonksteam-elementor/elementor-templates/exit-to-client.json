@@ -1,0 +1,172 @@
+{
+  "version": "0.4",
+  "title": "YonksTEAM — Exit to Client",
+  "type": "page",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "642d77b",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "fafe1b6",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "d1ec3fe",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"hero-interior\"><div class=\"hero-interior__inner\"><div class=\"hero-interior__eyebrow\">The Flagship Model</div><h1 class=\"hero-interior__headline\">Exit to Client. The sale that serves everyone.</h1><p class=\"hero-interior__subheadline\">Your clients trust you. They already know what your practice is worth. Why not sell it to them?</p></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9632572",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "9204943",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "875bb64",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"section section--light\"><div class=\"section__inner\"><h2 class=\"section__headline section__headline--center\">Traditional exits leave everyone worse off.</h2><div class=\"comparison\"><div class=\"comparison__col comparison__col--traditional\"><h3 class=\"comparison__label\">Traditional Exit</h3><ul class=\"comparison__list\"><li class=\"comparison__item\">Sold to the highest bidder</li><li class=\"comparison__item\">Clients find out from an email address change</li><li class=\"comparison__item\">Thirty years of relationships scattered</li><li class=\"comparison__item\">A stranger runs the practice</li><li class=\"comparison__item\">You get a check and disappear</li></ul></div><div class=\"comparison__col comparison__col--exit\"><h3 class=\"comparison__label\">Exit to Client</h3><ul class=\"comparison__list\"><li class=\"comparison__item\">Sold to the people who know you best</li><li class=\"comparison__item\">Clients become owners</li><li class=\"comparison__item\">Thirty years of relationships deepened</li><li class=\"comparison__item\">The community runs the practice</li><li class=\"comparison__item\">You get a check and a legacy</li></ul></div></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8ef666c",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "9e2acfa",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "3b30c51",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"section section--warm\"><div class=\"section__inner\"><h2 class=\"section__headline section__headline--center\">How Exit to Client Works</h2><div class=\"steps\"><div class=\"step reveal\"><div class=\"step__num\">1</div><div><h3 class=\"step__title\">Evaluate</h3><div class=\"step__body\"><p>We help you assess your practice's true value — not just the revenue multiple, but the client relationships, the trust capital, and the community you've built over decades.</p></div></div></div><div class=\"step reveal reveal-d1\"><div class=\"step__num\">2</div><div><h3 class=\"step__title\">Design the Ownership Structure</h3><div class=\"step__body\"><p>We build a model that lets your clients buy in — either as a group or through a structured vehicle. They become owners. You become free. The practice stays in the hands of the people who love it.</p></div></div></div><div class=\"step reveal reveal-d2\"><div class=\"step__num\">3</div><div><h3 class=\"step__title\">Transition on Your Terms</h3><div class=\"step__body\"><p>You set the timeline. You stay as long as you want — or leave as soon as you're ready. The transition happens when it's right for you, your clients, and your legacy.</p></div></div></div></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc8cd5f",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "940b2aa",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "6855e68",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"cta-section\"><div class=\"cta-section__inner\"><h2 class=\"cta-section__headline reveal\">Ready to explore Exit to Client?</h2><div class=\"cta-section__body reveal reveal-d1\"><p>Tell us about your practice. We'll show you what Exit to Client looks like for your specific situation.</p></div><div class=\"cta-section__actions reveal reveal-d2\"><a href=\"demo-contact.html\" class=\"btn btn--white btn--arrow\">Start the Conversation About Exit to Client →</a></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
