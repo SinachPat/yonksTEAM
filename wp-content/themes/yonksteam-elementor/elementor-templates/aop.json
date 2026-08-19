@@ -1,0 +1,213 @@
+{
+  "version": "0.4",
+  "title": "YonksTEAM — Agent Operator",
+  "type": "page",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "642d77b",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "fafe1b6",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "d1ec3fe",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"hero-interior\"><div class=\"hero-interior__inner\"><div class=\"hero-interior__eyebrow\">AOP.biz · Agent Operator</div><h1 class=\"hero-interior__headline\">You don't need to hire an AI team. You need to become the operator.</h1><p class=\"hero-interior__subheadline\">Agent Operator is a complete system for building, running, and owning your own AI agents — with no code, no hype, and no hand-holding.</p></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9632572",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "9204943",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "875bb64",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"section section--light\"><div class=\"section__inner\"><h2 class=\"section__headline section__headline--center\">What you get</h2><div class=\"features\"><div class=\"feature reveal\"><div class=\"feature__icon\" aria-hidden=\"true\">⚙️</div><h3 class=\"feature__title\">The Operator Playbook</h3><div class=\"feature__body\"><p>The complete step-by-step playbook for building agents that actually do work — not just chat.</p></div></div><div class=\"feature reveal reveal-d1\"><div class=\"feature__icon\" aria-hidden=\"true\">🧠</div><h3 class=\"feature__title\">Agent Templates</h3><div class=\"feature__body\"><p>Drop-in, battle-tested agent templates you can customize for your own business in minutes.</p></div></div><div class=\"feature reveal\"><div class=\"feature__icon\" aria-hidden=\"true\">🛠️</div><h3 class=\"feature__title\">Tooling &amp; Stack</h3><div class=\"feature__body\"><p>The exact tools, workflows, and stack we use — plus honest recommendations on what to skip.</p></div></div><div class=\"feature reveal reveal-d1\"><div class=\"feature__icon\" aria-hidden=\"true\">📈</div><h3 class=\"feature__title\">Real-World Case Studies</h3><div class=\"feature__body\"><p>How real operators are deploying agents in the wild — the wins, the failures, and the lessons.</p></div></div></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8ef666c",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "9e2acfa",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "3b30c51",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"section section--warm\"><div class=\"section__inner\"><h2 class=\"section__headline section__headline--center\">From zero to operator in three steps</h2><div class=\"steps\"><div class=\"step reveal\"><div class=\"step__num\">1</div><div><h3 class=\"step__title\">Learn the Operator Mindset</h3><div class=\"step__body\"><p>Understand what agents are actually good at, where they fail, and how to think about automation like an owner, not a tourist.</p></div></div></div><div class=\"step reveal reveal-d1\"><div class=\"step__num\">2</div><div><h3 class=\"step__title\">Build Your First Agent</h3><div class=\"step__body\"><p>Use the templates and playbook to ship your first working agent — deployed to a real task, with real guardrails.</p></div></div></div><div class=\"step reveal reveal-d2\"><div class=\"step__num\">3</div><div><h3 class=\"step__title\">Operate, Iterate, Own</h3><div class=\"step__body\"><p>Run the agent like a business asset. Monitor it, improve it, and stack more agents as you grow. You own the systems, not a subscription.</p></div></div></div></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc8cd5f",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "940b2aa",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "6855e68",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"section section--light\"><div class=\"section__inner--narrow\"><h2 class=\"section__headline\" style=\"text-align:center;\">Get Agent Operator</h2><div class=\"pricing-card reveal\"><div class=\"pricing-card__badge\">Instant Access</div><div class=\"pricing-card__price\">$97<span>/one-time</span></div><div class=\"pricing-card__period\">Lifetime access to the playbook, templates, and updates. No recurring fees.</div><ul class=\"pricing-card__list\"><li class=\"pricing-card__item\">The Operator Playbook (lifetime access)</li><li class=\"pricing-card__item\">Agent templates &amp; tooling stack</li><li class=\"pricing-card__item\">Real-world case studies</li><li class=\"pricing-card__item\">Future updates included</li></ul><a href=\"#\" class=\"btn btn--primary btn--arrow pricing-card__cta\">Get Agent Operator →</a></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "059d2c3",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "content_width": "full",
+        "gap": "no",
+        "_element_id": ""
+      },
+      "elements": [
+        {
+          "id": "695083d",
+          "elType": "column",
+          "isInner": true,
+          "_column_size": 100,
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "c72e491",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"cta-section\"><div class=\"cta-section__inner\"><h2 class=\"cta-section__headline reveal\">Your competitors are already building agents.</h2><div class=\"cta-section__body reveal reveal-d1\"><p>Learn the operator playbook and start building yours today.</p></div><div class=\"cta-section__actions reveal reveal-d2\"><a href=\"#\" class=\"btn btn--white btn--arrow\">Get Agent Operator →</a></div></div></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

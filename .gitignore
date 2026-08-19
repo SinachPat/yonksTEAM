@@ -26,4 +26,12 @@ node_modules/
 Thumbs.db
 
 # Allow pre-compiled theme CSS
-!assets/css/style.cssyonksteam-2.1.0/
+!assets/css/style.css
+
+# Release ZIPs — build output of release-zip.sh / release-zip.yml, not source
+/*.zip
+
+# Stray extracted theme folders at repo root (real source lives under
+# wp-content/themes/). Has happened before with yonksteam-2.1.0/ and
+# yonksteam-elementor-1.1.0/ — ignore the whole class going forward.
+/yonksteam*/

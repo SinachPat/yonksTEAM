@@ -1,20 +1,30 @@
 <?php
 /**
- * Index / Fallback template
+ * Default / fallback template.
  *
  * @package YonksTEAM
  */
-get_header(); ?>
 
-<div class="container-wide section-padding">
-    <?php
-    if (have_posts()) :
-        while (have_posts()) :
-            the_post();
-            the_content();
-        endwhile;
-    endif;
-    ?>
-</div>
+get_header();
 
-<?php get_footer();
+if ( yonksteam_is_elementor_page() ) :
+	while ( have_posts() ) :
+		the_post();
+		the_content();
+	endwhile;
+else :
+	?>
+	<div class="container-wide section-padding">
+		<?php
+		if ( have_posts() ) :
+			while ( have_posts() ) :
+				the_post();
+				the_content();
+			endwhile;
+		endif;
+		?>
+	</div>
+	<?php
+endif;
+
+get_footer();
